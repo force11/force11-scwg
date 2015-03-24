@@ -14,5 +14,5 @@ TBD
 
 | Name                    | Affiliation   | Role |
 |-------------------------|---------------|----------------|
-| Dan Katz ([@danielskatz](https://github.com/danielskatz)) | NSF           | Co-chair    |
 | Arfon Smith ([@arfon](https://github.com/arfon))    | GitHub        | Co-chair          |
+| Daniel S. Katz ([@danielskatz](https://github.com/danielskatz)) | U Chicago & Argonne Natl Lab           | Co-chair    |
