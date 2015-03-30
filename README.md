@@ -12,7 +12,7 @@ Co-chairs: Dan Katz & Arfon Smith
 
 - April 2015: Working group established
 - ...
-- January 2016: Formal recommendations presented at Force11 2016
+- February 2016: Formal recommendations presented at Force11 2016
 
 ##Members
 
