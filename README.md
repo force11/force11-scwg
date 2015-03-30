@@ -14,5 +14,8 @@ TBD
 
 | Name                    | Affiliation   | Role |
 |-------------------------|---------------|----------------|
-| Arfon Smith ([@arfon](https://github.com/arfon))    | GitHub        | Co-chair          |
 | Daniel S. Katz ([@danielskatz](https://github.com/danielskatz)) | U Chicago & Argonne Natl Lab           | Co-chair    |
+| Arfon Smith ([@arfon](https://github.com/arfon))    | GitHub        | Co-chair          |
+| Stephanie Hagstrom ([@sthagstrom](https://github.com/sthagstrom)) | Force11 | Participant |
+| Ivan Herman ([@iherman](https://github.com/iherman)) | W3C | Participant |
+
