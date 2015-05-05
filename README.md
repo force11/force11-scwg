@@ -22,4 +22,4 @@ Co-chairs: Dan Katz & Arfon Smith
 | Arfon Smith ([@arfon](https://github.com/arfon))    | GitHub        | Co-chair          |
 | Stephanie Hagstrom ([@sthagstrom](https://github.com/sthagstrom)) | Force11 | Participant |
 | Ivan Herman ([@iherman](https://github.com/iherman)) | W3C | Participant |
-
+| Lars Holm Nielsen ([@lnielsen](https://github.com/lnielsen)) | CERN | Participant |
