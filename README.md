@@ -24,3 +24,4 @@ Co-chairs: Dan Katz & Arfon Smith
 | Ivan Herman ([@iherman](https://github.com/iherman)) | W3C | Participant |
 | Lars Holm Nielsen ([@lnielsen](https://github.com/lnielsen)) | CERN | Participant |
 | Mercè Crosas ([@mcrosas](https://github.com/mcrosas)) | IQSS, Harvard University| Participant |
+| Neil Chue Hong ([@npch](https://github.com/npch)) | Software Sustainability Institute | Participant |
