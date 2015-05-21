@@ -26,3 +26,4 @@ Co-chairs: Dan Katz & Arfon Smith
 | Mercè Crosas ([@mcrosas](https://github.com/mcrosas)) | IQSS, Harvard University| Participant |
 | Neil Chue Hong ([@npch](https://github.com/npch)) | Software Sustainability Institute | Participant |
 | Nic Weber ([@nniiicc](https://github.com/nniiicc)) | University of Washington iSchool | Participant |
+| Kaitlin Thaney ([@kaythaney](https://github.com/kaythaney)) | Mozilla Science Lab | Participant |
