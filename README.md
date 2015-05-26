@@ -27,3 +27,4 @@ Co-chairs: Dan Katz & Arfon Smith
 | Neil Chue Hong ([@npch](https://github.com/npch)) | Software Sustainability Institute | Participant |
 | Nic Weber ([@nniiicc](https://github.com/nniiicc)) | University of Washington iSchool | Participant |
 | Bill Mills ([@BillMills](https://github.com/BillMills)) | Mozilla Science Lab | Participant |
+| Evan Misshula ([@EMisshula](https://github.com/EvanMisshula)) | CUNY Graduate Center | Participant |
