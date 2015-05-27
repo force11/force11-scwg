@@ -21,7 +21,7 @@ If you are interested in joining the group, please:
 1. Add yourself to the list below through a pull request
 2. To add yourself to the group mailing list and group folder on Force11:
   * Sign into Force11: http://www.force11.org/user/register
-  * After Signing in, on the group papge (http://www.force11.org/group/software-citation-working-group) subscribe to the group here using the "subscribe to group" link in right column above the group list
+  * After Signing in, on the group page (http://www.force11.org/group/software-citation-working-group) subscribe to the group here using the "subscribe to group" link in right column above the group list
 
 
 | Name                    | Affiliation   | Role |
