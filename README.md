@@ -10,9 +10,39 @@ Co-chairs: Dan Katz & Arfon Smith
 
 ##Timeline
 
-- April 2015: Working group established
-- ...
-- February 2016: Formal recommendations presented at Force11 2016
+### Phase 1 (June/July 2015)
+
+Kick off meeting (telecon) with goals of:
+- Establish interest/backgrounds of working group participants.
+- Review mission statement, timeline and goals
+- Seek out additional participants (if we're missing key individuals)
+
+### Phase 2 (July/August/September 2015)
+
+- Gather materials documenting existing practices in member disciplines
+- Review materials, identifying overlaps and differences
+
+### Phase 3 (September/October/November 2015)
+
+- Drafting of Software Citation Principles (possibly in person at [WSSSPE](http://wssspe.researchcomputing.org.uk/wssspe3/), Boulder, CO - 28/29 September) 
+- Seek community feedback on draft
+- Iterate
+
+### Phase 4 (November/December/January)
+
+- Software Citation Principles proposed final draft complete.
+- Seek out community endorsements for draft principles.
+
+### Phase 5 (February 2016)
+
+- Presentation of formal recommendations at Force11 2016
+
+## Communication plan
+
+- Monthly telecons
+- GitHub for documentation/iterating on content
+- Google groups for general discussion
+- Force11 email list for announcements
 
 ##Members
 
