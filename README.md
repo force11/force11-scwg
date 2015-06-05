@@ -64,6 +64,7 @@ If you are interested in joining the group, please:
 | Matthew B. Jones ([@mbjones](https://github.com/mbjones)) | NCEAS, UC Santa Barbara | Participant |
 | Daniel S. Katz ([@danielskatz](https://github.com/danielskatz)) | U Chicago & Argonne Natl Lab           | Co-chair    |
 | John Kratz ([@JEK-III](https://github.com/JEK-III)) | California Digital Library | Participant |
+| Daniel Mietchen ([@Daniel-Mietchen](https://github.com/Daniel-Mietchen)) | NIH | Participant |
 | Bill Mills ([@BillMills](https://github.com/BillMills)) | Mozilla Science Lab | Participant |
 | Evan Misshula ([@EMisshula](https://github.com/EvanMisshula)) | CUNY Graduate Center | Participant |
 | Lars Holm Nielsen ([@lnielsen](https://github.com/lnielsen)) | CERN | Participant |
