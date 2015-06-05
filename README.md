@@ -68,3 +68,4 @@ If you are interested in joining the group, please:
 | Lars Holm Nielsen ([@lnielsen](https://github.com/lnielsen)) | CERN | Participant |
 | Arfon Smith ([@arfon](https://github.com/arfon))    | GitHub        | Co-chair          |
 | Nic Weber ([@nniiicc](https://github.com/nniiicc)) | University of Washington iSchool | Participant |
+| John Kratz ([@JEK-III](https://github.com/JEK-III)) | California Digital Library | Participant |
