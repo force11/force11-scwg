@@ -61,6 +61,7 @@ If you are interested in joining the group, please:
 | Stephanie Hagstrom ([@sthagstrom](https://github.com/sthagstrom)) | Force11 | Participant |
 | Ivan Herman ([@iherman](https://github.com/iherman)) | W3C | Participant |
 | Neil Chue Hong ([@npch](https://github.com/npch)) | Software Sustainability Institute | Participant |
+| Matthew B. Jones ([@mbjones](https://github.com/mbjones)) | NCEAS, UC Santa Barbara | Participant |
 | Daniel S. Katz ([@danielskatz](https://github.com/danielskatz)) | U Chicago & Argonne Natl Lab           | Co-chair    |
 | Bill Mills ([@BillMills](https://github.com/BillMills)) | Mozilla Science Lab | Participant |
 | Evan Misshula ([@EMisshula](https://github.com/EvanMisshula)) | CUNY Graduate Center | Participant |
