@@ -63,13 +63,14 @@ If you are interested in joining the group, please:
 | Neil Chue Hong ([@npch](https://github.com/npch)) | Software Sustainability Institute | Participant |
 | Matthew B. Jones ([@mbjones](https://github.com/mbjones)) | NCEAS, UC Santa Barbara | Participant |
 | Daniel S. Katz ([@danielskatz](https://github.com/danielskatz)) | U Chicago & Argonne Natl Lab           | Co-chair    |
+| Alexander Konovalov ([@alex-konovalov](https://github.com/alex-konovalov)) | University of St Andrews | Participant |
 | John Kratz ([@JEK-III](https://github.com/JEK-III)) | California Digital Library | Participant |
 | Daniel Mietchen ([@Daniel-Mietchen](https://github.com/Daniel-Mietchen)) | NIH | Participant |
 | Bill Mills ([@BillMills](https://github.com/BillMills)) | Mozilla Science Lab | Participant |
 | Evan Misshula ([@EMisshula](https://github.com/EvanMisshula)) | CUNY Graduate Center | Participant |
 | Lars Holm Nielsen ([@lnielsen](https://github.com/lnielsen)) | CERN | Participant |
+| Karthik Ram ([@_inundata](https://github.com/karthik)) | University of California, Berkeley | Participant |
 | Arfon Smith ([@arfon](https://github.com/arfon))    | GitHub        | Co-chair          |
 | Kaitlin Thaney ([@kaythaney](https://github.com/kaythaney)) | Mozilla Science Lab | Participant |
 | Nic Weber ([@nniiicc](https://github.com/nniiicc)) | University of Washington iSchool | Participant |
-| Karthik Ram ([@_inundata](https://github.com/karthik)) | University of California, Berkeley | Participant |
 
