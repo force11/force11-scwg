@@ -56,11 +56,11 @@ If you are interested in joining the group, please:
 
 | Name                    | Affiliation   | Role |
 |-------------------------|---------------|----------------|
+| Neil Chue Hong ([@npch](https://github.com/npch)) | Software Sustainability Institute | Participant |
 | Mercè Crosas ([@mcrosas](https://github.com/mcrosas)) | IQSS, Harvard University| Participant |
 | Paul Groth ([@pgroth](https://github.com/pgroth)) | Elsevier Labs | Participant |
 | Stephanie Hagstrom ([@sthagstrom](https://github.com/sthagstrom)) | Force11 | Participant |
 | Ivan Herman ([@iherman](https://github.com/iherman)) | W3C | Participant |
-| Neil Chue Hong ([@npch](https://github.com/npch)) | Software Sustainability Institute | Participant |
 | Matthew B. Jones ([@mbjones](https://github.com/mbjones)) | NCEAS, UC Santa Barbara | Participant |
 | Daniel S. Katz ([@danielskatz](https://github.com/danielskatz)) | U Chicago & Argonne Natl Lab           | Co-chair    |
 | Alexander Konovalov ([@alex-konovalov](https://github.com/alex-konovalov)) | University of St Andrews | Participant |
