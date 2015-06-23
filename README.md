@@ -72,7 +72,7 @@ If you are interested in joining the group, please:
 | Evan Misshula ([@EMisshula](https://github.com/EvanMisshula)) | CUNY Graduate Center | Participant |
 | Lars Holm Nielsen ([@lnielsen](https://github.com/lnielsen)) | CERN | Participant |
 | Karthik Ram ([@_inundata](https://github.com/karthik)) | University of California, Berkeley | Participant |
+| Ashley Sands ([@ashleysa](https://github.com/ashleysa)) | UCLA Information Studies | Participant |
 | Arfon Smith ([@arfon](https://github.com/arfon))    | GitHub        | Co-chair          |
 | Kaitlin Thaney ([@kaythaney](https://github.com/kaythaney)) | Mozilla Science Lab | Participant |
 | Nic Weber ([@nniiicc](https://github.com/nniiicc)) | University of Washington iSchool | Participant |
-| Ashley Sands ([@ashleysa](https://github.com/ashleysa)) | UCLA Information Studies | Participant |
