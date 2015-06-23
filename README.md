@@ -59,6 +59,7 @@ If you are interested in joining the group, please:
 | Carl Boettiger ([@cboettig](https://github.com/cboettig)) | UC Berkeley | Participant |
 | Neil Chue Hong ([@npch](https://github.com/npch)) | Software Sustainability Institute | Participant |
 | Mercè Crosas ([@mcrosas](https://github.com/mcrosas)) | IQSS, Harvard University| Participant |
+| Ian Gent ([@turingfan](https://github.com/turingfan)) | University of St Andrews, recomputation.org | Participant | 
 | Paul Groth ([@pgroth](https://github.com/pgroth)) | Elsevier Labs | Participant |
 | Stephanie Hagstrom ([@sthagstrom](https://github.com/sthagstrom)) | Force11 | Participant |
 | Ivan Herman ([@iherman](https://github.com/iherman)) | W3C | Participant |
