@@ -69,6 +69,7 @@ If you are interested in joining the group, please:
 | Daniel S. Katz ([@danielskatz](https://github.com/danielskatz)) | U Chicago & Argonne Natl Lab           | Co-chair    |
 | Alexander Konovalov ([@alex-konovalov](https://github.com/alex-konovalov)) | University of St Andrews | Participant |
 | John Kratz ([@JEK-III](https://github.com/JEK-III)) | California Digital Library | Participant |
+| Brian Matthews ([@brianmatthews42](https://github.com/brianmatthews42)) | Science and Technology Facilites Council | Participant |
 | Daniel Mietchen ([@Daniel-Mietchen](https://github.com/Daniel-Mietchen)) | NIH | Participant |
 | Bill Mills ([@BillMills](https://github.com/BillMills)) | Mozilla Science Lab | Participant |
 | Evan Misshula ([@EMisshula](https://github.com/EvanMisshula)) | CUNY Graduate Center | Participant |
