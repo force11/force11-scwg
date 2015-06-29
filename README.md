@@ -78,3 +78,4 @@ If you are interested in joining the group, please:
 | Kaitlin Thaney ([@kaythaney](https://github.com/kaythaney)) | Mozilla Science Lab | Participant |
 | Matt Turk ([@MatthewTurk](https://github.com/MatthewTurk)) | University of Illinois  | Participant |
 | Nic Weber ([@nniiicc](https://github.com/nniiicc)) | University of Washington iSchool | Participant |
+| Thomas Ingraham ([@tingraham](https://github.com/tingraham)) | F1000Research | Participant |
