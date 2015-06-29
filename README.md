@@ -76,3 +76,4 @@ If you are interested in joining the group, please:
 | Arfon Smith ([@arfon](https://github.com/arfon))    | GitHub        | Co-chair          |
 | Kaitlin Thaney ([@kaythaney](https://github.com/kaythaney)) | Mozilla Science Lab | Participant |
 | Nic Weber ([@nniiicc](https://github.com/nniiicc)) | University of Washington iSchool | Participant |
+| Martin Fenner ([@mfenner](https://github.com/mfenner)) | Public Library of Science | Participant |
