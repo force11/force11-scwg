@@ -64,6 +64,7 @@ If you are interested in joining the group, please:
 | Paul Groth ([@pgroth](https://github.com/pgroth)) | Elsevier Labs | Participant |
 | Stephanie Hagstrom ([@sthagstrom](https://github.com/sthagstrom)) | Force11 | Participant |
 | Ivan Herman ([@iherman](https://github.com/iherman)) | W3C | Participant |
+| Thomas Ingraham ([@tingraham](https://github.com/tingraham)) | F1000Research | Participant |
 | Matthew B. Jones ([@mbjones](https://github.com/mbjones)) | NCEAS, UC Santa Barbara | Participant |
 | Daniel S. Katz ([@danielskatz](https://github.com/danielskatz)) | U Chicago & Argonne Natl Lab           | Co-chair    |
 | Alexander Konovalov ([@alex-konovalov](https://github.com/alex-konovalov)) | University of St Andrews | Participant |
@@ -78,4 +79,5 @@ If you are interested in joining the group, please:
 | Kaitlin Thaney ([@kaythaney](https://github.com/kaythaney)) | Mozilla Science Lab | Participant |
 | Matt Turk ([@MatthewTurk](https://github.com/MatthewTurk)) | University of Illinois  | Participant |
 | Nic Weber ([@nniiicc](https://github.com/nniiicc)) | University of Washington iSchool | Participant |
-| Thomas Ingraham ([@tingraham](https://github.com/tingraham)) | F1000Research | Participant |
+
+(this list is in alphabetic order by surname; please keep it that way when making additions)
