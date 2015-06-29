@@ -58,6 +58,7 @@ If you are interested in joining the group, please:
 |-------------------------|---------------|----------------|
 | Carl Boettiger ([@cboettig](https://github.com/cboettig)) | UC Berkeley | Participant |
 | Neil Chue Hong ([@npch](https://github.com/npch)) | Software Sustainability Institute | Participant |
+| Martin Fenner ([@mfenner](https://github.com/mfenner)) | Public Library of Science | Participant |
 | Mercè Crosas ([@mcrosas](https://github.com/mcrosas)) | IQSS, Harvard University| Participant |
 | Ian Gent ([@turingfan](https://github.com/turingfan)) | University of St Andrews, recomputation.org | Participant | 
 | Paul Groth ([@pgroth](https://github.com/pgroth)) | Elsevier Labs | Participant |
@@ -76,4 +77,3 @@ If you are interested in joining the group, please:
 | Arfon Smith ([@arfon](https://github.com/arfon))    | GitHub        | Co-chair          |
 | Kaitlin Thaney ([@kaythaney](https://github.com/kaythaney)) | Mozilla Science Lab | Participant |
 | Nic Weber ([@nniiicc](https://github.com/nniiicc)) | University of Washington iSchool | Participant |
-| Martin Fenner ([@mfenner](https://github.com/mfenner)) | Public Library of Science | Participant |
