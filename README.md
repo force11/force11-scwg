@@ -66,6 +66,7 @@ If you are interested in joining the group, please:
 | Ivan Herman ([@iherman](https://github.com/iherman)) | W3C | Participant |
 | Thomas Ingraham ([@tingraham](https://github.com/tingraham)) | F1000Research | Participant |
 | Matthew B. Jones ([@mbjones](https://github.com/mbjones)) | NCEAS, UC Santa Barbara | Participant |
+| Catherine Jones ([@cm-j0nes] (https://github.com/cm-j0nes)) | Science and Technology Facilities Council | Particpant |
 | Daniel S. Katz ([@danielskatz](https://github.com/danielskatz)) | U Chicago & Argonne Natl Lab           | Co-chair    |
 | Alexander Konovalov ([@alex-konovalov](https://github.com/alex-konovalov)) | University of St Andrews | Participant |
 | John Kratz ([@JEK-III](https://github.com/JEK-III)) | California Digital Library | Participant |
