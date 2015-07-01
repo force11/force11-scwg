@@ -6,6 +6,8 @@ The software citation working group is committee that will leverage the perspect
 
 The group will produce a set of principles, illustrated with working examples, and a plan for dissemination and distribution.  This group will not be producing detailed specifications for implementation although it may review and discuss possible technical solutions.
 
+See [Joint Declaration of Data Citation Principle](https://www.force11.org/group/joint-declaration-data-citation-principles-final) as a example of a similar deliverable.
+
 Co-chairs: Dan Katz & Arfon Smith
 
 ##Timeline
