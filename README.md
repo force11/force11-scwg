@@ -66,6 +66,7 @@ If you are interested in joining the group, please:
 | Paul Groth ([@pgroth](https://github.com/pgroth)) | Elsevier Labs | Participant |
 | Stephanie Hagstrom ([@sthagstrom](https://github.com/sthagstrom)) | Force11 | Participant |
 | Ivan Herman ([@iherman](https://github.com/iherman)) | W3C | Participant |
+| James Howison ([@jameshowison](https://github.com/jameshowison)) | UTexas | Participant |
 | Thomas Ingraham ([@tingraham](https://github.com/tingraham)) | F1000Research | Participant |
 | Matthew B. Jones ([@mbjones](https://github.com/mbjones)) | NCEAS, UC Santa Barbara | Participant |
 | Catherine Jones ([@cm-j0nes] (https://github.com/cm-j0nes)) | Science and Technology Facilities Council | Participant |
