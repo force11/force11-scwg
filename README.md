@@ -22,6 +22,7 @@ Kick off meeting (telecon) with goals of:
 ### Phase 2 (July/August/September 2015)
 
 - Gather materials documenting existing practices in member disciplines
+- Gather materials from workshops and other reports
 - Review materials, identifying overlaps and differences
 
 ### Phase 3 (September/October/November 2015)
