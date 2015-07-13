@@ -59,6 +59,7 @@ If you are interested in joining the group, please:
 
 | Name                    | Affiliation   | Role |
 |-------------------------|---------------|----------------|
+| Alberto Accomazzi ([@aaccomazzi](https://github.com/aaccomazzi)) | Harvard-Smithsonian CfA | Participant | 
 | Carl Boettiger ([@cboettig](https://github.com/cboettig)) | UC Berkeley | Participant |
 | Neil Chue Hong ([@npch](https://github.com/npch)) | Software Sustainability Institute | Participant |
 | Martin Fenner ([@mfenner](https://github.com/mfenner)) | Public Library of Science | Participant |
