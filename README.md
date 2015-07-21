@@ -68,6 +68,7 @@ If you are interested in joining the group, please:
 | Ian Gent ([@turingfan](https://github.com/turingfan)) | University of St Andrews, recomputation.org | Participant | 
 | Paul Groth ([@pgroth](https://github.com/pgroth)) | Elsevier Labs | Participant |
 | Stephanie Hagstrom ([@sthagstrom](https://github.com/sthagstrom)) | Force11 | Participant |
+| Robert Hanisch ([@rjhanisch](https://github.com/rjhanisch)) | NIST/ODI | Participant |
 | Ivan Herman ([@iherman](https://github.com/iherman)) | W3C | Participant |
 | James Howison ([@jameshowison](https://github.com/jameshowison)) | UTexas | Participant |
 | Thomas Ingraham ([@tingraham](https://github.com/tingraham)) | F1000Research | Participant |
