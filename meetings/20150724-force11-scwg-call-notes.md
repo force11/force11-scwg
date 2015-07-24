@@ -27,37 +27,37 @@
 - Matt: Can we start from the data citation principles, and see how software differs from there?
     - Force11 data principles: https://www.force11.org/group/joint-declaration-data-citation-principles-final
     - Yes! No reason for us to start from scratch. However, just a small warning to not be too attached to the world of data. For example, there is a lot of concern wtih using the phrase "data publication" as it assumes that data are published the same as literature. In the same way, we should be careful to not be too focused on the similarities with the data analogy that we miss what is actually most important about software, and it may not be parallel at all to data. We'll see :)
-    - One approach would be to start with our own priciniples to not be prejudiced, and look at the data citation principles only later
+    - One approach would be to start with our own principles to not be prejudiced, and look at the data citation principles only later
 - Timeline for the group: https://github.com/force11/force11-scwg#phase-2-julyaugustseptember-2015
 
 
-POTENTIAL VENUES FOR IN-PERSON MEETING:
-- Proposal to meet in person to work on principles on Sep 28/29 at WSSSPE3 in Boulder, CO
-    - http://wssspe.researchcomputing.org.uk/wssspe3/
-    - Could be one of the working tasks for WSSSPE3
-    - Planning to attend: 
-        - Arfon
-        - Dan
-        - 
-- Also could consider: Software Credit Workshop, 19 October 2015 in London: http://www.software/ac.uk/software-credit (it's only one day on Monday, so perhaps we may need an extra half a day before or maybe better after that) 
-    - Planning to attend:
-        - Alexander
-        - Arfon
-        - Maybe Dan
-- And also SC15 (Supercomputing) — November 15-20, 2015 — Austin, TX
-    - Planning to attend:
-        - Dan
-- RDA, Paris also another venue; 23rd-25th September https://rd-alliance.org/plenary-meetings/rda-sixth-plenary-meeting.html
-- Ashley: ASIST is another candidate, November 2015 http://www.asis.org/asist2015/am15cfp.html
+- POTENTIAL VENUES FOR IN-PERSON MEETING:
+    - Proposal to meet in person to work on principles on Sep 28/29 at WSSSPE3 in Boulder, CO
+        - http://wssspe.researchcomputing.org.uk/wssspe3/
+        - Could be one of the working tasks for WSSSPE3
+        - Planning to attend: 
+            - Arfon
+            - Dan
+
+    - Also could consider: Software Credit Workshop, 19 October 2015 in London: http://www.software/ac.uk/software-credit (it's only one day on Monday, so perhaps we may need an extra half a day before or maybe better after that) 
+        - Planning to attend:
+            - Alexander
+            - Arfon
+            - Maybe Dan
+    - And also SC15 (Supercomputing) — November 15-20, 2015 — Austin, TX
+        - Planning to attend:
+            - Dan
+    - RDA, Paris also another venue; 23rd-25th September https://rd-alliance.org/plenary-meetings/rda-sixth-plenary-meeting.html
+    - Ashley: ASIST is another candidate, November 2015 http://www.asis.org/asist2015/am15cfp.html
 
 
-OTHER COMMENTS
-- Catherine Jones:18:00: All, I haven't joined the call, but am looking at this. What about software repositories providers?
-    - Not just the companies, but institutions/organisations who provide them for communities
+- OTHER COMMENTS
+    - Catherine Jones:18:00: All, I haven't joined the call, but am looking at this. What about software repositories providers?
+        - Not just the companies, but institutions/organisations who provide them for communities
 
-NEXT STEPS:
+
+- NEXT STEPS:
     - Email from Arfon (and Dan) to come out
     - Async discussion of principles
     - Drafting of firm principles in Github, but use Google Docs for commentary
-
 
