@@ -38,15 +38,18 @@
         - Planning to attend: 
             - Arfon
             - Dan
+            - Neil
 
     - Also could consider: Software Credit Workshop, 19 October 2015 in London: http://www.software/ac.uk/software-credit (it's only one day on Monday, so perhaps we may need an extra half a day before or maybe better after that) 
         - Planning to attend:
             - Alexander
             - Arfon
             - Maybe Dan
+            - Neil
     - And also SC15 (Supercomputing) — November 15-20, 2015 — Austin, TX
         - Planning to attend:
             - Dan
+            - Neil
     - RDA, Paris also another venue; 23rd-25th September https://rd-alliance.org/plenary-meetings/rda-sixth-plenary-meeting.html
         - Planning to attend:
             - Daniel
