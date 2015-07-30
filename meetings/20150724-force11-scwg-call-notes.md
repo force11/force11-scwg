@@ -6,6 +6,9 @@
 - Introductions of all participants, please list your name here:
     - Matt Jones, Abby Cabunoc Mayes, Alexander Konovalov, Ashley Sands, Brian Matthews, Chris Erdmann, David Baker, Fiona Murphy, Scott Edmunds, Stephanie Haegstrom, Thomas Ingraham, Carl Boettiger, Dan Katz, Jennifer Lin, Martin Fenner, John Kratz, Lars Holm Nielsen, Bob Hanisch
 
+- Apologies:
+    - Mercè Crosas, Martin Fenner, Neil Chue Hong, James Howison, Daniel Mietchen, Bill Mills, Karthik Ram, Jonathan Tedds, Kaitlin Thaney
+
 - Mission statement: relatively stable
     - Audience for our work:
     - editors / reviewers
