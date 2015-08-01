@@ -49,7 +49,7 @@
             - Arfon
             - Maybe Dan
             - Neil
-			- Tom Crick
+            - Tom Crick
     - And also SC15 (Supercomputing) — November 15-20, 2015 — Austin, TX
         - Planning to attend:
             - Dan
