@@ -7,7 +7,9 @@
     - Matt Jones, Abby Cabunoc Mayes, Alexander Konovalov, Ashley Sands, Brian Matthews, Chris Erdmann, David Baker, Fiona Murphy, Scott Edmunds, Stephanie Haegstrom, Thomas Ingraham, Carl Boettiger, Dan Katz, Jennifer Lin, Martin Fenner, John Kratz, Lars Holm Nielsen, Bob Hanisch
 
 - Apologies:
-    - Mercè Crosas, Martin Fenner, Neil Chue Hong, James Howison, Daniel Mietchen, Bill Mills, Karthik Ram, Jonathan Tedds, Kaitlin Thaney
+    - Mercè Crosas, Martin Fenner, Neil Chue Hong, James Howison,
+      Daniel Mietchen, Bill Mills, Karthik Ram, Jonathan Tedds,
+      Kaitlin Thaney, Tom Crick
 
 - Mission statement: relatively stable
     - Audience for our work:
@@ -49,6 +51,7 @@
             - Arfon
             - Maybe Dan
             - Neil
+			- Tom Crick
     - And also SC15 (Supercomputing) — November 15-20, 2015 — Austin, TX
         - Planning to attend:
             - Dan
