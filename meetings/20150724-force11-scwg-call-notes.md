@@ -59,6 +59,7 @@
         - Planning to attend:
             - Daniel
             - Fiona Murphy
+            - John Kratz
     - Ashley: ASIST is another candidate, November 2015 http://www.asis.org/asist2015/am15cfp.html
 
 
