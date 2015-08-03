@@ -50,6 +50,7 @@
             - Maybe Dan
             - Neil
             - Tom Crick
+            - Maybe Fiona Murphy
     - And also SC15 (Supercomputing) — November 15-20, 2015 — Austin, TX
         - Planning to attend:
             - Dan
@@ -57,6 +58,7 @@
     - RDA, Paris also another venue; 23rd-25th September https://rd-alliance.org/plenary-meetings/rda-sixth-plenary-meeting.html
         - Planning to attend:
             - Daniel
+            - Fiona Murphy
     - Ashley: ASIST is another candidate, November 2015 http://www.asis.org/asist2015/am15cfp.html
 
 
