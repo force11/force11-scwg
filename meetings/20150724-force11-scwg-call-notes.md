@@ -47,7 +47,7 @@
         - Planning to attend:
             - Alexander
             - Arfon
-            - Maybe Dan
+            - Maybe Dan (but if so, cannot be available on 20 Oct)
             - Neil
             - Tom Crick
             - Maybe Fiona Murphy
