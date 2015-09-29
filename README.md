@@ -95,6 +95,7 @@ If you are interested in joining the group, please:
 | Frank J. Seinstra ([@fjseins](https://github.com/fjseins)) | Netherlands eScience Center | Participant |
 | Arfon Smith ([@arfon](https://github.com/arfon))    | GitHub        | Co-chair          |
 | Kaitlin Thaney ([@kaythaney](https://github.com/kaythaney)) | Mozilla Science Lab | Participant |
+| Ilian Todorov ([@iliant](https://github.com/iliant)) | STFC | Participant |
 | Matt Turk ([@MatthewTurk](https://github.com/MatthewTurk)) | University of Illinois  | Participant |
 | Nic Weber ([@nniiicc](https://github.com/nniiicc)) | University of Washington iSchool | Participant |
 
