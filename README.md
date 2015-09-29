@@ -60,7 +60,7 @@ If you are interested in joining the group, please:
 | Name                    | Affiliation   | Role |
 |-------------------------|---------------|----------------|
 | Alberto Accomazzi ([@aaccomazzi](https://github.com/aaccomazzi)) | Harvard-Smithsonian CfA | Participant | 
-| Alice Allen ([@owlice](https://github.com/owlice) | Astrophysics Source Code Library | Participant | 
+| Alice Allen ([@owlice](https://github.com/owlice)) | Astrophysics Source Code Library | Participant | 
 | Carl Boettiger ([@cboettig](https://github.com/cboettig)) | UC Berkeley | Participant |
 | Neil Chue Hong ([@npch](https://github.com/npch)) | Software Sustainability Institute | Participant |
 | Tom Crick ([@tomcrick](https://github.com/tomcrick)) | Cardiff Metropolitan University | Participant |
