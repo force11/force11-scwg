@@ -79,6 +79,7 @@ If you are interested in joining the group, please:
 | Alexander Konovalov ([@alex-konovalov](https://github.com/alex-konovalov)) | University of St Andrews | Participant |
 | John Kratz ([@JEK-III](https://github.com/JEK-III)) | California Digital Library | Participant |
 | Jennifer Lin ([@jenniferlin15](https://github.com/jenniferlin15)) | Public Library of Science | Participant |
+| Frank Löffler ([@knarrff](https://github.com/knarrff)) | Louisiana State University | Participant |
 | Brian Matthews ([@brianmatthews42](https://github.com/brianmatthews42)) | Science and Technology Facilites Council | Participant |
 | Abigail Cabunoc Mayes ([@acabunoc](https://github.com/acabunoc)) | Mozilla Science Lab | Participant |
 | Daniel Mietchen ([@Daniel-Mietchen](https://github.com/Daniel-Mietchen)) | NIH | Participant |
