@@ -84,8 +84,9 @@ If you are interested in joining the group, please:
 | Daniel Mietchen ([@Daniel-Mietchen](https://github.com/Daniel-Mietchen)) | NIH | Participant |
 | Bill Mills ([@BillMills](https://github.com/BillMills)) | Mozilla Science Lab | Participant |
 | Evan Misshula ([@EMisshula](https://github.com/EvanMisshula)) | CUNY Graduate Center | Participant |
-  Fiona Murphy ([@DrFionalm] (https://github.com/FionaLMMurphy)) | Independent Researcher | Participant |
+| Fiona Murphy ([@DrFionalm](https://github.com/FionaLMMurphy)) | Independent Researcher | Participant |
 | Lars Holm Nielsen ([@lnielsen](https://github.com/lnielsen)) | CERN | Participant |
+| Kyle Niemeyer ([@kyleniemeyer](https://github.com/kyleniemeyer)) | Oregon State University | Participant |
 | Karthik Ram ([@_inundata](https://github.com/karthik)) | University of California, Berkeley | Participant |
 | Ashley Sands ([@ashleysa](https://github.com/ashleysa)) | UCLA Information Studies | Participant |
 | Soren Scott ([@roomthily](https://github.com/roomthily)) | Independent Researcher | Participant |
