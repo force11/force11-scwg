@@ -59,15 +59,15 @@ If you are interested in joining the group, please:
 
 | Name                    | Affiliation   | Role |
 |-------------------------|---------------|----------------|
-| Alberto Accomazzi ([@aaccomazzi](https://github.com/aaccomazzi)) | Harvard-Smithsonian CfA | Participant | 
-| Alice Allen ([@owlice](https://github.com/owlice)) | Astrophysics Source Code Library | Participant | 
+| Alberto Accomazzi ([@aaccomazzi](https://github.com/aaccomazzi)) | Harvard-Smithsonian CfA | Participant |
+| Alice Allen ([@owlice](https://github.com/owlice)) | Astrophysics Source Code Library | Participant |
 | Carl Boettiger ([@cboettig](https://github.com/cboettig)) | UC Berkeley | Participant |
 | Neil Chue Hong ([@npch](https://github.com/npch)) | Software Sustainability Institute | Participant |
 | Tom Crick ([@tomcrick](https://github.com/tomcrick)) | Cardiff Metropolitan University | Participant |
 | Martin Fenner ([@mfenner](https://github.com/mfenner)) | Public Library of Science | Participant |
 | Mercè Crosas ([@mcrosas](https://github.com/mcrosas)) | IQSS, Harvard University| Participant |
 | Christopher Erdmann ([@libcce](https://github.com/libcce)) | Harvard-Smithsonian CfA | Participant |
-| Ian Gent ([@turingfan](https://github.com/turingfan)) | University of St Andrews, recomputation.org | Participant | 
+| Ian Gent ([@turingfan](https://github.com/turingfan)) | University of St Andrews, recomputation.org | Participant |
 | Paul Groth ([@pgroth](https://github.com/pgroth)) | Elsevier Labs | Participant |
 | Stephanie Hagstrom ([@sthagstrom](https://github.com/sthagstrom)) | Force11 | Participant |
 | Robert Hanisch ([@rjhanisch](https://github.com/rjhanisch)) | NIST/ODI | Participant |
@@ -98,6 +98,7 @@ If you are interested in joining the group, please:
 | Kaitlin Thaney ([@kaythaney](https://github.com/kaythaney)) | Mozilla Science Lab | Participant |
 | Ilian Todorov ([@iliant](https://github.com/iliant)) | STFC | Participant |
 | Matt Turk ([@MatthewTurk](https://github.com/MatthewTurk)) | University of Illinois  | Participant |
+| Stijn Van Hoey ([@StijnVanHoey](https://github.com/stijnvanhoey)) | Ghent University | Participant |
 | Nic Weber ([@nniiicc](https://github.com/nniiicc)) | University of Washington iSchool | Participant |
 
 (this list is in alphabetic order by surname; please keep it that way when making additions)
