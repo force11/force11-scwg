@@ -98,6 +98,7 @@ If you are interested in joining the group, please:
 | Kaitlin Thaney ([@kaythaney](https://github.com/kaythaney)) | Mozilla Science Lab | Participant |
 | Ilian Todorov ([@iliant](https://github.com/iliant)) | STFC | Participant |
 | Matt Turk ([@MatthewTurk](https://github.com/MatthewTurk)) | University of Illinois  | Participant |
+| Daan Van Hauwermeiren ([@DaanVanHauwermeiren](https://github.com/daanvanhauwermeiren)) | Ghent University | Participant |
 | Stijn Van Hoey ([@StijnVanHoey](https://github.com/stijnvanhoey)) | Ghent University | Participant |
 | Nic Weber ([@nniiicc](https://github.com/nniiicc)) | University of Washington iSchool | Participant |
 
