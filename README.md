@@ -36,7 +36,7 @@ Kick off meeting (telecon) with goals of:
 - Software Citation Principles proposed final draft complete.
 - Seek out community endorsements for draft principles.
 
-### Phase 5 (February 2016)
+### Phase 5 (April 2016)
 
 - Presentation of formal recommendations at Force11 2016
 
