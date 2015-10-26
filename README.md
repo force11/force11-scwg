@@ -69,6 +69,7 @@ If you are interested in joining the group, please:
 | Christopher Erdmann ([@libcce](https://github.com/libcce)) | Harvard-Smithsonian CfA | Participant |
 | Ian Gent ([@turingfan](https://github.com/turingfan)) | University of St Andrews, recomputation.org | Participant |
 | Paul Groth ([@pgroth](https://github.com/pgroth)) | Elsevier Labs | Participant |
+| Melissa Haendel ([@mellybelly](https://github.com/mellybelly)) | OHSU | Participant |
 | Stephanie Hagstrom ([@sthagstrom](https://github.com/sthagstrom)) | Force11 | Participant |
 | Robert Hanisch ([@rjhanisch](https://github.com/rjhanisch)) | NIST/ODI | Participant |
 | Ivan Herman ([@iherman](https://github.com/iherman)) | W3C | Participant |
