@@ -88,6 +88,7 @@ If you are interested in joining the group, please:
 | Daniel Mietchen ([@Daniel-Mietchen](https://github.com/Daniel-Mietchen)) | NIH | Participant |
 | Bill Mills ([@BillMills](https://github.com/BillMills)) | Mozilla Science Lab | Participant |
 | Evan Misshula ([@EMisshula](https://github.com/EvanMisshula)) | CUNY Graduate Center | Participant |
+| August Muench ([@augustfly](https://github.com/augustfly)) | American Astronomical Society | Participant |
 | Fiona Murphy ([@DrFionalm](https://github.com/FionaLMMurphy)) | Independent Researcher | Participant |
 | Lars Holm Nielsen ([@lnielsen](https://github.com/lnielsen)) | CERN | Participant |
 | Kyle Niemeyer ([@kyleniemeyer](https://github.com/kyleniemeyer)) | Oregon State University | Participant |
