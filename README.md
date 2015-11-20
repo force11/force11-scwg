@@ -12,26 +12,26 @@ Co-chairs: Arfon Smith & Daniel S. Katz
 
 ##Timeline
 
-### Phase 1 (June/July 2015)
+### Phase 1 (June - July 2015)
 
 Kick off meeting (telecon) with goals of:
 - Establish interest/backgrounds of working group participants.
 - Review mission statement, timeline and goals
 - Seek out additional participants (if we're missing key individuals)
 
-### Phase 2 (July/August/September 2015)
+### Phase 2 (July - September 2015)
 
 - Gather materials documenting existing practices in member disciplines
 - Gather materials from workshops and other reports
 - Review materials, identifying overlaps and differences
 
-### Phase 3 (September/October/November 2015)
+### Phase 3 (September 2015 - January 2016)
 
-- Drafting of Software Citation Principles (possibly in person at [WSSSPE](http://wssspe.researchcomputing.org.uk/wssspe3/), Boulder, CO - 28/29 September)
+- Drafting of Software Citation Principles ~~(possibly in person at [WSSSPE](http://wssspe.researchcomputing.org.uk/wssspe3/), Boulder, CO - 28/29 September)~~
 - Seek community feedback on draft
 - Iterate
 
-### Phase 4 (November/December/January)
+### Phase 4 (January - March 2016)
 
 - Software Citation Principles proposed final draft complete.
 - Seek out community endorsements for draft principles.
