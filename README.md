@@ -73,6 +73,7 @@ If you are interested in joining the group, please:
 | Melissa Haendel ([@mellybelly](https://github.com/mellybelly)) | OHSU | Participant |
 | Stephanie Hagstrom ([@sthagstrom](https://github.com/sthagstrom)) | Force11 | Participant |
 | Robert Hanisch ([@rjhanisch](https://github.com/rjhanisch)) | NIST/ODI | Participant |
+| Edwin Henneken ([@ehenneken](https://github.com/ehenneken)) | Harvard-Smithsonian CfA | Participant |
 | Ivan Herman ([@iherman](https://github.com/iherman)) | W3C | Participant |
 | James Howison ([@jameshowison](https://github.com/jameshowison)) | UTexas | Participant |
 | Lorraine Hwang ([@ljhwang](https://github.com/ljhwang)) | UC Davis| Participant |
