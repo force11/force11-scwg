@@ -102,6 +102,7 @@ If you are interested in joining the group, please:
 | Kaitlin Thaney ([@kaythaney](https://github.com/kaythaney)) | Mozilla Science Lab | Participant |
 | Ilian Todorov ([@iliant](https://github.com/iliant)) | STFC | Participant |
 | Matt Turk ([@MatthewTurk](https://github.com/MatthewTurk)) | University of Illinois  | Participant |
+| Miguel de Val-Borro ([@migueldvb](https://github.com/migueldvb)) | Princeton University| Participant |
 | Daan Van Hauwermeiren ([@DaanVanHauwermeiren](https://github.com/daanvanhauwermeiren)) | Ghent University | Participant |
 | Stijn Van Hoey ([@StijnVanHoey](https://github.com/stijnvanhoey)) | Ghent University | Participant |
 | Belinda Weaver ([@weaverbel](https://github.com/weaverbel)) | The University of Queensland | Participant |
