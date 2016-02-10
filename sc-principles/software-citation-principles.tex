@@ -27,20 +27,34 @@
 \makesavenoteenv{tabular}
 \makesavenoteenv{table}
 
+\usepackage{enumitem}
+\setlist{leftmargin=7mm}
+
 \usepackage[bookmarks, bookmarksopen, bookmarksnumbered]{hyperref}
 \usepackage[all]{hypcap}
 \urlstyle{rm}
 
-\title{Software Citation Principles}
+% 15 characters / 2.5 cm => 100 characters / line
+% Using 11 pt => 94 characters / line
+\setlength{\paperwidth}{216 mm}
+% 6 lines / 2.5 cm => 55 lines / page
+% Using 11pt => 48 lines / pages
+\setlength{\paperheight}{279 mm}
+\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
+% You can use a baselinestretch of down to 0.9
+\renewcommand{\baselinestretch}{0.96}
+
+
+\title[]{Software Citation Principles}
 
 \author{}
 
 \date{}
 
+\begin{document}
 \begin{abstract}
 \end{abstract}
 
-\begin{document}
 \maketitle
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -54,6 +68,49 @@
 \section{Use cases}
 \label{sec:use_cases}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table}[htbp]
+\caption{Use cases for software citation}
+\centering
+\scriptsize\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}l l c c c c c c c c@{}}
+\toprule
+ & & \multicolumn{6}{c}{Requirements} \\
+ \cmidrule{3-10}
+\multirow{2}{*}{Stakeholder} &	\multirow{2}{*}{Use\slash wants to} 	 &  Software  & \multirow{2}{*}{Author(s)} & \multirow{2}{*}{Version \#} & Release & Location\slash  & \multirow{2}{*}{DOI} & Indexed & \multirow{2}{*}{Role} \\
+& & name &  &  &  date & repository &  & citations & \\
+\midrule
+Researcher & someone else's software for a paper	& \textbullet	& \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & & \\
+Researcher & someone else's software for new software& \textbullet	& \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & & \\
+Researcher & contribute to software 				& \textbullet	& \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & & \textbullet \\
+Researcher & find citations of software 			& \textbullet &   &   &   &   & \textbullet & \textbullet & \\
+Researcher & credit for software development		& \textbullet & \textbullet &   & \textbullet & \textbullet & \textbullet & & \textbullet \\
+Researcher & ``reproduce'' analysis 				& \textbullet &   & \textbullet & \textbullet & \textbullet & \textbullet & & \\
+Researcher & benchmark software 					& \textbullet &   & \textbullet & \textbullet & \textbullet & \textbullet & & \\
+Researcher & find software to implement task 		& \textbullet & \textbullet &   &   & \textbullet & \textbullet & \textbullet & \\
+Publisher & publish software paper					& \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & & \\
+Publisher & publish papers that cite software 		& \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \\
+Indexer & build catalog of software 				& \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \\
+Domain group & build catalog of software 			& \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &  & \\
+Library\slash archive & build catalog of software 	& \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &  & \\
+Repository & show scientific impact of holdings 	& \textbullet &   &   &   &   & \textbullet & \textbullet & \\
+Funder & show how funded software has been used		& \textbullet &   &   &   &   & \textbullet & \textbullet & \\
+\bottomrule
+\end{tabular}
+\label{tab:use_cases}
+\end{table}%
+
+Meaning of ``researcher'' includes academic researcher (e.g., postdoc, tenure-track faculty member) and research software engineer.
+``Reproduce'' can mean reproduction, replication, verification, validation, repeatability, and\slash or utility.
+Examples of indexers include Scopus, Web of Science, Google Scholar, and Microsoft Academic Search.
+Domain groups include ASCL, bioCADDIE.
+
+Alternate metadata
+\begin{itemize}
+\item version number and release date: download date
+\item location\slash respository: contact name\slash email if not publicly available
+\end{itemize}
+
 
 
 
