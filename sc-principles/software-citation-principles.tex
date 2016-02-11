@@ -54,7 +54,7 @@
 
 \title{Software Citation Principles}
 
-\author{}
+\author{Force11 Software Citation Working Group (Smith Katz Niemeyer eds)}
 
 \date{}
 
@@ -93,15 +93,24 @@ could be applied, related back to the use cases in \S\ref{sec:use_cases}.
 \label{sec:use_cases}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+We have documented and analyzed a set of use cases related to software citation in \cite{SC-Use-Cases}.  Table~\ref{tab:use_cases} summarizes these use cases and makes clear what the requirements are for software citation in each case.  \katznote{not sure if this next long sentence should be here, should be in the table caption, or should be footnotes to the table, or even more than one of these} In the table, 
+``researcher'' includes academic researchers (e.g., postdoc, tenure-track faculty member) and research software engineers
+``publisher'' includes both traditional publishers that publish text and\slash or software papers as well as archives such as Zenodo that directly publish software; ``reproduce'' can mean reproduction, replication, verification, validation, repeatability, and\slash or utility; 
+examples of indexers include Scopus, Web of Science, Google Scholar, and Microsoft Academic Search;  
+domain groups include ASCL, bioCADDIE, CIG, etc.;
+``repository'' is ???; and
+``funder'' is a group that funds software or work using software.
+
 \begin{table}[htbp]
 \caption{Use cases for software citation, adapted from \cite{SC-Use-Cases}}
+\katznote{I changed DOI to UID, meaning unique ID - I think we probably want to be general here}
 \centering
 \scriptsize\setlength{\tabcolsep}{2.5pt}
 \begin{tabular}{@{}l l c c c c c c c c@{}}
 \toprule
  & & \multicolumn{6}{c}{Requirements} \\
  \cmidrule{3-10}
-\multirow{2}{*}{Stakeholder} &	\multirow{2}{*}{Use\slash wants to} 	 &  Software  & \multirow{2}{*}{Author(s)} & \multirow{2}{*}{Version \#} & Release & Location\slash  & \multirow{2}{*}{DOI} & Indexed & \multirow{2}{*}{Role} \\
+\multirow{2}{*}{Stakeholder} &	\multirow{2}{*}{Use\slash wants to} 	 &  Software  & \multirow{2}{*}{Author(s)} & \multirow{2}{*}{Version \#} & Release & Location\slash  & \multirow{2}{*}{UID} & Indexed & \multirow{2}{*}{Role} \\
 & & name &  &  &  date & repository &  & citations & \\
 \midrule
 Researcher & someone else's software for a paper	& \textbullet	& \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & & \\
@@ -124,10 +133,7 @@ Funder & show how funded software has been used		& \textbullet &   &   &   &   &
 \label{tab:use_cases}
 \end{table}%
 
-``Researcher'' includes academic researchers (e.g., postdoc, tenure-track faculty member) and research software engineers.
-``Reproduce'' can mean reproduction, replication, verification, validation, repeatability, and\slash or utility.
-Examples of indexers include Scopus, Web of Science, Google Scholar, and Microsoft Academic Search.
-Domain groups include ASCL, bioCADDIE, CIG, etc.
+
 
 Alternate metadata
 \begin{itemize}
@@ -150,7 +156,7 @@ Alternate metadata
 \label{sec:principles}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\katznote{The initial context of this section is liberally borrowed and loosely adapted from \cite{data-citation-principles}}
+\katznote{The current content of this section is liberally borrowed and loosely adapted from \cite{data-citation-principles}.  We we will want to add some text here explaining that we started with that document, and then modified it to take into account the information from the use cases and the related work, once we do so.}
 
 \begin{enumerate}
 \item \textbf{Importance}:
