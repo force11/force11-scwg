@@ -38,6 +38,7 @@
 \newcommand{\katznote}[1]{ {\textcolor{blue} { ***DSK: #1 }}}
 \newcommand{\niemnote}[1]{ {\textcolor{orange} { ***KEN: #1 }}}
 \newcommand{\asnote}[1]{ {\textcolor{red} { ***AMS: #1 }}}
+\newcommand{\flnote}[1]{ {\textcolor{olive} { ***FL: #1 }}}
 
 
 
@@ -85,18 +86,18 @@ The Force11 Software Citation Working Group~\cite{f11scwg} was created in April 
 It gathered members, and then in June 2015 began studying this, with a number of meetings
 and some off-line work by group members to gather materials documenting existing
 practices in member disciplines; gather materials from workshops and other reports;
-review those materials, identifying overlaps and differences; and draft this resulting document.
-This document will be presented and discussed at the Force2016 Conference \cite{force2016}
+review those materials, identifying overlaps and differences; and draft this resulting document,
+which will be presented and discussed at the Force2016 Conference \cite{force2016}
 in April 2016.  We expect that
-this discussion may lead to a second, final version of this document, and we also
+this discussion may lead to a second, final version, and we also
 plan to have a follow-on working group that will work with stakeholders to ensure that
 these principles impact the scientific process.
 
 In the next section (\S\ref{sec:use_cases}), we provide some detailed context in which
 software citation is important, by means of use cases.  In \S\ref{sec:related_work}, we
 summarize and analyze a large amount of previous work and thinking in this area.  In
-\S\ref{sec:principles}, we provide set of guiding principles for citation of software within
-scholarly literature, other software dataset, or any other research object.  Finally,
+\S\ref{sec:principles}, we provide a set of guiding principles for citation of software within
+scholarly literature, other software, datasets, or any other research object.  Finally,
 in \S\ref{sec:examples} we give examples of how these software citation principles
 could be applied, related back to the use cases in \S\ref{sec:use_cases}.
 
@@ -108,7 +109,7 @@ could be applied, related back to the use cases in \S\ref{sec:use_cases}.
 We have documented and analyzed a set of use cases related to software citation in \cite{SC-Use-Cases}.
 Table~\ref{tab:use_cases} summarizes these use cases and makes clear what the requirements are for software citation in each case.
 \katznote{not sure if this next long sentence should be here, should be in the table caption, or should be footnotes to the table, or even more than one of these}
-\niemnote{Not sure either; definitely should include in the text due to length. Maybe an abbreviated version in the caption?}
+\niemnote{Not sure either; definitely should include in the text due to length. Maybe an abbreviated version in the caption?}\flnote{If these ``definitions'' are not used anywhere else than in the table (and they don't really seem to be so far), then I tend towards putting this in the caption. That's where they are needed (in the table). I don't like footnotes for something like this.}
 In the table,
 ``researcher'' includes both academic researchers (e.g., postdoc, tenure-track faculty member) and research software engineers;
 ``publisher'' includes both traditional publishers that publish text and\slash or software papers as well as archives such as Zenodo that directly publish software;
@@ -120,7 +121,7 @@ domain groups include bioCADDIE, CIG, etc.;
 ``UID'' means unique ID, such as DOI or PURL.
 
 \begin{table}[htbp]
-\caption{Use cases for software citation, adapted from \cite{SC-Use-Cases}}
+\caption{Use cases for software citation, adapted from \cite{SC-Use-Cases} \flnote{This table is a little hard to read: it is hard to follow which 'dots' belong to which lines. What about using a alternating (light) background or such to help? Also, I noticed that some entries have the same requirements: maybe they could be combined to one line?}}
 \centering
 \scriptsize\setlength{\tabcolsep}{2.5pt}
 \begin{tabular}{@{}l l c c c c c c c c@{}}
@@ -176,7 +177,7 @@ this isn't exactly the same there are many similarities (what is different exact
 
 \textbf{General community/non domain-specific activities}
 
-Some of the most actionable work has come from the SSI in the form of blog posts written by their community fellows:
+Some of the most actionable work has come from the NSF Software Infrastructure for Sustained Innovation (SSI) program in the form of blog posts written by their community fellows:
 
 In a blog post from 2012, \cite{ssi-how-to-cite} discussing some of the pitfalls of trying to cite software in publications.
 The author includes useful guidance for when to consider citing software as well as some ways to help `convince' journal editors
