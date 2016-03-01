@@ -34,12 +34,12 @@
 \usepackage[all]{hypcap}
 \urlstyle{rm}
 
-
+\definecolor{darkgreen}{rgb}{0,0.6,0}
 \newcommand{\katznote}[1]{ {\textcolor{blue} { ***DSK: #1 }}}
 \newcommand{\niemnote}[1]{ {\textcolor{orange} { ***KEN: #1 }}}
 \newcommand{\asnote}[1]{ {\textcolor{red} { ***AMS: #1 }}}
 \newcommand{\flnote}[1]{ {\textcolor{olive} { ***FL: #1 }}}
-
+\newcommand{\scnote}[1]{ {\textcolor{darkgreen} { ***SCC: #1 }}} % Sou-Cheng Choi
 
 
 % 15 characters / 2.5 cm => 100 characters / line
@@ -190,6 +190,7 @@ authors of the software would like to be cited by others. While this isn't a for
 readable for example) this does offer a solution for authors wishing to give explicit instructions to potential citing authors.
 In a later post on the SSI blog, Jackson \cite{ssi-how-shalt-i-cite-thee} gives a good overview of some of the approaches
 package authors have taken to automate the generation of citation entities such as bibtex entries.
+\scnote{So does \cite{knepley2013accurately}}
 
 Perhaps in recognition of the broad range of research domains struggling with
 the challenge of better recognizing the role of software, a number of community
@@ -198,6 +199,7 @@ NIH, Alfred P. Sloan Foundation) and UK (e.g., SFTC, JISC) have run a number of
 workshops with participants from across a range of disciplines.
 
 \asnote{Should also discuss the WSSSPE \cite{wssspe} series of workshops in this section}
+\scnote{Section 5.8 and Appendix J in \cite{WSSSPE3} has some preliminary work and discussion on the topic.}
 
 \textbf{Domain-specific community activities}
 
