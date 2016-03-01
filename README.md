@@ -95,6 +95,7 @@ If you are interested in joining the group, please:
 | Lars Holm Nielsen ([@lnielsen](https://github.com/lnielsen)) | CERN | Participant |
 | Kyle Niemeyer ([@kyleniemeyer](https://github.com/kyleniemeyer)) | Oregon State University | Participant |
 | Karthik Ram ([@_inundata](https://github.com/karthik)) | University of California, Berkeley | Participant |
+| Fernando Rios ([@zoidy](https://github.com/zoidy)) | Johns Hopkins University | Participant |
 | Ashley Sands ([@ashleysa](https://github.com/ashleysa)) | UCLA Information Studies | Participant |
 | Soren Scott ([@roomthily](https://github.com/roomthily)) | Independent Researcher | Participant |
 | Frank J. Seinstra ([@fjseins](https://github.com/fjseins)) | Netherlands eScience Center | Participant |
