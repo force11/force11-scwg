@@ -4,7 +4,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 
-\usepackage{xcolor}
+\usepackage[table]{xcolor}
 \usepackage{dcolumn}
 \usepackage{float}
 \usepackage{graphicx}
@@ -120,6 +120,7 @@ domain groups include bioCADDIE, CIG, etc.;
 ``funder'' is a group that funds software or work using software; and
 ``UID'' means unique ID, such as DOI or PURL.
 
+\rowcolors{5}{gray!25}{white}
 \begin{table}[htbp]
 \caption{Use cases for software citation, adapted from \cite{SC-Use-Cases} \flnote{This table is a little hard to read: it is hard to follow which 'dots' belong to which lines. What about using a alternating (light) background or such to help? Also, I noticed that some entries have the same requirements: maybe they could be combined to one line?}}
 \centering
@@ -131,21 +132,21 @@ domain groups include bioCADDIE, CIG, etc.;
 \multirow{2}{*}{Stakeholder} &	\multirow{2}{*}{Use\slash wants to} 	 &  Software  & \multirow{2}{*}{Author(s)} & \multirow{2}{*}{Version \#} & Release & Location\slash  & \multirow{2}{*}{UID} & Indexed & \multirow{2}{*}{Role} \\
 & & name &  &  &  date & repository &  & citations & \\
 \midrule
-Researcher & someone else's software for a paper	& \textbullet	& \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & & \\
-Researcher & someone else's software for new software& \textbullet	& \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & & \\
-Researcher & contribute to software 				& \textbullet	& \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & & \textbullet \\
-Researcher & find citations of software 			& \textbullet &   &   &   &   & \textbullet & \textbullet & \\
-Researcher & credit for software development		& \textbullet & \textbullet &   & \textbullet & \textbullet & \textbullet & & \textbullet \\
-Researcher & ``reproduce'' analysis 				& \textbullet &   & \textbullet & \textbullet & \textbullet & \textbullet & & \\
-Researcher & benchmark software 					& \textbullet &   & \textbullet & \textbullet & \textbullet & \textbullet & & \\
-Researcher & find software to implement task 		& \textbullet & \textbullet &   &   & \textbullet & \textbullet & \textbullet & \\
-Publisher & publish software paper					& \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & & \\
-Publisher & publish papers that cite software 		& \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \\
-Indexer & build catalog of software 				& \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \\
-Domain group & build catalog of software 			& \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &  & \\
-Library\slash archive & build catalog of software 	& \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &  & \\
-Repository & show scientific impact of holdings 	& \textbullet &   &   &   &   & \textbullet & \textbullet & \\
-Funder & show how funded software has been used		& \textbullet &   &   &   &   & \textbullet & \textbullet & \\
+Researcher            & someone else's software for a paper      & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &             &             \\
+Researcher            & someone else's software for new software & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &             &             \\
+Researcher            & contribute to software                   & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &             & \textbullet \\
+Researcher            & find citations of software               & \textbullet &             &             &             &             & \textbullet & \textbullet &             \\
+Researcher            & credit for software development          & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet &             & \textbullet \\
+Researcher            & ``reproduce'' analysis                   & \textbullet &             & \textbullet & \textbullet & \textbullet & \textbullet &             &             \\
+Researcher            & benchmark software                       & \textbullet &             & \textbullet & \textbullet & \textbullet & \textbullet &             &             \\
+Researcher            & find software to implement task          & \textbullet & \textbullet &             &             & \textbullet & \textbullet & \textbullet &             \\
+Publisher             & publish software paper                   & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &             &             \\
+Publisher             & publish papers that cite software        & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &             \\
+Indexer               & build catalog of software                & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &             \\
+Domain group          & build catalog of software                & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &             &             \\
+Library\slash archive & build catalog of software                & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &             &             \\
+Repository            & show scientific impact of holdings       & \textbullet &             &             &             &             & \textbullet & \textbullet &             \\
+Funder                & show how funded software has been used   & \textbullet &             &             &             &             & \textbullet & \textbullet &             \\
 \bottomrule
 \end{tabular}
 \label{tab:use_cases}
