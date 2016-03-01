@@ -34,12 +34,12 @@
 \usepackage[all]{hypcap}
 \urlstyle{rm}
 
-
+\definecolor{darkgreen}{rgb}{0,0.6,0}
 \newcommand{\katznote}[1]{ {\textcolor{blue} { ***DSK: #1 }}}
 \newcommand{\niemnote}[1]{ {\textcolor{orange} { ***KEN: #1 }}}
 \newcommand{\asnote}[1]{ {\textcolor{red} { ***AMS: #1 }}}
 \newcommand{\flnote}[1]{ {\textcolor{olive} { ***FL: #1 }}}
-
+\newcommand{\scnote}[1]{ {\textcolor{darkgreen} { ***SCC: #1 }}} % Sou-Cheng Choi
 
 
 % 15 characters / 2.5 cm => 100 characters / line
@@ -190,6 +190,7 @@ authors of the software would like to be cited by others. While this isn't a for
 readable for example) this does offer a solution for authors wishing to give explicit instructions to potential citing authors.
 In a later post on the SSI blog, Jackson \cite{ssi-how-shalt-i-cite-thee} gives a good overview of some of the approaches
 package authors have taken to automate the generation of citation entities such as bibtex entries.
+\scnote{So does \cite{knepley2013accurately}}
 
 Perhaps in recognition of the broad range of research domains struggling with
 the challenge of better recognizing the role of software, a number of community
@@ -198,6 +199,7 @@ NIH, Alfred P. Sloan Foundation) and UK (e.g., SFTC, JISC) have run a number of
 workshops with participants from across a range of disciplines.
 
 \asnote{Should also discuss the WSSSPE \cite{wssspe} series of workshops in this section}
+\scnote{Section 5.8 and Appendix J in \cite{WSSSPE3} has some preliminary work and discussion on the topic.}
 
 \textbf{Domain-specific community activities}
 
@@ -244,7 +246,7 @@ Survey of data citation practices \cite{Kratz_2015}
 Software should be considered a legitimate, citable product of research. Software citations should be accorded the same importance in the scholarly record as citations of other research objects, such as publications and data.
 \item \textbf{Credit and Attribution}
 \begin{enumerate}
-\item Software citations should facilitate giving scholarly credit and normative and legal attribution to all contributors to the software, recognizing that a single style or mechanism of attribution may not be applicable to all software.
+\item Software citations should facilitate giving scholarly credit and normative and legal attribution to all contributors to the software, recognizing that a single style or mechanism of attribution may not be applicable to all software.\scnote{At least four styles (AMS, APA, Chicago, MLA) for software citation are illustrated with examples in ~\cite{lipson2011cite}.}
 \item In scholarly literature and other products, whenever and wherever a claim relies upon software, the corresponding software should be cited.
 \end{enumerate}
 \item \textbf{Unique Identification}
