@@ -40,6 +40,7 @@
 \newcommand{\asnote}[1]{ {\textcolor{red} { ***AMS: #1 }}}
 \newcommand{\flnote}[1]{ {\textcolor{olive} { ***FL: #1 }}}
 \newcommand{\scnote}[1]{ {\textcolor{darkgreen} { ***SCC: #1 }}} % Sou-Cheng Choi
+\newcommand{\dmnote}[1]{ {\textcolor{purple} { ***DM: #1 }}} % Daniel Mietchen
 
 
 % 15 characters / 2.5 cm => 100 characters / line
@@ -76,10 +77,10 @@
 As the process of science has become increasingly digital, scientific outputs and products have
 grown beyond simple papers and books to include software, data, and other electronic
 components.  Scientific knowledge is embedded in these components.  And papers and books
-themselves are also becoming increasingly digital, allowing them to executable
+themselves are also becoming increasingly digital, allowing them to become executable
 and reproducible.  As we move towards this future where science is performed in and recorded
 as a variety of linked digital products, the characteristics and properties that developed for
-books and papers need to be applied to all digital products.  Here, we are concerned specifically
+books and papers need to be applied to all digital products and possibly adjusted.  Here, we are concerned specifically
 with the citation of software products.
 
 The Force11 Software Citation Working Group~\cite{f11scwg} was created in April 2015.
@@ -109,27 +110,27 @@ could be applied, related back to the use cases in \S\ref{sec:use_cases}.
 We have documented and analyzed a set of use cases related to software citation in \cite{SC-Use-Cases}.
 Table~\ref{tab:use_cases} summarizes these use cases and makes clear what the requirements are for software citation in each case.
 \katznote{not sure if this next long sentence should be here, should be in the table caption, or should be footnotes to the table, or even more than one of these}
-\niemnote{Not sure either; definitely should include in the text due to length. Maybe an abbreviated version in the caption?}\flnote{If these ``definitions'' are not used anywhere else than in the table (and they don't really seem to be so far), then I tend towards putting this in the caption. That's where they are needed (in the table). I don't like footnotes for something like this.}
+\niemnote{Not sure either; definitely should include in the text due to length. Maybe an abbreviated version in the caption?}\flnote{If these ``definitions'' are not used anywhere else than in the table (and they don't really seem to be so far), then I tend towards putting this in the caption. That's where they are needed (in the table). I don't like footnotes for something like this.}\dmnote{Agree it would be better in the caption.}
 In the table,
 ``researcher'' includes both academic researchers (e.g., postdoc, tenure-track faculty member) and research software engineers;
 ``publisher'' includes both traditional publishers that publish text and\slash or software papers as well as archives such as Zenodo that directly publish software;
 ``reproduce'' can mean reproduction, replication, verification, validation, repeatability, and\slash or utility;
 examples of indexers include Scopus, Web of Science, Google Scholar, and Microsoft Academic Search;
-domain groups include bioCADDIE, CIG, etc.;
+domain groups include bioCADDIE, CIG, etc.;\dmnote{Not sure what CIG stands for, and acronyms should probably be explained or linked}
 ``repository'' refers to open-source software repositories such as ASCL, GitHub, Netlib, CRAN, institutional repositories;
 ``funder'' is a group that funds software or work using software; and
-``UID'' means unique ID, such as DOI or PURL.
+``UID'' means unique ID, such as a DOI or PURL.
 
 \rowcolors{5}{white}{gray!25}
 \begin{table}[htbp]
-\caption{Use cases for software citation, adapted from \cite{SC-Use-Cases} \flnote{Also, I noticed that some entries have the same requirements: maybe they could be combined to one line?}}
+\caption{Use cases for software citation, adapted from \cite{SC-Use-Cases} \flnote{Also, I noticed that some entries have the same requirements: maybe they could be combined to one line?} \dmnote{I would leve them separate. What about adding a column for license?}}
 \centering
 \scriptsize\setlength{\tabcolsep}{2.5pt}
 \begin{tabular}{@{}l l c c c c c c c c@{}}
 \toprule
  & & \multicolumn{6}{c}{Requirements} \\
  \cmidrule{3-10}
-\multirow{2}{*}{Stakeholder} &	\multirow{2}{*}{Use\slash wants to} 	 &  Software  & \multirow{2}{*}{Author(s)} & \multirow{2}{*}{Version \#} & Release & Location\slash  & \multirow{2}{*}{UID} & Indexed & \multirow{2}{*}{Role} \\
+\multirow{2}{*}{Stakeholder} &	\multirow{2}{*}{Use\slash wants to \dmnote{should start with a verb}} 	 &  Software  & \multirow{2}{*}{Author(s)} & \multirow{2}{*}{Version \#} & Release & Location\slash  & \multirow{2}{*}{UID} & Indexed & \multirow{2}{*}{Role} \\
 & & name &  &  &  date & repository &  & citations & \\
 \midrule
 Researcher            & someone else's software for a paper      & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &             &             \\
@@ -152,7 +153,7 @@ Funder                & show how funded software has been used   & \textbullet &
 \label{tab:use_cases}
 \end{table}%
 
-If certain metadata are not available, alternates may be provided:
+If certain metadata are not available, alternatives may be provided:
 \begin{itemize}
 \item version number and release date: download date
 \item location\slash repository: contact name\slash email if not publicly
@@ -169,7 +170,7 @@ If certain metadata are not available, alternates may be provided:
 
 With close to 50 working group participants representing a range of research domains, the working group was tasked to
 document existing practices in their respective communities. A total of 47 documents were submitted by working group
-participants with the life sciences, astrophysics, and geosciences being particularly well-represented in the submitted
+participants, with the life sciences, astrophysics, and geosciences being particularly well-represented in the submitted
 resources.
 
 \textbf{Summary of submitted resources}
@@ -181,13 +182,13 @@ this isn't exactly the same there are many similarities (what is different exact
 
 Some of the most actionable work has come from the NSF Software Infrastructure for Sustained Innovation (SSI) program in the form of blog posts written by their community fellows:
 
-In a blog post from 2012, \cite{ssi-how-to-cite} discussing some of the pitfalls of trying to cite software in publications.
+In a blog post from 2012, \cite{ssi-how-to-cite} discusses some of the pitfalls of trying to cite software in publications.
 The author includes useful guidance for when to consider citing software as well as some ways to help `convince' journal editors
 to allow the inclusion of software citations.
 
 In \cite{ssi-citation-files}, Wilson suggests that software authors include a `CITATION' file that documents exactly how the
 authors of the software would like to be cited by others. While this isn't a formal metadata specification (it's not machine
-readable for example) this does offer a solution for authors wishing to give explicit instructions to potential citing authors.
+readable for example) this does offer a solution for authors wishing to give explicit instructions to potential citing authors.\dmnote{There is evidence from databases that people actually tend to follow such instructions if they exist: \href{http://doi.org/10.1371/journal.pone.0136631}{10.1371/journal.pone.0136631}.}
 In a later post on the SSI blog, Jackson \cite{ssi-how-shalt-i-cite-thee} gives a good overview of some of the approaches
 package authors have taken to automate the generation of citation entities such as bibtex entries.
 \scnote{So does \cite{knepley2013accurately}}
@@ -224,7 +225,7 @@ required to describe, discover and execute research software. NSF geosciences wo
 
 \textbf{Existing principles}
 
-Author guidelines in F1000Research, APA authors, SSI `publish or be damned' \cite{ssi-publish-or-be-damned} manifesto.
+Author guidelines in F1000Research, APA authors, SSI `publish or be damned' \cite{ssi-publish-or-be-damned} manifesto. \dmnote{There are many other journals publishing software descriptions, some even specialized in software, e.g. \href{http://www.openresearchcomputation.com}{Open Research Computation}.}
 
 \textbf{Existing efforts around metadata standards}
 
