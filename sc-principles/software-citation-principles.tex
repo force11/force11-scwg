@@ -41,7 +41,7 @@
 \newcommand{\flnote}[1]{ {\textcolor{olive} { ***FL: #1 }}}
 \newcommand{\scnote}[1]{ {\textcolor{darkgreen} { ***SCC: #1 }}} % Sou-Cheng Choi
 \newcommand{\dmnote}[1]{ {\textcolor{purple} { ***DM: #1 }}} % Daniel Mietchen
-
+\newcommand{\acmnote}[1]{ {\textcolor{green} { ***ACM: #1 }}} % Abigail Cabunoc Mayes 
 
 % 15 characters / 2.5 cm => 100 characters / line
 % Using 11 pt => 94 characters / line
@@ -83,8 +83,16 @@ as a variety of linked digital products, the characteristics and properties that
 books and papers need to be applied to all digital products and possibly adjusted.  Here, we are concerned specifically
 with the citation of software products.
 
-The Force11 Software Citation Working Group~\cite{f11scwg} was created in April 2015.
-It gathered members (see Appendix~\ref{app:wg_members}), and then in June 2015 began studying this, with a number of meetings
+\katznote{add cites to James's study how what people cite software and Matthew Mayernik's similar one as part of motivation} 
+
+The Force11 Software Citation Working Group~\cite{f11scwg} was created in April 2015, with the following mission statement:
+
+\begin{quote}
+The software citation working group is a committee that will leverage the perspectives of a variety of existing initiatives working on software citation to produce a consolidated set of citation principles in order to encourage broad adoption of a consistent policy for software citation across disciplines and venues. The working group will review existing efforts and make a set of recommendations. These recommendations will be put up for endorsement by the organizations represented by this group and others that play an important role in the community.
+
+The group will produce a set of principles, illustrated with working examples, and a plan for dissemination and distribution. This group will not be producing detailed specifications for implementation although it may review and discuss possible technical solutions.\end{quote}
+
+The group gathered members (see Appendix~\ref{app:wg_members}) in April and May 2015, and then in June began work, with a number of meetings
 and some off-line work by group members to gather materials documenting existing
 practices in member disciplines; gather materials from workshops and other reports;
 review those materials, identifying overlaps and differences; and draft this resulting document,
@@ -94,6 +102,8 @@ this discussion may lead to a second, final version, and we also
 plan to have a follow-on working group that will work with stakeholders to ensure that
 these principles impact the scientific process.
 
+The principles in this document should guide further development of software citation mechanisms and system, and the reader should be able to look at any particular example of software citation and see if it meets the principles.
+
 In the next section (\S\ref{sec:use_cases}), we provide some detailed context in which
 software citation is important, by means of use cases.  In \S\ref{sec:related_work}, we
 summarize and analyze a large amount of previous work and thinking in this area.  In
@@ -102,6 +112,8 @@ scholarly literature, other software, datasets, or any other research object.  F
 in \S\ref{sec:examples} we give examples of how these software citation principles
 could be applied, related back to the use cases in \S\ref{sec:use_cases}.
 
+ \acmnote{would like to add info on the problem we're trying to solve in academia to motivation} 
+ 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Use cases}
 \label{sec:use_cases}
@@ -123,7 +135,7 @@ domain groups include bioCADDIE, CIG, etc.;\dmnote{Not sure what CIG stands for,
 
 \rowcolors{5}{white}{gray!25}
 \begin{table}[htbp]
-\caption{Use cases for software citation, adapted from \cite{SC-Use-Cases} \flnote{Also, I noticed that some entries have the same requirements: maybe they could be combined to one line?} \dmnote{I would leve them separate. What about adding a column for license?}}
+\caption{Use cases for software citation, adapted from \cite{SC-Use-Cases} \flnote{Also, I noticed that some entries have the same requirements: maybe they could be combined to one line?} \dmnote{I would leave them separate. What about adding a column for license?}}
 \centering
 \scriptsize\setlength{\tabcolsep}{2.5pt}
 \begin{tabular}{@{}l l c c c c c c c c@{}}
@@ -244,18 +256,15 @@ Survey of data citation practices \cite{Kratz_2015}
 
 \begin{enumerate}
 \item \textbf{Importance}:
-Software should be considered a legitimate, citable product of research. Software citations should be accorded the same importance in the scholarly record as citations of other research objects, such as publications and data.
+Software should be considered a legitimate, citable product of research. Software citations should be accorded the same importance in the scholarly record as citations of other research objects, such as publications and data. Software should be cited whenever and wherever a research product (such as a paper) relies upon it, specifically, as part of the standard reference list for that research product.
 \item \textbf{Credit and Attribution}
-\begin{enumerate}
-\item Software citations should facilitate giving scholarly credit and normative and legal attribution to all contributors to the software, recognizing that a single style or mechanism of attribution may not be applicable to all software.\scnote{At least four styles (AMS, APA, Chicago, MLA) for software citation are illustrated with examples in ~\cite{lipson2011cite}.}
-\item In scholarly literature and other products, whenever and wherever a claim relies upon software, the corresponding software should be cited.
-\end{enumerate}
+Software citations should facilitate giving scholarly credit and normative and legal attribution to all contributors to the software, recognizing that a single style or mechanism of attribution may not be applicable to all software.\scnote{At least four styles (AMS, APA, Chicago, MLA) for software citation are illustrated with examples in ~\cite{lipson2011cite}.}
 \item \textbf{Unique Identification}
 A software citation should include a persistent method for identification that is machine actionable, globally unique, and widely used by a community.
-\item \textbf{Access}
-Software citations should facilitate access to the software themselves and to such associated metadata, documentation, data, and other materials, as are necessary for both humans and machines to make informed use of the referenced software.
 \item \textbf{Persistence}
 Unique identifiers, and metadata describing the software, and its disposition, should persist -- even beyond the lifespan of the software they describe.
+\item \textbf{Accessibility}
+Software citations should facilitate access to the software itself and to such associated metadata, documentation, data, and other materials, as are necessary for both humans and machines to make informed use of the referenced software.\dmnote{Should provide a location where the software is available. Should we say anything about environments?}
 \item \textbf{Specificity and Verifiability}
 Software citations should facilitate identification of, access to, and verification of the specific software that support a claim. Citations or citation metadata should include information about provenance and fixity sufficient to facilitate verifying that the specific version and/or portion of software retrieved subsequently is the same as was originally cited.
 \item \textbf{Interoperability and Flexibility}
@@ -283,7 +292,7 @@ Alice Allen, Astrophysics Source Code Library
 
 Carl Boettiger, UC Berkeley
 
-Sou-Cheng Choi , NORC at the University of Chicago \& Illinois Institute of Technology	
+Sou-Cheng Choi, NORC at the University of Chicago \& Illinois Institute of Technology	
 
 Neil Chue Hong, Software Sustainability Institute	
 
@@ -333,7 +342,7 @@ Brian Matthews, Science and Technology Facilites Council
 
 Abigail Cabunoc Mayes, Mozilla Science Lab	
 
-Daniel Mietchen, NIH	
+Daniel Mietchen, National Institutes of Health	
 
 Bill Mills, Mozilla Science Lab	
 
@@ -352,7 +361,6 @@ Karthik Ram, University of California, Berkeley
 Fernando Rios, Johns Hopkins University	
 
 Ashley Sands, UCLA Information Studies	
-
 
 Soren Scott , Independent Researcher
 
