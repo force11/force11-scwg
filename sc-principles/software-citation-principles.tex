@@ -35,14 +35,19 @@
 \usepackage[all]{hypcap}
 \urlstyle{rm}
 
-\definecolor{darkgreen}{rgb}{0,0.6,0}
 \newcommand{\katznote}[1]{ {\textcolor{blue} { ***DSK: #1 }}}
 \newcommand{\niemnote}[1]{ {\textcolor{orange} { ***KEN: #1 }}}
 \newcommand{\asnote}[1]{ {\textcolor{red} { ***AMS: #1 }}}
 \newcommand{\flnote}[1]{ {\textcolor{olive} { ***FL: #1 }}}
+\definecolor{darkgreen}{rgb}{0,0.6,0}
 \newcommand{\scnote}[1]{ {\textcolor{darkgreen} { ***SCC: #1 }}} % Sou-Cheng Choi
 \newcommand{\dmnote}[1]{ {\textcolor{purple} { ***DM: #1 }}} % Daniel Mietchen
 \newcommand{\acmnote}[1]{ {\textcolor{green} { ***ACM: #1 }}} % Abigail Cabunoc Mayes 
+\definecolor{fuschsia}{rgb}{1.0, 0.58, 1.0}
+\newcommand{\LJHnote}[1]{ {\textcolor{fuschsia} { ***LJH: #1 }}} % Lorraine Hwang
+\definecolor{bondiblue}{rgb}{0.0, 0.58, 0.71}
+\newcommand{\ssnote}[1]{ {\textcolor{bondiblue} { ***SS: #1}}} % Soren Scott
+\newcommand{\GMnote}[1]{ {\textcolor{violet} { ***GM: #1}}} % August (Gus) Muench
 
 % 15 characters / 2.5 cm => 100 characters / line
 % Using 11 pt => 94 characters / line
@@ -71,7 +76,43 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Introduction \& motivation}
+\section{Software citation principles}
+\label{sec:principles}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The principles in this section are written fairly concisely, and further discussed later in this document (in \S\ref{sec:examples}). For example, in this section, we are not defining what software should be cited, but how it should be cited.  In the next section, we discuss what how we think such decisions might be made.
+
+\katznote{maybe should change the language in the principles to be more requirements-like -- e.g. use ``shall'' a lot} \katznote{if the principles are machine readable, that might also imply something about the language used}
+
+\begin{enumerate}
+\item \textbf{Importance}:
+Software should be considered a legitimate, citable product of research. Software citations should be accorded the same importance in the scholarly record as citations of other research objects, such as publications and data. Software should be cited whenever and wherever a research product (such as a paper or derived software) relies upon it, specifically, as part of the standard reference list for that research product. 
+\item \textbf{Credit and Attribution}:
+Software citations should facilitate giving scholarly credit and normative
+and legal attribution to all contributors to the software, recognizing
+that a single style or mechanism of attribution may not be applicable to
+all software. 
+\item \textbf{Unique Identification}:
+A software citation should include a method for identification that is
+machine actionable, globally unique, interoperable, and recognized by
+a community.
+\item \textbf{Persistence}:
+Unique identifiers and metadata describing the software and its disposition should persist~-- even beyond the lifespan of the software they describe.
+\item \textbf{Accessibility}:
+Software citations should permit and facilitate access to the software itself and to such associated metadata, documentation, data, and other materials as are necessary for both humans and machines to make informed use of the referenced software. 
+\item \textbf{Specificity}:
+Software citations should facilitate identification of, and access to, the specific version of software that was used.  Software identification should be as specific as necessary, such as using version numbers, revision numbers, or variants such as platforms.
+%\item \textbf{Interoperability and Flexibility}:
+%Software citation methods should be sufficiently flexible to accommodate the variant practices among communities, but should not differ so much that they compromise interoperability of software citation practices across communities.
+\end{enumerate}
+
+These software citation principles were originally based on an adaptation of the parallel set of data citation principles~\cite{data-citation-principles}, and then were modified based on working group discussions and the information from the use cases and the related work.
+The adaptations and modifications have been made because software, while similar to data in terms of not traditionally having been cited in publications, is also different than data \ldots \katznote{Dan to write a little more here}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Motivation}
 \label{sec:intro}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -82,12 +123,12 @@ themselves are also becoming increasingly digital, allowing them to become execu
 and reproducible.  As we move towards this future where science is performed in and recorded
 as a variety of linked digital products, the characteristics and properties that developed for
 books and papers need to be applied to all digital products and possibly adjusted.  Here, we are concerned specifically
-with the citation of software products.
+with the citation of software products.  This is more general than just textual citations of software in a paper, but more general identification of software within the research process. \katznote{other comments on this last sentence are welcome - is this a good enough description of what we mean by software citation?}
 
 Software and other digital resources currently appear in publications in very inconsistent ways.
 For example, a random sample of 90 articles in the biology literature
 found seven different ways that software was mentioned, including simple
-names in the full-text, URLs in footnote, and different kinds of mentions
+names in the full-text, URLs in footnotes, and different kinds of mentions
 in references lists: project names or websites, user manuals, publications
 that describe or introduce the software~\cite{howison2015jasist}.
 Table~\ref{tab:mentions} shows examples of these varied forms of software
@@ -96,6 +137,7 @@ mentions and the frequency with which they were encountered.
 Many of these kinds of mentions fail to perform the functions needed of citations, and their very diversity and frequent informality undermines the integration of software work into bibliometrics and other analyses. 
 %In some ways the situation is not too surprising: practices are diverse and informal because authors receive little guidance from editors, style guides, and their scientific communities, as well as weak support from citation software (such as Endnote and Zotero). 
 Studies on data and facility citation have shown similar results~\cite{10.1371/journal.pone.0136631, mayernik_poster, parsons_duerr_minster}.
+% Add Hwang et al. from WSSSPE3 LJH
 % In Howison and Bullard's study only 24\% of journals provided any guidance and software is treated inconsistently by style guides, if it appears at all.
 
 \rowcolors{2}{white}{gray!25}
@@ -122,10 +164,12 @@ Not even name           & 4   & 1\%  \\ % & \ldots was carried out using softwar
 There are many reasons this lack of both software citations in general and standard practices
 for software citation are of concern:
 \begin{itemize}
-\item Understanding Science: Software is a product of research, and by not citing it, we leave holes in the record of of scientific progress.
+\item Understanding Science: Software is a product of research, and by not citing it, we leave holes in the record of scientific progress.
 \item Academic Credit: Academic researchers at all levels, including students, postdocs, faculty, and staff, should be
 credited for the software products they develop and contribute to, particularly when those products enable or further research done by others.
-\item Finding Software - citations enable software to be discovered \katznote{dan to flesh out more}
+\item Finding Software - citations enable software to be discovered \LJHnote{and reused}. \katznote{dan to flesh out more} \ssnote{is it worth framing as software(cite \& find)->researcher(credit)->science (reuse) areas?}
+\item Reproducibility - citations enable specific software that was
+used to be identified, though they are not sufficient to make reproducibility happen \katznote{better language welcome}
 \end{itemize}
 
 \acmnote{would like to add info on the problem we're trying to solve in academia to motivation} 
@@ -279,6 +323,7 @@ fields are critical for useful indexing - suggested candidates for this list.
 
 Geosciences: Ontosoft \cite{ontosoft} - A Community Software Commons for the Geosciences. Lots of attention given to the metadata
 required to describe, discover and execute research software. NSF geosciences workshop around data lifecycle, management and citation \cite{nsf-geo-data}. This report includes many recommendations for data citation.
+\LJHnote{ The Seismological Research Letters, Electronic Seismologists publishes papers on software.} %text needs to be cleaned up LJH%
 
 \textbf{Existing principles}
 
@@ -287,48 +332,48 @@ Author guidelines in F1000Research, APA authors, SSI `publish or be damned' \cit
 \textbf{Existing efforts around metadata standards}
 
 AAS workshop \cite{aas-software-index}, CRediT project \cite{casrai-credit}, Ontosoft \cite{ontosoft}
+\acmnote{ CodeMeta? }
 
 \textbf{Studies of author motivations}
 
 Survey of data citation practices \cite{Kratz_2015}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Software citation principles}
-\label{sec:principles}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-The following set of software citation principles were originally based on an adaptation of the parallel set of data citation principles~\cite{data-citation-principles}, and then were modified based on working group discussions and the information from the use cases and the related work.
-
-\begin{enumerate}
-\item \textbf{Importance}:
-Software should be considered a legitimate, citable product of research. Software citations should be accorded the same importance in the scholarly record as citations of other research objects, such as publications and data. Software should be cited whenever and wherever a research product (such as a paper) relies upon it, specifically, as part of the standard reference list for that research product.
-\item \textbf{Credit and Attribution}:
-Software citations should facilitate giving scholarly credit and normative
-and legal attribution to all contributors to the software, recognizing
-that a single style or mechanism of attribution may not be applicable to
-all software. \scnote{At least four styles (AMS, APA, Chicago, MLA) for
-software citation are illustrated with examples in~\cite{lipson2011cite}.}
-\item \textbf{Unique Identification}:
-A software citation should include a method for identification that is
-machine actionable, globally unique, interoperable, and widely used by
-a community.
-\item \textbf{Persistence}:
-Unique identifiers, and metadata describing the software, and its disposition, should persist -- even beyond the lifespan of the software they describe.
-\item \textbf{Accessibility}:
-Software citations should facilitate access to the software itself and to such associated metadata, documentation, data, and other materials as are necessary for both humans and machines to make informed use of the referenced software.\dmnote{Should provide a location where the software is available. Should we say anything about environments?} \katznote{If we provide access, I think that includes the location.  I don't think we need to say anything about environments here, since it is in the next principles (platforms).  Daniel, if this is ok with you, please comment out this set of comments}
-\item \textbf{Specificity}:
-Software citations should facilitate identification of and access to the specific version of software that was used.  Software identification should be as specific as necessary, such as using version numbers, revision numbers, or variants such as platforms.
-%\item \textbf{Interoperability and Flexibility}:
-%Software citation methods should be sufficiently flexible to accommodate the variant practices among communities, but should not differ so much that they compromise interoperability of software citation practices across communities.
-\end{enumerate}
-\dmnote{ Anything missing? Configurations? Interactive software? Screenshots? \ldots ?}
-
-\katznote{perhaps we should have some discussion of these here, so that we could include Sou-Cheng's note and others?  I would like to have the principles be as brief as possible, but in some cases, more may be needed.  Or perhaps that comment goes into the next section?}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Implementation examples}
+\section{Discussion and implementation examples}
 \label{sec:examples}
+
+\subsection{Discussion of principles}
+
+\paragraph{importance}
+
+\katznote{what about derived software?  What metadata should be preserved from the original? What is done for data today?  should this be in the principles?  tried to add to principle 1 and can discuss in next section. maybe also discuss somewhere else, such as in the list of stuff we recognize but don't address (currently in a GitHub issue)}
+\LJHnote{this is analogous to built upon research}
+
+\paragraph{what software to cite}
+
+\katznote{put discussion of what software to cite here -- something about what type of software we think should be cited and shouldn't not, e.g. excel} \LJHnote{sometimes excel could be considered materiel \ldots}
+\niemnote{Example of using Excel to simply store and plot data, vs.\ using it for statistical analysis}
+\ssnote{from the data side, an example might be found in the National Climate Assessment (NASA, GCIS) where this is captured in PROV instead?}
+\dmnote{ Mention that the principles are covering what's necessary, not necessarily what is sufficient for a given use case. So perhaps we should discuss things like configurations or bugs? }
+\paragraph{examples of citation styles}  \scnote{At least four styles (AMS, APA, Chicago, MLA) for
+software citation are illustrated with examples in~\cite{lipson2011cite}.}
+
+\paragraph{unique identifiers}  \katznote{recognize that a UID points to a specific software, but multiple UIDs might point to the same software} \LJHnote{not sure that multiple UIDs would be a recommended best practice as  this could cause conflicts} \katznote{LJH: not recommended, but likely will happen anyhow} \katznote{maybe discuss how identifiers are created}
+
+\paragraph{talk about access to software - maybe discuss location}
+\LJHnote{recognize that some software is proprietary, not all is open source} 
+
+\subsection{Reproducibility}  \katznote{recognize that more is needed for reproducibility, such as configuration information and runtime environment} \LJHnote{concept of enhance metadata to support this goal?}
+
+\subsection{Updates}
+\dmnote{Any provisions for updating the principles?}
+\LJHnote{may require feedback from "Implementation Group" and some time to put into practice to find gaps. Most of the time revisions are frequent in the beginning of the lifecycle to cover gaps and become less frequent.}
+
+\subsection{Implementation examples}
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \appendix
