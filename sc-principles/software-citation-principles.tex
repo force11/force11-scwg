@@ -151,24 +151,20 @@ could be applied, related back to the use cases in \S\ref{sec:use_cases}.
 
 We have documented and analyzed a set of use cases related to software citation in \cite{SC-Use-Cases}.
 Table~\ref{tab:use_cases} summarizes these use cases and makes clear what the requirements are for software citation in each case.
-\katznote{not sure if this next long sentence should be here, should be in the table caption, or should be footnotes to the table, or even more than one of these}
-\niemnote{Not sure either; definitely should include in the text due to length. Maybe an abbreviated version in the caption?}\flnote{If these ``definitions'' are not used anywhere else than in the table (and they don't really seem to be so far), then I tend towards putting this in the caption. That's where they are needed (in the table). I don't like footnotes for something like this.}\dmnote{Agree it would be better in the caption.}
-In the table,
-``researcher'' includes both academic researchers (e.g., postdoc, tenure-track faculty member) and research software engineers;
-``publisher'' includes both traditional publishers that publish text and\slash or software papers as well as archives such as Zenodo that directly publish software;
-``reproduce'' can mean reproduction, replication, verification, validation, repeatability, and\slash or utility;
-examples of indexers include Scopus, Web of Science, Google Scholar, and Microsoft Academic Search;
-domain groups include bioCADDIE, CIG, etc.;\dmnote{Not sure what CIG stands for, and acronyms should probably be explained or linked}
-``repository'' refers to public software repositories such as ASCL,
-GitHub, Netlib, CRAN, institutional repositories;
-``funder'' is a group that funds software or work using software; and
-``unique ID'' refers to identifiers such as a DOI or PURL.
 
 %
 \newcommand*\rot[1]{\begin{turn}{90} #1 \end{turn}}%
 \rowcolors{4}{gray!25}{white}
 \begin{table}[htbp]
-\caption{Use cases for software citation, adapted from \cite{SC-Use-Cases}}
+\caption{Use cases for software citation, adapted from \cite{SC-Use-Cases}. ``Researcher'' includes both academic researchers (e.g., postdoc, tenure-track faculty member) and research software engineers;
+``publisher'' includes both traditional publishers that publish text and\slash or software papers as well as archives such as Zenodo that directly publish software;
+``reproduce'' can mean reproduction, replication, verification, validation, repeatability, and\slash or utility;
+examples of indexers include Scopus, Web of Science, Google Scholar, and Microsoft Academic Search;
+domain groups include bioCADDIE~\cite{bioCADDIE}, Computational Infrastructure for Geodynamics~\cite{CIG}, etc.;
+``repository'' refers to public software repositories such as ASCL~\cite{ascl},
+GitHub, Netlib, CRAN, institutional repositories;
+``funder'' is a group that funds software or work using software; and
+``unique ID'' refers to identifiers such as a DOI, ARK, or PURL.}
 \centering
 \scriptsize\setlength{\tabcolsep}{2.5pt}
 \begin{tabular}{@{}l l c c c c c c c c c@{}}
