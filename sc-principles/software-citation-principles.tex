@@ -85,7 +85,7 @@ The principles in this section are written fairly concisely, and further discuss
 \katznote{maybe should change the language in the principles to be more requirements-like -- e.g. use ``shall'' a lot} \katznote{if the principles are machine readable, that might also imply something about the language used}
 
 \begin{enumerate}
-\item \textbf{Importance}:
+\item \textbf{Importance}: \label{principle:importance}
 Software should be considered a legitimate, citable product of research. Software citations should be accorded the same importance in the scholarly record as citations of other research objects, such as publications and data. Software should be cited whenever and wherever a research product (such as a paper or derived software) relies upon it, specifically, as part of the standard reference list for that research product. 
 \item \textbf{Credit and Attribution}:
 Software citations should facilitate giving scholarly credit and normative
@@ -195,9 +195,7 @@ The principles in this document should guide further development of software cit
 
 In the next section (\S\ref{sec:use_cases}), we provide some detailed context in which
 software citation is important, by means of use cases.  In \S\ref{sec:related_work}, we
-summarize and analyze a large amount of previous work and thinking in this area.  In
-\S\ref{sec:principles}, we provide a set of guiding principles for citation of software within
-scholarly literature, other software, datasets, or any other research object.  Finally,
+summarize and analyze a large amount of previous work and thinking in this area.  In \S\ref{sec:discussion}, we discuss issues related to the principles stated in \S\ref{sec:principles}, and finally,
 in \S\ref{sec:examples} we give examples of how these software citation principles
 could be applied, related back to the use cases in \S\ref{sec:use_cases}.
 
@@ -338,15 +336,21 @@ Survey of data citation practices \cite{Kratz_2015}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Discussion and implementation examples}
-\label{sec:examples}
+\section{Discussion}
+\label{sec:discussion}
+
+In this section, we discuss some the principles stated in Section~\ref{sec:principles} and some related concerns.
 
 \subsection{Discussion of principles}
 
-\paragraph{importance}
+\paragraph{Derived Software}
 
-\katznote{what about derived software?  What metadata should be preserved from the original? What is done for data today?  should this be in the principles?  tried to add to principle 1 and can discuss in next section. maybe also discuss somewhere else, such as in the list of stuff we recognize but don't address (currently in a GitHub issue)}
-\LJHnote{this is analogous to built upon research}
+The goals of software include the linked ideas of crediting those responsible for software and understanding the dependencies of scientific products on specific software.
+In the Importance principle (\ref{principle:importance}), we state that
+``software should be cited whenever and wherever a research product (such as a paper or derived software) relies upon it, specifically, as part of the standard reference list for that research product.''
+In the case of one code that is derived from another code, citing the derived software may appear to not credit those responsible for the original software, nor recognize its role in the work that used the derived software.
+However, this is really analogous to how any research builds on other research, where each research product just cites those products that it directly builds on, not those that it indirectly builds on.
+Understanding these chains of knowledge and credit have been part of history of science field for some time, though more recent work is suggesting more nuanced evaluation of the credit chains~\cite{casrai-credit, transitive_credit_json-ld}.
 
 \paragraph{what software to cite}
 
@@ -368,7 +372,9 @@ software citation are illustrated with examples in~\cite{lipson2011cite}.}
 \dmnote{Any provisions for updating the principles?}
 \LJHnote{may require feedback from "Implementation Group" and some time to put into practice to find gaps. Most of the time revisions are frequent in the beginning of the lifecycle to cover gaps and become less frequent.}
 
-\subsection{Implementation examples}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Implementation examples}
+\label{sec:examples}
 
 
 
