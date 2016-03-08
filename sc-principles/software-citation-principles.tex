@@ -80,7 +80,7 @@
 \label{sec:principles}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The principles in this section are written fairly concisely, and further discussed later in this document (in \S\ref{sec:examples}). For example, in this section, we are not defining what software should be cited, but how it should be cited.  In the next section, we discuss what how we think such decisions might be made.
+The principles in this section are written fairly concisely, and discussed further later in this document (\S\ref{sec:discussion}). For example, in this section we do not define what software should be cited, but how it should be cited.  we talk about how we think such decisions might be made in the discussion section.
 
 \katznote{maybe should change the language in the principles to be more requirements-like -- e.g. use ``shall'' a lot} \katznote{if the principles are machine readable, that might also imply something about the language used}
 
@@ -341,9 +341,19 @@ Survey of data citation practices \cite{Kratz_2015}
 
 In this section, we discuss some the principles stated in Section~\ref{sec:principles} and some related concerns.
 
-\subsection{Discussion of principles}
 
-\paragraph{Derived Software}
+\textbf{What software to cite}
+
+In the principles, we did not define what software should be cited, but how it should be cited.
+What software should be cited is the decision of the author(s) of the research work, in the context of community norms and practices, and in most scientific communities, these are currently in flux.
+In general, we believe that any software on which a research product directly depends should be cited, if it significantly contributes to the research product.
+Again, the specific decision of what is significant must be made by the author(s) of the product.
+However, an illustrative example is the use of Microsoft Excel in research.
+We suggest that if Excel is used to simply store and plot data, it does not need to be cited, but if it is used for statistical analysis, it should be.
+\ssnote{from the data side, an example might be found in the National Climate Assessment (NASA, GCIS) where this is captured in PROV instead?}
+\dmnote{ Mention that the principles are covering what's necessary, not necessarily what is sufficient for a given use case. So perhaps we should discuss things like configurations or bugs? }
+
+\textbf{Derived software}
 
 The goals of software include the linked ideas of crediting those responsible for software and understanding the dependencies of scientific products on specific software.
 In the Importance principle (\ref{principle:importance}), we state that
@@ -352,23 +362,27 @@ In the case of one code that is derived from another code, citing the derived so
 However, this is really analogous to how any research builds on other research, where each research product just cites those products that it directly builds on, not those that it indirectly builds on.
 Understanding these chains of knowledge and credit have been part of history of science field for some time, though more recent work is suggesting more nuanced evaluation of the credit chains~\cite{casrai-credit, transitive_credit_json-ld}.
 
-\paragraph{what software to cite}
+\textbf{Citations in text}
 
-\katznote{put discussion of what software to cite here -- something about what type of software we think should be cited and shouldn't not, e.g. excel} \LJHnote{sometimes excel could be considered materiel \ldots}
-\niemnote{Example of using Excel to simply store and plot data, vs.\ using it for statistical analysis}
-\ssnote{from the data side, an example might be found in the National Climate Assessment (NASA, GCIS) where this is captured in PROV instead?}
-\dmnote{ Mention that the principles are covering what's necessary, not necessarily what is sufficient for a given use case. So perhaps we should discuss things like configurations or bugs? }
-\paragraph{examples of citation styles}  \scnote{At least four styles (AMS, APA, Chicago, MLA) for
-software citation are illustrated with examples in~\cite{lipson2011cite}.}
+In terms of how citations should be expressed as text, such
+as in journals or other human readable material, there are currently at least four styles (AMS, APA, Chicago, MLA). These have been illustrated with examples by Lipson~\cite{lipson2011cite}.
+This is another area that is in flux at this time.
 
-\paragraph{unique identifiers}  \katznote{recognize that a UID points to a specific software, but multiple UIDs might point to the same software} \LJHnote{not sure that multiple UIDs would be a recommended best practice as  this could cause conflicts} \katznote{LJH: not recommended, but likely will happen anyhow} \katznote{maybe discuss how identifiers are created}
+\textbf{Unique identifiers}
 
-\paragraph{talk about access to software - maybe discuss location}
+A UID points to a specific software, but multiple UIDs might point to the same software.
+\LJHnote{not sure that multiple UIDs would be a recommended best practice as  this could cause conflicts} \katznote{LJH: not recommended, but likely will happen anyhow} \katznote{maybe discuss how identifiers are created}
+
+\textbf{talk about access to software - maybe discuss location}
+
 \LJHnote{recognize that some software is proprietary, not all is open source} 
 
-\subsection{Reproducibility}  \katznote{recognize that more is needed for reproducibility, such as configuration information and runtime environment} \LJHnote{concept of enhance metadata to support this goal?}
+\textbf{Reproducibility}
 
-\subsection{Updates}
+\katznote{recognize that more is needed for reproducibility, such as configuration information and runtime environment} \LJHnote{concept of enhance metadata to support this goal?}
+
+\textbf{Updates}
+
 \dmnote{Any provisions for updating the principles?}
 \LJHnote{may require feedback from "Implementation Group" and some time to put into practice to find gaps. Most of the time revisions are frequent in the beginning of the lifecycle to cover gaps and become less frequent.}
 
