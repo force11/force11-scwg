@@ -63,7 +63,7 @@
 
 \title{Software Citation Principles}
 
-\author{Force11 Software Citation Working Group (Editors: Arfon M.~Smith, Daniel S.~Katz, Kyle E.~Niemeyer)}
+\author{FORCE11 Software Citation Working Group (Editors: Arfon M.~Smith, Daniel S.~Katz, Kyle E.~Niemeyer)}
 
 \date{}
 
@@ -86,7 +86,7 @@ section we do not define what software should be cited, but how it should be
 cited.  We talk about how we think such decisions might be made in the
 discussion section.
 
-\katznote{maybe should change the language in the principles to be more requirements-like -- e.g. use ``shall'' a lot} \katznote{if the principles are machine readable, that might also imply something about the language used}
+\katznote{consider changing the language in the principles to be more requirements-like -- e.g. use ``shall'' a lot; related: consider making the principles machine-readable (has implications on language}
 
 \begin{enumerate}
 \item \textbf{Importance}: \label{principle:importance}
@@ -100,9 +100,9 @@ all software.
 A software citation should include a method for identification that is
 machine actionable, globally unique, interoperable, and recognized by
 a community.
-\item \textbf{Persistence}:
+\item \textbf{Persistence}: \label{principle:persistence}
 Unique identifiers and metadata describing the software and its disposition should persist~-- even beyond the lifespan of the software they describe.
-\item \textbf{Accessibility}:
+\item \textbf{Accessibility}: \label{principle:accessibility}
 Software citations should permit and facilitate access to the software itself and to such associated metadata, documentation, data, and other materials as are necessary for both humans and machines to make informed use of the referenced software. 
 \item \textbf{Specificity}:
 Software citations should facilitate identification of, and access to, the specific version of software that was used.  Software identification should be as specific as necessary, such as using version numbers, revision numbers, or variants such as platforms.
@@ -127,7 +127,7 @@ themselves are also becoming increasingly digital, allowing them to become execu
 and reproducible.  As we move towards this future where science is performed in and recorded
 as a variety of linked digital products, the characteristics and properties that developed for
 books and papers need to be applied to all digital products and possibly adjusted.  Here, we are concerned specifically
-with the citation of software products.  The challenge is not just the textual citation of software in a paper, but the more general identification of software within the research process. \katznote{other comments on this last sentence are welcome - is this a good enough description of what we mean by software citation?}
+with the citation of software products.  The challenge is not just the textual citation of software in a paper, but the more general identification of software used within the research process. 
 
 Software and other digital resources currently appear in publications in very inconsistent ways.
 For example, a random sample of 90 articles in the biology literature
@@ -166,8 +166,8 @@ Not even name           & 4   & 1\%  \\ % & \ldots was carried out using softwar
 \end{table}%
 
 There are many reasons why this lack of both software citations in general and
-standard practices for software citation are of concern: \katznote{Any more
-items to be added to list?}
+standard practices for software citation are of concern: \katznote{Are there any more
+items that should be added to this list?}
 
 \begin{itemize}
 \item Understanding Science: Software is a product of research, and by not citing it, we leave holes in the record of scientific progress.
@@ -349,7 +349,7 @@ Survey of data citation practices \cite{Kratz_2015}
 \section{Discussion}
 \label{sec:discussion}
 
-In this section, we discuss some the principles stated in Section~\ref{sec:principles} and some related concerns.
+In this section we discuss some the issues and concerns related to the principles stated in Section~\ref{sec:principles}.
 
 
 \textbf{What software to cite}
@@ -359,10 +359,19 @@ What software should be cited is the decision of the author(s) of the research w
 In general, we believe that any software on which a research product directly depends should be cited, if it significantly contributes to the research product.
 Again, the specific decision of what is significant must be made by the author(s) of the product.
 However, an illustrative example is the use of Microsoft Excel in research.
-We suggest that if Excel is used to simply store and plot data, it does not need to be cited, but if it is used for statistical analysis, it should be.
-\ssnote{from the data side, an example might be found in the National Climate Assessment (NASA, GCIS) where this is captured in PROV instead?}
-\dmnote{ Mention that the principles are covering what's necessary, not necessarily what is sufficient for a given use case. So perhaps we should discuss things like configurations or bugs? }
-\scnote{\emph{Do not cite standard office software (e.g. Word, Excel) or programming languages.  Provide references only for specialized software. }---Source: \url{https://owl.english.purdue.edu/owl/resource/560/10/}. Likewise,  on what software not to cite,  generally speaking, we should not cite general software for conducting library research (e.g., JSTOR Mobile App), writing research papers (e.g., \LaTeX), scientific presentations (e.g., Powerpoint) or communications (e.g. Skype).}
+We suggest that if Excel is used to simply store and plot data, it does not need to be cited, but if it is used for statistical analysis, it should be.  Similarly, general software for conducting library research (e.g., JSTOR Mobile App), writing research papers (e.g., \LaTeX), scientific presentations (e.g., Powerpoint) or communications (e.g., Skype) should not be cited.''
+This recommendation matches that of the Purdue Online Writing Lab: ``Do not cite standard office software (e.g. Word, Excel) or programming languages.  Provide references only for specialized software.''~\cite{powl-citing-software}
+
+Note that some software which is or could be captured as part of data provenance may not be cited.
+Citation is a a record of software that is important to the research outcome, where provenance is a record of all steps (including software) used to generated particular data within the research process.
+This implies that for a data research product, provenance data will include all cited software, but not necessarily vice versa.
+Similarly, the software metadata that is recorded as part of data provenance should be a superset of the metadata recorded as part of software citation.
+And the data recorded for reproducibility should also be a superset of the metadata recorded as part of software citation.  
+These statements may also be true for software products.
+In general, we intend the software citation principles to cover what is minimum of what is necessary for software citation for the purpose of software identification.  
+Other use cases (e.g., provenance, reproducibility) may lead to additional requirements (i.e., enhanced metadata).
+%\ssnote{from the data side, an example might be found in the National Climate Assessment (NASA, GCIS) where this is captured in PROV instead?}
+%\dmnote{ Mention that the principles are covering what's necessary, not necessarily what is sufficient for a given use case. So perhaps we should discuss things like configurations or bugs? }
 
 \textbf{Derived software}
 
@@ -379,23 +388,38 @@ In terms of how citations should be expressed as text, such
 as in journals or other human readable material, there are currently at least four styles (AMS, APA, Chicago, MLA). These have been illustrated with examples by Lipson~\cite{lipson2011cite}.
 This is another area that is in flux at this time.
 
-\textbf{Unique identifiers}
+\textbf{Unique identifiers} \katznote{Is this discussion topic needed?  I would like to delete it.}
 
 A UID points to a specific software, but multiple UIDs might point to the same software.
 \LJHnote{not sure that multiple UIDs would be a recommended best practice as  this could cause conflicts} \katznote{LJH: not recommended, but likely will happen anyhow} \katznote{maybe discuss how identifiers are created}
 
-\textbf{talk about access to software - maybe discuss location}
+\textbf{Access to software}
 
-\LJHnote{recognize that some software is proprietary, not all is open source} 
+The Accessibility principle (\ref{principle:accessibility}) states that ``software citations should permit and facilitate access to the software itself.''
+This does not mean that the software must be freely available.
+Rather, the metadata should provide enough information that the software can be accessed.
+If the software is free, the metadata will likely provide an identifier that can be resolved to a URL that contains the specific version of the software that is being cited.
+For commercial software, the metadata should still provide information on how to access the specific software, but this may be a link to a web site that allows the software be purchased or a company's product number.
+As stated in the Persistence principle (\ref{principle:persistence}), we recognize that the commercial software version may no longer be available, but it still should be cited along with information about how it was accessed.
 
-\textbf{Reproducibility}
+%\LJHnote{recognize that some software is proprietary, not all is open source} 
 
-\katznote{recognize that more is needed for reproducibility, such as configuration information and runtime environment} \LJHnote{concept of enhance metadata to support this goal?}
+%\textbf{Reproducibility}
+%
+%\katznote{recognize that more is needed for reproducibility, such as configuration information and runtime environment} \LJHnote{concept of enhance metadata to support this goal?}
 
-\textbf{Updates}
+\textbf{Updates to this document}
 
-\dmnote{Any provisions for updating the principles?}
-\LJHnote{may require feedback from "Implementation Group" and some time to put into practice to find gaps. Most of the time revisions are frequent in the beginning of the lifecycle to cover gaps and become less frequent.}
+As this set of software citation principles has been created by the FORCE11 Software Citation Working Group, which will cease work and dissolve after these principles have been published,
+any updates will require a different FORCE11 working group to make them.
+We expect a follow-on working group to be established to promote the implementation of
+these principles, and it is possible that this group might find items that need correction or addition
+in these principles.
+We recommend that this Software Citation Implementation Working Group be charged, in part,
+with updating these principles during its lifetime, and that FORCE11 should listen to community requests for later updates and respond by creating a new working group.
+
+%\dmnote{Any provisions for updating the principles?}
+%\LJHnote{may require feedback from "Implementation Group" and some time to put into practice to find gaps. Most of the time revisions are frequent in the beginning of the lifecycle to cover gaps and become less frequent.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Implementation examples}
@@ -410,7 +434,7 @@ A UID points to a specific software, but multiple UIDs might point to the same s
 \section{Working Group Membership}
 \label{app:wg_members}
 
-\katznote{should check to make sure these are all still right}
+\katznote{please check to make sure these are all still right}
 
 Alberto Accomazzi, Harvard-Smithsonian CfA
 
