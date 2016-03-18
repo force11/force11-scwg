@@ -91,12 +91,12 @@ discussion section.
 \begin{enumerate}
 \item \textbf{Importance}: \label{principle:importance}
 Software should be considered a legitimate, citable product of research. Software citations should be accorded the same importance in the scholarly record as citations of other research objects, such as publications and data. Software should be cited whenever and wherever a research product (such as a paper or derived software) relies upon it, specifically, as part of the standard reference list for that research product. 
-\item \textbf{Credit and Attribution}:
+\item \textbf{Credit and Attribution}: \label{principle:credit}
 Software citations should facilitate giving scholarly credit and normative
 and legal attribution to all contributors to the software, recognizing
 that a single style or mechanism of attribution may not be applicable to
 all software. 
-\item \textbf{Unique Identification}:
+\item \textbf{Unique Identification}: \label{principle:uid}
 A software citation should include a method for identification that is
 machine actionable, globally unique, interoperable, and recognized by
 a community.
@@ -412,11 +412,17 @@ In terms of how citations should be expressed as text, such
 as in journals or other human readable material, there are currently at least four styles (AMS, APA, Chicago, MLA). These have been illustrated with examples by Lipson~\cite{lipson2011cite}.
 This is another area that is in flux at this time.
 
-\textbf{Unique identifiers}
+\textbf{Unique identification}
 
-The ``unique'' in a UID means that it points to a unique, specific software. However, multiple UIDs might point to the same software.  This is not recommended, but is possible.  We strongly recommend that if there is already a UID for a version of software, no additional UID should be
-created.  Multiple UIDs can lead to split credit, which does not help anyone.  In particular, we
-urge the use of standard DOIs as the UIDs for software. \katznote{This topic is discussed in detail in the `Unique Identification' section of \cite{10.7717/peerj-cs.1}}
+The Unique identification principle (\ref{principle:uid}) calls for ``a method for identification that is machine actionable, globally unique, interoperable, and recognized by a community.''
+What this means for data is discussed in detail in the `Unique Identification' section of a report by the FORCE11 Data Citation Implementation Group (DCIG)~\cite{10.7717/peerj-cs.1}, which calls for ``unique identification in a manner that is machine-resolvable on the Web and demonstrates a long-term commitment to persistence.''
+This report also lists examples of identifiers that match these criteria including DOIs, PURLs, Handles, ARKS, and NBNs.
+For software, we recommend the use of DOIs as the unique identifier due to their common usage and acceptance, particularly as they are the standard for other digital products such as publications. 
+
+Note that the ``unique'' in a UID means that it points to a unique, specific software. However, multiple UIDs might point to the same software.
+This is not recommended, but is possible.
+We strongly recommend that if there is already a UID for a version of software, no additional UID should be created.
+Multiple UIDs can lead to split credit, which goes against the Credit and Attribution principle (\ref{principle:credit}).
 
 %\LJHnote{not sure that multiple UIDs would be a recommended best practice as  this could cause conflicts} \katznote{LJH: not recommended, but likely will happen anyhow} \katznote{maybe discuss how identifiers are created}
 
