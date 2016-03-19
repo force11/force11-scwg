@@ -61,6 +61,7 @@ If you are interested in joining the group, please:
 |-------------------------|---------------|----------------|
 | Alberto Accomazzi ([@aaccomazzi](https://github.com/aaccomazzi)) | Harvard-Smithsonian CfA | Participant |
 | Alice Allen ([@owlice](https://github.com/owlice)) | Astrophysics Source Code Library | Participant |
+| Jay Jay Billings ([@jayjaybillings](https://github.com/jayjaybillings)) | Oak Ridge National Laboratory | Participant |
 | Carl Boettiger ([@cboettig](https://github.com/cboettig)) | UC Berkeley | Participant |
 | Sou-Cheng Choi ([@sctchoi](https://github.com/sctchoi)) | NORC at the University of Chicago and Illinois Institute of Technology  | Participant |
 | Neil Chue Hong ([@npch](https://github.com/npch)) | Software Sustainability Institute | Participant |
