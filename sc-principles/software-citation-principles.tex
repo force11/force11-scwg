@@ -304,7 +304,8 @@ Most noteable of the community efforts are those of WSSSPE~\cite{wssspe} and SSI
 
 One approach to increasing the `citability' of software is to encourage the
 submission of papers in standard journals describing a piece of research
-software. While some journals (e.g., F1000Research) have traditionally accepted
+software, often known as software papers (see \S\ref{sec:software_papers}).
+While some journals (e.g., F1000Research) have traditionally accepted
 software submissions, the American Astronomical Society (AAS) have recently
 announced they will accept software papers in their journals
 \cite{aas-sofware-papers}. As the publishers of journals and conveners of domain-specific conferences the authors note the potential importance of professional societies in effecting changes in community practice. \katznote{I can't quite understand what the prev sentence says}
@@ -345,7 +346,7 @@ Survey of data citation practices \cite{Kratz_2015}
 In this section we discuss some the issues and concerns related to the principles stated in Section~\ref{sec:principles}.
 
 
-\textbf{What software to cite}
+\subsection{What software to cite}
 
 The software citation principles do not define what software should be cited, but rather, how software should be cited.
 What software should be cited is the decision of the author(s) of the research work, in the context of community norms and practices, and in most scientific communities, these are currently in flux.
@@ -366,7 +367,7 @@ Other use cases (e.g., provenance, reproducibility) may lead to additional requi
 %\ssnote{from the data side, an example might be found in the National Climate Assessment (NASA, GCIS) where this is captured in PROV instead?}
 %\dmnote{ Mention that the principles are covering what's necessary, not necessarily what is sufficient for a given use case. So perhaps we should discuss things like configurations or bugs? }
 
-\textbf{Software papers}
+\subsection{Software papers} \label{sec:software_papers}
 
 Currently, and for the foreseeable future, software papers are being published and cited,
 in addition to software itself being cited, as many community norms and practices are
@@ -380,7 +381,7 @@ important to the work, then the software paper should also be cited.
 In addition, if the software authors ask that a paper should be cited, that should be respected.
 Note that there are situations where it's appropriate to cite the software, the software paper, or both.
 
-\textbf{Derived software}
+\subsection{Derived software}
 
 The goals of software include the linked ideas of crediting those responsible for software and understanding the dependencies of scientific products on specific software.
 In the Importance principle (\ref{principle:importance}), we state that
@@ -389,7 +390,7 @@ In the case of one code that is derived from another code, citing the derived so
 However, this is really analogous to how any research builds on other research, where each research product just cites those products that it directly builds on, not those that it indirectly builds on.
 Understanding these chains of knowledge and credit have been part of history of science field for some time, though more recent work is suggesting more nuanced evaluation of the credit chains~\cite{casrai-credit, transitive_credit_json-ld}.
 
-\textbf{Software peer review}
+\subsection{Software peer review}
 
 This document does not discuss peer review of software, which is an important issue but is
 also mostly out of scope in the context of software citation principles.
@@ -399,13 +400,13 @@ is irrelevant.  One possible exception would be if the peer-review status of the
 be part of the metadata, but the working group does not believe this to be part of the
 minimal metadata needed to identify the software.
 
-\textbf{Citations in text}
+\subsection{Citations in text}
 
 In terms of how citations should be expressed as text, such
 as in journals or other human readable material, there are currently at least four styles (AMS, APA, Chicago, MLA). These have been illustrated with examples by Lipson~\cite{lipson2011cite}.
 This is another area that is in flux at this time.
 
-\textbf{Unique identification}
+\subsection{Unique identification}
 
 The Unique identification principle (\ref{principle:uid}) calls for ``a method for identification that is machine actionable, globally unique, interoperable, and recognized by a community.''
 What this means for data is discussed in detail in the `Unique Identification' section of a report by the FORCE11 Data Citation Implementation Group (DCIG)~\cite{10.7717/peerj-cs.1}, which calls for ``unique identification in a manner that is machine-resolvable on the Web and demonstrates a long-term commitment to persistence.''
@@ -419,7 +420,7 @@ Multiple UIDs can lead to split credit, which goes against the Credit and Attrib
 
 %\LJHnote{not sure that multiple UIDs would be a recommended best practice as  this could cause conflicts} \katznote{LJH: not recommended, but likely will happen anyhow} \katznote{maybe discuss how identifiers are created}
 
-\textbf{Access to software}
+\subsection{Access to software}
 
 The Accessibility principle (\ref{principle:accessibility}) states that ``software citations should permit and facilitate access to the software itself.''
 This does not mean that the software must be freely available.
@@ -434,7 +435,7 @@ As stated in the Persistence principle (\ref{principle:persistence}), we recogni
 %
 %\katznote{recognize that more is needed for reproducibility, such as configuration information and runtime environment} \LJHnote{concept of enhance metadata to support this goal?}
 
-\textbf{Updates to this document}
+\subsection{Updates to this document}
 
 As this set of software citation principles has been created by the FORCE11 Software Citation Working Group, which will cease work and dissolve after these principles have been published,
 any updates will require a different FORCE11 working group to make them.
