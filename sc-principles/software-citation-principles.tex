@@ -35,14 +35,14 @@
 \usepackage[all]{hypcap}
 \urlstyle{rm}
 
-\newcommand{\katznote}[1]{ {\textcolor{blue} { ***DSK: #1 }}} % Dan 
+\newcommand{\katznote}[1]{ {\textcolor{blue} { ***DSK: #1 }}} % Dan
 \newcommand{\niemnote}[1]{ {\textcolor{orange} { ***KEN: #1 }}} % Kyle
 \newcommand{\asnote}[1]{ {\textcolor{red} { ***AMS: #1 }}} %Arfon
 \newcommand{\flnote}[1]{ {\textcolor{olive} { ***FL: #1 }}} %Frank L�ffler
 \definecolor{darkgreen}{rgb}{0,0.6,0}
 \newcommand{\scnote}[1]{ {\textcolor{darkgreen} { ***SCC: #1 }}} % Sou-Cheng Choi
 \newcommand{\dmnote}[1]{ {\textcolor{purple} { ***DM: #1 }}} % Daniel Mietchen
-\newcommand{\acmnote}[1]{ {\textcolor{green} { ***ACM: #1 }}} % Abigail Cabunoc Mayes 
+\newcommand{\acmnote}[1]{ {\textcolor{green} { ***ACM: #1 }}} % Abigail Cabunoc Mayes
 \definecolor{fuschsia}{rgb}{1.0, 0.58, 1.0}
 \newcommand{\LJHnote}[1]{ {\textcolor{fuschsia} { ***LJH: #1 }}} % Lorraine Hwang
 \definecolor{bondiblue}{rgb}{0.0, 0.58, 0.71}
@@ -90,12 +90,12 @@ discussion section.
 
 \begin{enumerate}
 \item \textbf{Importance}: \label{principle:importance}
-Software should be considered a legitimate, citable product of research. Software citations should be accorded the same importance in the scholarly record as citations of other research objects, such as publications and data. Software should be cited whenever and wherever a research product (such as a paper or derived software) relies upon it, specifically, as part of the standard reference list for that research product. 
+Software should be considered a legitimate, citable product of research. Software citations should be accorded the same importance in the scholarly record as citations of other research objects, such as publications and data. Software should be cited whenever and wherever a research product (such as a paper or derived software) relies upon it, specifically, as part of the standard reference list for that research product.
 \item \textbf{Credit and Attribution}: \label{principle:credit}
 Software citations should facilitate giving scholarly credit and normative
 and legal attribution to all contributors to the software, recognizing
 that a single style or mechanism of attribution may not be applicable to
-all software. 
+all software.
 \item \textbf{Unique Identification}: \label{principle:uid}
 A software citation should include a method for identification that is
 machine actionable, globally unique, interoperable, and recognized by
@@ -103,7 +103,7 @@ a community.
 \item \textbf{Persistence}: \label{principle:persistence}
 Unique identifiers and metadata describing the software and its disposition should persist~-- even beyond the lifespan of the software they describe.
 \item \textbf{Accessibility}: \label{principle:accessibility}
-Software citations should permit and facilitate access to the software itself and to such associated metadata, documentation, data, and other materials as are necessary for both humans and machines to make informed use of the referenced software. 
+Software citations should permit and facilitate access to the software itself and to such associated metadata, documentation, data, and other materials as are necessary for both humans and machines to make informed use of the referenced software.
 \item \textbf{Specificity}:
 Software citations should facilitate identification of, and access to, the specific version of software that was used.  Software identification should be as specific as necessary, such as using version numbers, revision numbers, or variants such as platforms.
 %\item \textbf{Interoperability and Flexibility}:
@@ -127,7 +127,7 @@ themselves are also becoming increasingly digital, allowing them to become execu
 and reproducible.  As we move towards this future where science is performed in and recorded
 as a variety of linked digital products, the characteristics and properties that developed for
 books and papers need to be applied to all digital products and possibly adjusted.  Here, we are concerned specifically
-with the citation of software products.  The challenge is not just the textual citation of software in a paper, but the more general identification of software used within the research process. 
+with the citation of software products.  The challenge is not just the textual citation of software in a paper, but the more general identification of software used within the research process.
 
 Software and other digital resources currently appear in publications in very inconsistent ways.
 For example, a random sample of 90 articles in the biology literature
@@ -136,17 +136,17 @@ names in the full-text, URLs in footnotes, and different kinds of mentions
 in references lists: project names or websites, user manuals, publications
 that describe or introduce the software~\cite{howison2015jasist}.
 Table~\ref{tab:mentions} shows examples of these varied forms of software
-mentions and the frequency with which they were encountered. 
-%Even in the top journals (top 10 by impact factor), only 38\% of mentions included an entry of some sort in the reference list and fully 36\% were informal, following no recognizable style or format. 
-Many of these kinds of mentions fail to perform the functions needed of citations, and their very diversity and frequent informality undermines the integration of software work into bibliometrics and other analyses. 
-%In some ways the situation is not too surprising: practices are diverse and informal because authors receive little guidance from editors, style guides, and their scientific communities, as well as weak support from citation software (such as Endnote and Zotero). 
+mentions and the frequency with which they were encountered.
+%Even in the top journals (top 10 by impact factor), only 38\% of mentions included an entry of some sort in the reference list and fully 36\% were informal, following no recognizable style or format.
+Many of these kinds of mentions fail to perform the functions needed of citations, and their very diversity and frequent informality undermines the integration of software work into bibliometrics and other analyses.
+%In some ways the situation is not too surprising: practices are diverse and informal because authors receive little guidance from editors, style guides, and their scientific communities, as well as weak support from citation software (such as Endnote and Zotero).
 Studies on data and facility citation have shown similar results~\cite{10.1371/journal.pone.0136631, mayernik_poster, parsons_duerr_minster}.
 % Add Hwang et al. from WSSSPE3 LJH
 % In Howison and Bullard's study only 24\% of journals provided any guidance and software is treated inconsistently by style guides, if it appears at all.
 
 \rowcolors{2}{white}{gray!25}
 \begin{table}[htbp]
-\caption{Varieties of software mentions in publications, from Howison and Bullard~\cite{howison2015jasist}.} 
+\caption{Varieties of software mentions in publications, from Howison and Bullard~\cite{howison2015jasist}.}
 \centering
 \scriptsize\setlength{\tabcolsep}{2.5pt}
 \begin{tabular}{@{}l l l } % p{0.6\textwidth}@{}}
@@ -166,8 +166,7 @@ Not even name           & 4   & 1\%  \\ % & \ldots was carried out using softwar
 \end{table}%
 
 There are many reasons why this lack of both software citations in general and
-standard practices for software citation are of concern: \katznote{Are there any more
-items that should be added to this list?}
+standard practices for software citation are of concern:
 
 \begin{itemize}
 \item Understanding Science: Software is a product of research, and by not citing it, we leave holes in the record of scientific progress.
@@ -366,9 +365,9 @@ Note that some software which is or could be captured as part of data provenance
 Citation is a record of software that is important to the research outcome, where provenance is a record of all steps (including software) used to generated particular data within the research process.
 This implies that for a data research product, provenance data will include all cited software, but not necessarily vice versa.
 Similarly, the software metadata that is recorded as part of data provenance should be a superset of the metadata recorded as part of software citation.
-And the data recorded for reproducibility should also be a superset of the metadata recorded as part of software citation.  
+And the data recorded for reproducibility should also be a superset of the metadata recorded as part of software citation.
 These statements may also be true for software products.
-In general, we intend the software citation principles to cover what is minimum of what is necessary for software citation for the purpose of software identification.  
+In general, we intend the software citation principles to cover what is minimum of what is necessary for software citation for the purpose of software identification.
 Other use cases (e.g., provenance, reproducibility) may lead to additional requirements (i.e., enhanced metadata).
 %\ssnote{from the data side, an example might be found in the National Climate Assessment (NASA, GCIS) where this is captured in PROV instead?}
 %\dmnote{ Mention that the principles are covering what's necessary, not necessarily what is sufficient for a given use case. So perhaps we should discuss things like configurations or bugs? }
@@ -379,7 +378,7 @@ Currently, and for the foreseeable future, software papers are being published a
 in addition to software itself being cited, as many community norms and practices are
 oriented towards citation of papers.
 Given a software paper and software, the question of which should be cited and when is
-complicated, and there is no simple answer.  
+complicated, and there is no simple answer.
 As discussed in the Importance principle (\ref{principle:importance}), \textit{the software
 itself should also be cited if it is directly used and was important to the work}.
 If a software paper exists and it contains results (performance, validation, etc.) that are
@@ -417,7 +416,7 @@ This is another area that is in flux at this time.
 The Unique identification principle (\ref{principle:uid}) calls for ``a method for identification that is machine actionable, globally unique, interoperable, and recognized by a community.''
 What this means for data is discussed in detail in the `Unique Identification' section of a report by the FORCE11 Data Citation Implementation Group (DCIG)~\cite{10.7717/peerj-cs.1}, which calls for ``unique identification in a manner that is machine-resolvable on the Web and demonstrates a long-term commitment to persistence.''
 This report also lists examples of identifiers that match these criteria including DOIs, PURLs, Handles, ARKS, and NBNs.
-For software, we recommend the use of DOIs as the unique identifier due to their common usage and acceptance, particularly as they are the standard for other digital products such as publications. 
+For software, we recommend the use of DOIs as the unique identifier due to their common usage and acceptance, particularly as they are the standard for other digital products such as publications.
 
 Note that the ``unique'' in a UID means that it points to a unique, specific software. However, multiple UIDs might point to the same software.
 This is not recommended, but is possible.
@@ -435,7 +434,7 @@ If the software is free, the metadata will likely provide an identifier that can
 For commercial software, the metadata should still provide information on how to access the specific software, but this may be a link to a web site that allows the software be purchased or a company's product number.
 As stated in the Persistence principle (\ref{principle:persistence}), we recognize that the commercial software version may no longer be available, but it still should be cited along with information about how it was accessed.
 
-%\LJHnote{recognize that some software is proprietary, not all is open source} 
+%\LJHnote{recognize that some software is proprietary, not all is open source}
 
 %\textbf{Reproducibility}
 %
@@ -475,39 +474,39 @@ Alice Allen, Astrophysics Source Code Library
 
 Carl Boettiger, University of California,  Berkeley
 
-Sou-Cheng T.~Choi, NORC at the University of Chicago \& Illinois Institute of Technology	
+Sou-Cheng T.~Choi, NORC at the University of Chicago \& Illinois Institute of Technology
 
-Neil Chue Hong, Software Sustainability Institute	
+Neil Chue Hong, Software Sustainability Institute
 
-Tom Crick, Cardiff Metropolitan University	
+Tom Crick, Cardiff Metropolitan University
 
-Martin Fenner, Public Library of Science	
+Martin Fenner, Public Library of Science
 
-Merc\`e Crosas, IQSS, Harvard University	
+Merc\`e Crosas, IQSS, Harvard University
 
-Christopher Erdmann, Harvard-Smithsonian CfA	
+Christopher Erdmann, Harvard-Smithsonian CfA
 
-Ian Gent, University of St Andrews, recomputation.org	
+Ian Gent, University of St Andrews, recomputation.org
 
-Paul Groth, Elsevier Labs	
+Paul Groth, Elsevier Labs
 
 Melissa Haendel, Oregon Health and Science University
 
-Stephanie Hagstrom, FORCE11	
+Stephanie Hagstrom, FORCE11
 
-Robert Hanisch, National Institute of Standards and Technology, One Degree Imager	
+Robert Hanisch, National Institute of Standards and Technology, One Degree Imager
 
-Edwin Henneken, Harvard-Smithsonian CfA	
+Edwin Henneken, Harvard-Smithsonian CfA
 
 Ivan Herman, World Wide Web Consortium (W3C)
 
-James Howison, University of Texas	
+James Howison, University of Texas
 
-Lorraine Hwang, University of California,  Davis	
+Lorraine Hwang, University of California,  Davis
 
-Thomas Ingraham, F1000Research	
+Thomas Ingraham, F1000Research
 
-Matthew B.~Jones, NCEAS, University of California,  Santa Barbara	
+Matthew B.~Jones, NCEAS, University of California,  Santa Barbara
 
 Catherine Jones, Science and Technology Facilities Council
 
@@ -515,35 +514,35 @@ Daniel S.~Katz, University of Illinois (co-chair)
 
 Alexander Konovalov, University of St Andrews
 
-John Kratz, California Digital Library	
+John Kratz, California Digital Library
 
-Jennifer Lin, Public Library of Science	
+Jennifer Lin, Public Library of Science
 
-Frank L\"offler, Louisiana State University	
+Frank L\"offler, Louisiana State University
 
-Brian Matthews, Science and Technology Facilities Council	
+Brian Matthews, Science and Technology Facilities Council
 
-Abigail Cabunoc Mayes, Mozilla Science Lab	
+Abigail Cabunoc Mayes, Mozilla Science Lab
 
-Daniel Mietchen, National Institutes of Health	
+Daniel Mietchen, National Institutes of Health
 
 Bill Mills, TRIUMF
 
-Evan Misshula, CUNY Graduate Center	
+Evan Misshula, CUNY Graduate Center
 
-August Muench, American Astronomical Society	
+August Muench, American Astronomical Society
 
-Fiona Murphy, Independent Researcher	
+Fiona Murphy, Independent Researcher
 
-Lars Holm Nielsen, CERN	
+Lars Holm Nielsen, CERN
 
-Kyle Niemeyer, Oregon State University	
+Kyle Niemeyer, Oregon State University
 
-Karthik Ram, University of California, Berkeley	
+Karthik Ram, University of California, Berkeley
 
-Fernando Rios, Johns Hopkins University	
+Fernando Rios, Johns Hopkins University
 
-Ashley Sands, University of California, Los Angeles	
+Ashley Sands, University of California, Los Angeles
 
 Soren Scott, Independent Researcher
 
