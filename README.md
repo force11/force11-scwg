@@ -69,6 +69,7 @@ If you are interested in joining the group, please:
 | Martin Fenner ([@mfenner](https://github.com/mfenner)) | Public Library of Science | Participant |
 | Mercè Crosas ([@mcrosas](https://github.com/mcrosas)) | IQSS, Harvard University| Participant |
 | Christopher Erdmann ([@libcce](https://github.com/libcce)) | Harvard-Smithsonian CfA | Participant |
+| Darel Finkbeiner ([@darelf](https://github.com/darelf)) | OSTI | Participant |
 | Ian Gent ([@turingfan](https://github.com/turingfan)) | University of St Andrews, recomputation.org | Participant |
 | Paul Groth ([@pgroth](https://github.com/pgroth)) | Elsevier Labs | Participant |
 | Melissa Haendel ([@mellybelly](https://github.com/mellybelly)) | OHSU | Participant |
