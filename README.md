@@ -66,6 +66,7 @@ If you are interested in joining the group, please:
 | Sou-Cheng Choi ([@sctchoi](https://github.com/sctchoi)) | NORC at the University of Chicago and Illinois Institute of Technology  | Participant |
 | Neil Chue Hong ([@npch](https://github.com/npch)) | Software Sustainability Institute | Participant |
 | Tom Crick ([@tomcrick](https://github.com/tomcrick)) | Cardiff Metropolitan University | Participant |
+| Scott Edmunds ([@ScottBGI](https://github.com/ScottBGI)) | GigaScience, BGI Hong Kong| Participant |
 | Martin Fenner ([@mfenner](https://github.com/mfenner)) | Public Library of Science | Participant |
 | Mercè Crosas ([@mcrosas](https://github.com/mcrosas)) | IQSS, Harvard University| Participant |
 | Christopher Erdmann ([@libcce](https://github.com/libcce)) | Harvard-Smithsonian CfA | Participant |
@@ -94,7 +95,7 @@ If you are interested in joining the group, please:
 | August Muench ([@augustfly](https://github.com/augustfly)) | American Astronomical Society | Participant |
 | Fiona Murphy ([@DrFionalm](https://github.com/FionaLMMurphy)) | Independent Researcher | Participant |
 | Lars Holm Nielsen ([@lnielsen](https://github.com/lnielsen)) | CERN | Participant |
-| Kyle Niemeyer ([@kyleniemeyer](https://github.com/kyleniemeyer)) | Oregon State University | Participant |
+| Kyle Niemeyer ([@kyleniemeyer](https://github.com/kyleniemeyer)) | Oregon State University | Co-chair |
 | Karthik Ram ([@_inundata](https://github.com/karthik)) | University of California, Berkeley | Participant |
 | Fernando Rios ([@zoidy](https://github.com/zoidy)) | Johns Hopkins University | Participant |
 | Ashley Sands ([@ashleysa](https://github.com/ashleysa)) | UCLA Information Studies | Participant |
