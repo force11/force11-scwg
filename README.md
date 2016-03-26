@@ -66,8 +66,8 @@ If you are interested in joining the group, please:
 | Sou-Cheng Choi ([@sctchoi](https://github.com/sctchoi)) | NORC at the University of Chicago and Illinois Institute of Technology  | Participant |
 | Neil Chue Hong ([@npch](https://github.com/npch)) | Software Sustainability Institute | Participant |
 | Tom Crick ([@tomcrick](https://github.com/tomcrick)) | Cardiff Metropolitan University | Participant |
-| Scott Edmunds ([@ScottBGI](https://github.com/ScottBGI)) | GigaScience, BGI Hong Kong| Participant |
 | Mercè Crosas ([@mcrosas](https://github.com/mcrosas)) | IQSS, Harvard University| Participant |
+| Scott Edmunds ([@ScottBGI](https://github.com/ScottBGI)) | GigaScience, BGI Hong Kong| Participant |
 | Christopher Erdmann ([@libcce](https://github.com/libcce)) | Harvard-Smithsonian CfA | Participant |
 | Martin Fenner ([@mfenner](https://github.com/mfenner)) | Public Library of Science | Participant |
 | Darel Finkbeiner ([@darelf](https://github.com/darelf)) | OSTI | Participant |
