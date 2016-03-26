@@ -67,9 +67,9 @@ If you are interested in joining the group, please:
 | Neil Chue Hong ([@npch](https://github.com/npch)) | Software Sustainability Institute | Participant |
 | Tom Crick ([@tomcrick](https://github.com/tomcrick)) | Cardiff Metropolitan University | Participant |
 | Scott Edmunds ([@ScottBGI](https://github.com/ScottBGI)) | GigaScience, BGI Hong Kong| Participant |
-| Martin Fenner ([@mfenner](https://github.com/mfenner)) | Public Library of Science | Participant |
 | Mercè Crosas ([@mcrosas](https://github.com/mcrosas)) | IQSS, Harvard University| Participant |
 | Christopher Erdmann ([@libcce](https://github.com/libcce)) | Harvard-Smithsonian CfA | Participant |
+| Martin Fenner ([@mfenner](https://github.com/mfenner)) | Public Library of Science | Participant |
 | Darel Finkbeiner ([@darelf](https://github.com/darelf)) | OSTI | Participant |
 | Ian Gent ([@turingfan](https://github.com/turingfan)) | University of St Andrews, recomputation.org | Participant |
 | Paul Groth ([@pgroth](https://github.com/pgroth)) | Elsevier Labs | Participant |
