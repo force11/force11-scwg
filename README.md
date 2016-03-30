@@ -72,6 +72,7 @@ If you are interested in joining the group, please:
 | Martin Fenner ([@mfenner](https://github.com/mfenner)) | DataCite | Participant |
 | Darel Finkbeiner ([@darelf](https://github.com/darelf)) | OSTI | Participant |
 | Ian Gent ([@turingfan](https://github.com/turingfan)) | University of St Andrews, recomputation.org | Participant |
+| Carole Goble ([@carolegoble](https://github.com/carolegoble)) | The University of Manchester, Software Sustainability Institute | Participant |
 | Paul Groth ([@pgroth](https://github.com/pgroth)) | Elsevier Labs | Participant |
 | Melissa Haendel ([@mellybelly](https://github.com/mellybelly)) | OHSU | Participant |
 | Stephanie Hagstrom ([@sthagstrom](https://github.com/sthagstrom)) | Force11 | Participant |
