@@ -63,6 +63,7 @@ If you are interested in joining the group, please:
 | Alice Allen ([@owlice](https://github.com/owlice)) | Astrophysics Source Code Library | Participant |
 | Jay Jay Billings ([@jayjaybillings](https://github.com/jayjaybillings)) | Oak Ridge National Laboratory | Participant |
 | Carl Boettiger ([@cboettig](https://github.com/cboettig)) | UC Berkeley | Participant |
+| Jed Brown ([@jedbrown](https://github.com/jedbrown)) | CU Boulder | Participant |
 | Sou-Cheng Choi ([@sctchoi](https://github.com/sctchoi)) | NORC at the University of Chicago and Illinois Institute of Technology  | Participant |
 | Neil Chue Hong ([@npch](https://github.com/npch)) | Software Sustainability Institute | Participant |
 | Tom Crick ([@tomcrick](https://github.com/tomcrick)) | Cardiff Metropolitan University | Participant |
