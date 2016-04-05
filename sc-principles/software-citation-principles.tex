@@ -283,30 +283,59 @@ could be applied, related back to the use cases in \S\ref{sec:use_cases}.
 \label{sec:use_cases}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-We have documented and analyzed a set of use cases related to software citation in \cite{SC-Use-Cases}.
-Table~\ref{tab:use_cases} summarizes these use cases and makes clear what the requirements are for software citation in each case.
-\scnote{Perhaps the long caption of Table 2 can be mostly moved here and be replaced with a shorter version there.}
+We have documented and analyzed a set of use cases related to software citation
+in \cite{SC-Use-Cases}. Table~\ref{tab:use_cases} summarizes these use cases and
+makes clear what the requirements are for software citation in each case. In the following list,
+we clarify a few notions used in the table.
+\begin{itemize}
 
-%
+\item ``Researcher'' includes both academic researchers (e.g., postdoc,
+tenure-track faculty member) and research software engineers;
+
+\item ``Publisher'' includes both traditional publishers that publish text
+and\slash or software papers as well as archives such as Zenodo that directly
+publish software;
+
+\item ``Repository'' refers to public software repositories such as Astronomy
+Source Code Library (ASCL)~\cite{ascl}, GitHub, Netlib, Comprehensive R Archive
+Network (CRAN), institutional repositories;
+
+\item ``Funder'' is a group that funds software or work using software; 
+
+\item Examples of ``Indexer'' include Scopus, Web of Science, Google Scholar,
+and Microsoft Academic Search;
+
+\item ``Domain group'' includes bioCADDIE~\cite{bioCADDIE}, Computational
+Infrastructure for Geodynamics (CIG)~\cite{CIG}, etc.;
+
+\item ``Unique identifier'' refers to identifiers such as a DOI, ARK, or PURL;
+
+\item``reproduce'' can mean reproduction, replication, verification, validation,
+repeatability, and\slash or utility.
+\end{itemize}
+
 \newcommand*\rot[1]{\begin{turn}{90} #1 \end{turn}}%
 \rowcolors{4}{gray!25}{white}
-\begin{table}[htbp]
-\caption{Use cases for software citation, adapted from \cite{SC-Use-Cases}. ``Researcher'' includes both academic researchers (e.g., postdoc, tenure-track faculty member) and research software engineers;
-``publisher'' includes both traditional publishers that publish text and\slash or software papers as well as archives such as Zenodo that directly publish software;
-``reproduce'' can mean reproduction, replication, verification, validation, repeatability, and\slash or utility;
-examples of indexers include Scopus, Web of Science, Google Scholar, and Microsoft Academic Search;
-domain groups include bioCADDIE~\cite{bioCADDIE}, Computational Infrastructure for Geodynamics (CIG)~\cite{CIG}, etc.;
-``repository'' refers to public software repositories such as Astronomy Source Code Library (ASCL)~\cite{ascl},
-GitHub, Netlib, Comprehensive R Archive Network (CRAN), institutional repositories;
-``funder'' is a group that funds software or work using software; and
-``unique ID'' refers to identifiers such as a DOI, ARK, or PURL.}
+\begin{table}[tbhp]
+\caption{Use cases for software citation, adapted from~\cite{SC-Use-Cases}.}
+%``Researcher'' includes both academic researchers (e.g., postdoc, tenure-track
+%faculty member) and research software engineers;
+%``publisher'' includes both traditional publishers that publish text and\slash or software papers as well as archives such as Zenodo that directly publish software;
+%``reproduce'' can mean reproduction, replication, verification, validation, repeatability, and\slash or utility;
+%examples of indexers include Scopus, Web of Science, Google Scholar, and Microsoft Academic Search;
+%domain groups include bioCADDIE~\cite{bioCADDIE}, Computational Infrastructure for Geodynamics (CIG)~\cite{CIG}, etc.;
+%``repository'' refers to public software repositories such as Astronomy Source Code Library (ASCL)~\cite{ascl},
+%GitHub, Netlib, Comprehensive R Archive Network (CRAN), institutional repositories;
+%``funder'' is a group that funds software or work using software; and
+%``unique ID'' refers to identifiers such as a DOI, ARK, or PURL.
+%}
 \centering
 \scriptsize\setlength{\tabcolsep}{2.5pt}
 \begin{tabular}{@{}l l c c c c c c c c c@{}}
 \toprule
  & & \multicolumn{9}{c}{Requirements} \\
  \cmidrule{3-11}
-Stakeholder & Use\slash wants to 	&  \rot{Software name} & \rot{Author(s)} & \rot{Version number} & \rot{Release date} & \rot{Location\slash repository} & \rot{Unique identifier} & \rot{Indexed citations} & \rot{Contributor role} & \rot{Software license}  \\
+Stakeholder & wants to 	&  \rot{Software name} & \rot{Author(s)} & \rot{Version number} & \rot{Release date} & \rot{Location\slash repository} & \rot{Unique identifier} & \rot{Indexed citations} & \rot{Contributor role} & \rot{Software license}  \\
 \midrule
 Researcher            & use someone else's software for a paper      & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &             &             & \textbullet \\
 Researcher            & use someone else's software for new software & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &             &             & \textbullet \\
