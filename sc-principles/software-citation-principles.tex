@@ -22,6 +22,7 @@
 \usepackage{verbatim}
 \usepackage{booktabs,multicol}
 \usepackage{rotating}
+\usepackage[inline]{enumitem}
 
 % The following three lines are used for displaying footnote in tables.
 \usepackage{footnote}
@@ -48,6 +49,10 @@
 \definecolor{bondiblue}{rgb}{0.0, 0.58, 0.71}
 \newcommand{\ssnote}[1]{ {\textcolor{bondiblue} { ***SS: #1}}} % Soren Scott
 \newcommand{\GMnote}[1]{ {\textcolor{violet} { ***GM: #1}}} % August (Gus) Muench
+
+\newenvironment{italicquotes}
+{\begin{quote}\itshape}
+{\end{quote}}
 
 % 15 characters / 2.5 cm => 100 characters / line
 % Using 11 pt => 94 characters / line
@@ -151,32 +156,41 @@ generally true.
 \label{sec:intro}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-As the process of science has become increasingly digital, scientific outputs and products have
-grown beyond simple papers and books to include software, data, and other electronic
-components.  Scientific knowledge is embedded in these components.  And papers and books
-themselves are also becoming increasingly digital, allowing them to become executable
-and reproducible.  As we move towards this future where science is performed in and recorded
-as a variety of linked digital products, the characteristics and properties that developed for
-books and papers need to be applied to all digital products and possibly adjusted.  Here, we are concerned specifically
-with the citation of software products.  The challenge is not just the textual citation of software in a paper, but the more general identification of software used within the research process.
+As the process of science has become increasingly digital, scientific outputs
+and products have grown beyond simply papers and books to include software,
+data, and other electronic components such as presentation slides, posters, 
+(interactive)  graphs, maps, websites (e.g., blogs and forums),  multimedia 
+(e.g., audio and  video lectures).  Scientific knowledge is embedded in these
+components. And papers and books themselves are also becoming increasingly
+digital, allowing them to become executable and reproducible. As we move towards
+this future where science is performed in and recorded as a variety of linked
+digital products, the characteristics and properties that developed for books
+and papers need to be applied to all digital products and possibly adjusted.
+Here, we are concerned specifically with the citation of software products. The
+challenge is not just the textual citation of software in a paper, but the more
+general identification of software used within the research process.
 
-Software and other digital resources currently appear in publications in very inconsistent ways.
-For example, a random sample of 90 articles in the biology literature
-found seven different ways that software was mentioned, including simple
-names in the full-text, URLs in footnotes, and different kinds of mentions
-in references lists: project names or websites, user manuals, publications
-that describe or introduce the software~\cite{howison2015jasist}.
+Software and other digital resources currently appear in publications in very
+inconsistent ways. For example, a random sample of 90 articles in the biology
+literature found seven different ways that software was mentioned, including
+simple names in the full-text, URLs in footnotes, and different kinds of
+mentions in references lists: project names or websites, user manuals,
+publications that describe or introduce the software~\cite{howison2015jasist}.
 Table~\ref{tab:mentions} shows examples of these varied forms of software
 mentions and the frequency with which they were encountered.
 %Even in the top journals (top 10 by impact factor), only 38\% of mentions included an entry of some sort in the reference list and fully 36\% were informal, following no recognizable style or format.
-Many of these kinds of mentions fail to perform the functions needed of citations, and their very diversity and frequent informality undermines the integration of software work into bibliometrics and other analyses.
+Many of these kinds of mentions fail to perform the functions needed of
+citations, and their very diversity and frequent informality undermines the
+integration of software work into bibliometrics and other analyses.
 %In some ways the situation is not too surprising: practices are diverse and informal because authors receive little guidance from editors, style guides, and their scientific communities, as well as weak support from citation software (such as Endnote and Zotero).
-Studies on data and facility citation have shown similar results~\cite{10.1371/journal.pone.0136631, mayernik_poster, parsons_duerr_minster}.
+Studies on data and facility citation have shown similar
+results~\cite{10.1371/journal.pone.0136631, mayernik_poster,
+parsons_duerr_minster}.
 % Add Hwang et al. from WSSSPE3 LJH
 % In Howison and Bullard's study only 24\% of journals provided any guidance and software is treated inconsistently by style guides, if it appears at all.
 
 \rowcolors{2}{white}{gray!25}
-\begin{table}[htbp]
+\begin{table}[tb]
 \caption{Varieties of software mentions in publications, from Howison and Bullard~\cite{howison2015jasist}.}
 \centering
 \scriptsize\setlength{\tabcolsep}{2.5pt}
@@ -200,41 +214,67 @@ There are many reasons why this lack of both software citations in general and
 standard practices for software citation are of concern:
 
 \begin{itemize}
-\item Understanding Science: Software is a product of research, and by not citing it, we leave holes in the record of scientific progress.
-\item Academic Credit: Academic researchers at all levels, including students, postdocs, faculty, and staff, should be
-credited for the software products they develop and contribute to, particularly when those products enable or further research done by others.
-\item Finding Software: Citations enable the specific software used in a research product to be discovered. Additional researchers can then use the same software for different purposes, leading
-to credit for those responsible for the software.
-\item Reproducibility: Citation of specific software used is necessary for reproducibility, but is not sufficient.  Additional information such as configurations and platform issues are also needed.
+\item Understanding Science: Software is a product of research, and by not
+citing it, we leave holes in the record of scientific progress.
+
+\item Academic Credit: Academic researchers at all levels, including students,
+postdocs, faculty, and staff, should be credited for the software products they
+develop and contribute to, particularly when those products enable or further
+research done by others.
+
+\item Discovering Software: Citations enable the specific software used in a
+research product to be found. Additional researchers can then use the same
+software for different purposes, leading to credit for those responsible for the
+software.
+
+\item Reproducibility: Citation of specific software used is necessary for
+reproducibility, but is not sufficient. Additional information such as
+configurations and platform issues are also needed.
+
 \end{itemize}
 
 
-The FORCE11 Software Citation Working Group~\cite{f11scwg} was created in April 2015, with the following mission statement:
+The FORCE11 Software Citation Working Group~\cite{f11scwg} was created in April
+2015 with the following mission statement:
+% following quote updated from webpage https://www.force11.org/group/software-citation-working-group
+\advance\leftmargini -1em
+\begin{italicquotes} 
+The software citation working group is a cross-team committee leveraging the
+perspectives from a variety of existing initiatives working on software citation
+to produce a consolidated set of citation principles in order to encourage broad
+adoption of a consistent policy for software citation across disciplines and
+venues. The working group will review existing efforts and make a set of
+recommendations. These recommendations will be put of for endorsement by the
+organizations represented by this group and others that play an important role
+in the community.
 
-\begin{quote}
-The software citation working group is a committee that will leverage the perspectives of a variety of existing initiatives working on software citation to produce a consolidated set of citation principles in order to encourage broad adoption of a consistent policy for software citation across disciplines and venues. The working group will review existing efforts and make a set of recommendations. These recommendations will be put up for endorsement by the organizations represented by this group and others that play an important role in the community.
+The group will produce a set of principles, illustrated with working examples,
+and a plan for dissemination and distribution. This group will not be producing
+detailed specifications for implementation although it may review and discuss
+possible technical solutions.
+\end{italicquotes}
 
-The group will produce a set of principles, illustrated with working examples, and a plan for dissemination and distribution. This group will not be producing detailed specifications for implementation although it may review and discuss possible technical solutions.\end{quote}
 
 The group gathered members (see Appendix~\ref{app:wg_members}) in April and May 2015,
-and then in June began work, with a number of meetings
+and then began work in June, with a number of meetings
 and some off-line work by group members to gather materials documenting existing
 practices in member disciplines; gather materials from workshops and other reports;
-review those materials, identifying overlaps and differences; and draft this resulting document,
-which will be presented and discussed at the Force2016 Conference \cite{force2016}
-in April 2016.  We expect that
-this discussion may lead to a second, final version, and we also
+review those materials, identifying overlaps and differences; and subsequently draft this resulting document,
+which will be presented and discussed at the Force2016 Conference~\cite{force2016}
+in April 2016.  We expect that this discussion may lead to a second, final version, and we also
 plan to have a follow-on working group that will work with stakeholders to ensure that
 these principles impact the scientific process.
 
 The principles in this document should guide further development of software citation
-mechanisms and system, and the reader should be able to look at any particular example
+mechanisms and systems, and the reader should be able to look at any particular example
 of software citation and see if it meets the principles.
 
-In the next section (\S\ref{sec:use_cases}), we provide some detailed context in which
-software citation is important, by means of use cases.  In \S\ref{sec:related_work}, we
-summarize and analyze a large amount of previous work and thinking in this area.  In \S\ref{sec:discussion}, we discuss issues related to the principles stated in \S\ref{sec:principles}, and finally,
-in \S\ref{sec:examples} we give examples of how these software citation principles
+In the next section~(\S\ref{sec:use_cases}), we provide some detailed context in
+which software citation is important, by means of use cases. In
+\S\ref{sec:related_work}, we summarize and analyze a large amount of previous
+work and thinking in this area. In \S\ref{sec:discussion}, we discuss issues
+related to the principles stated in \S\ref{sec:principles}, and finally, in
+\S\ref{sec:examples} we give examples of how these software citation principles
 could be applied, related back to the use cases in \S\ref{sec:use_cases}.
 
 
