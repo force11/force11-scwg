@@ -368,79 +368,129 @@ And the contact name\slash email is an alternative to the location\slash reposit
 \label{sec:related_work}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-With close to 50 working group participants (see Appendix~\ref{app:wg_members}) representing a range of research domains, the working group was tasked to
-document existing practices in their respective communities. A total of 47 documents were submitted by working group
-participants, with the life sciences, astrophysics, and geosciences being particularly well-represented in the submitted
-resources.
+With approximately 50 working group participants (see Appendix~\ref{app:wg_members})
+representing a range of research domains, the working group was tasked to
+document existing practices in their respective communities. A total of 47
+documents were submitted by working group participants, with the life sciences,
+astrophysics, and geosciences being particularly well-represented in the
+submitted resources.
 
 \subsection{General community/non domain-specific activities}
 
-Some of the most actionable work has come from the UK Software Sustainability Institute (SSI) in the form of blog posts written by their community fellows:
+Some of the most actionable work has come from the UK Software Sustainability
+Institute (SSI) in the form of blog posts written by their community fellows:
 
-In a blog post from 2012, Jackson discusses some of the pitfalls of trying to cite software in publications~\cite{ssi-how-to-cite}.
-He includes useful guidance for when to consider citing software as well as some ways to help ``convince'' journal editors
-to allow the inclusion of software citations.
+In a blog post from 2012, Jackson discusses some of the pitfalls of trying to
+cite software in publications~\cite{ssi-how-to-cite}. He includes useful
+guidance for when to consider citing software as well as some ways to help
+``convince'' journal editors to allow the inclusion of software citations.
 
-Wilson suggests that software authors include a \texttt{CITATION} file that documents exactly how the authors of the software would like to be cited by others~\cite{ssi-citation-files}. While this is not a formal metadata specification (e.g., it is not machine readable) this does offer a solution for authors wishing to give explicit instructions to potential citing authors and as noted in the motivation section (\S\ref{sec:intro}), there is evidence that authors follow instructions if they exist~\cite{10.1371/journal.pone.0136631}.
+Wilson suggests that software authors include a \texttt{CITATION} file that
+documents exactly how the authors of the software would like to be cited by
+others~\cite{ssi-citation-files}. While this is not a formal metadata
+specification (e.g., it is not machine readable) this does offer a solution for
+authors wishing to give explicit instructions to potential citing authors and as
+noted in the motivation section (\S\ref{sec:intro}), there is evidence that
+authors follow instructions if they exist~\cite{10.1371/journal.pone.0136631}.
 
-In a later post on the SSI blog, Jackson gives a good overview of some of the approaches
-package authors have taken to automate the generation of citation entities such as \textsc{Bib}\TeX\ entries~\cite{ssi-how-shalt-i-cite-thee},
-and Knepley et al.\ do similarly~\cite{knepley2013accurately}.
+In a later post on the SSI blog, Jackson gives a good overview of some of the
+approaches package authors have taken to automate the generation of citation
+entities such as \textsc{Bib}\TeX\ entries~\cite{ssi-how-shalt-i-cite-thee}, and
+Knepley et al.\ do similarly~\cite{knepley2013accurately}.
 
-While not usually expressed as software citation principles, a number of groups have developed community guidelines around software and data citation. Van de Sompel et al.~\cite{VandeSompel2004} argue for registration of all units of scholarly communication, including software. In ``Publish or be damned? An alternative impact manifesto for research software''~\cite{ssi-publish-or-be-damned}, Chue Hong lists nine principles as part of `The Research Software Impact Manifesto'.
+While not usually expressed as software citation principles, a number of groups
+have developed community guidelines around software and data citation. Van de
+Sompel et al.~\cite{VandeSompel2004} argue for registration of all units of
+scholarly communication, including software. In ``Publish or be damned? An
+alternative impact manifesto for research
+software''~\cite{ssi-publish-or-be-damned}, Chue Hong lists nine principles as
+part of ``The Research Software Impact Manifesto.''
 
 Perhaps in recognition of the broad range of research domains struggling with
 the challenge of better recognizing the role of software, a number of community
-efforts hosted (and sponsored) by funders and agencies in both the US (e.g., NSF,
-NIH, Alfred P.\ Sloan Foundation) and UK (e.g., SFTC, JISC, Wellcome Trust) have run a number of
-workshops with participants from across a range of disciplines.
+efforts hosted (and sponsored) by funders and agencies in both the US (e.g.,
+NSF, NIH, Alfred P.\ Sloan Foundation) and UK (e.g., SFTC, JISC, Wellcome Trust)
+have run a number of workshops with participants from across a range of
+disciplines.
 
 Most notable of the community efforts are those of WSSSPE~\cite{wssspe} and
 SSI~\cite{ssi-workshops}, who between them have run a series of workshops aimed
-at gathering together community members with an interest in 1) defining the set of problems
-related to the role of software and associated people in research settings, particularly academia,
-2) discussing potential solutions to those problems, and 3) beginning to work on implementing
-some of those solutions.
+at gathering together community members with an interest in
+\begin{enumerate*}[series=InlineList, before=\hspace{-0.6ex}]
+    \item defining the set
+of problems related to the role of software and associated people in research
+settings, particularly academia,
+    \item discussing potential solutions to those
+problems, 
+\item beginning to work on implementing some of those solutions.
+  \end{enumerate*}
 %\asnote{Not sure this is a sufficient one-line
 %summary but couldn't think of anything better.} \katznote{I've edited it a bit}
-In each of the three years that
-WSSSPE workshops have run thus far, the participants have produced a report~\cite{WSSSPE1,WSSSPE2,WSSSPE3}
-documenting the topics covered. Section 5.8 and Appendix J in the WSSSPE3 report~\cite{WSSSPE3}
-has some preliminary work and discussion particularly relevant to this working
-group.
-Up
-In addition, a number of academic publishers such as APA~\cite{APA-guidelines} have recommendations for submitting authors on how to cite software and journals such as F1000Research~\cite{F1000}, SoftwareX~\cite{softwareX}, and Open Research Computation~\cite{softwareX} allow for submissions entirely focussed on research software.
+In each of the three years that WSSSPE workshops have run thus far, the
+participants have produced a report~\cite{WSSSPE1,WSSSPE2,WSSSPE3} documenting
+the topics covered. Section~5.8 and Appendix~J in the WSSSPE3
+report~\cite{WSSSPE3} has some preliminary work and discussion particularly
+relevant to this working group.  In addition, a number of academic publishers
+such as APA~\cite{APA-guidelines} have recommendations for submitting authors on
+how to cite software and journals such as F1000Research~\cite{F1000},
+SoftwareX~\cite{softwareX}, and Open Research Computation~\cite{softwareX} allow
+for submissions entirely focussed on research software.
 
 \subsection{Domain-specific community activities}
 
-One approach to increasing the ``citability'' of software is to encourage the
+One approach to increasing software ``citability''   is to encourage the
 submission of papers in standard journals describing a piece of research
 software, often known as software papers (see \S\ref{sec:software_papers}).
-While some journals (e.g., Transactions on Mathematical Software [TOMS], Bioinformatics, Computer Physics Communications, F1000Research) have traditionally accepted
-software submissions, the American Astronomical Society (AAS) have recently
-announced they will accept software papers in their journals~\cite{aas-sofware-papers}.
-Professional societies are in a good position to change their respective communities, as the publishers of journals and conveners of domain-specific conferences; as publishers they can change editorial policies (as AAS has done) and conferences are an opportunity to communicate and discuss these changes with their communities.
+While some journals (e.g., Transactions on Mathematical Software (TOMS),
+Bioinformatics, Computer Physics Communications, F1000Research) have
+traditionally accepted software submissions, the American Astronomical Society
+(AAS) has recently announced they will accept software papers in their
+journals~\cite{aas-sofware-papers}. Professional societies are in a good
+position to change their respective communities, as the publishers of journals
+and conveners of domain-specific conferences; as publishers they can change
+editorial policies (as AAS has done) and conferences are an opportunity to
+communicate and discuss these changes with their communities.
 
 In astronomy and astrophysics: The Astronomy Source Code Library
 (ASCL)~\cite{ascl}, is a website dedicated to the curation and indexing of
 software used in the astronomy-based literature. In 2015, the AAS and GitHub
 co-hosted a workshop~\cite{aas-software-index} dedicated to software citation,
-indexing and discoverability and more recently, a Birds of a Feather session
-was held at the Astronomical Data Analysis Software and Systems (ADASS) XXV
+indexing and discoverability in astrophysics. More recently, a Birds of a Feather session was
+held at the Astronomical Data Analysis Software and Systems (ADASS) XXV
 conference~\cite{2015arXiv151207919A} which included discussion of software
 citation.
 
-In the life sciences: In May 2014, the NIH held a workshop aimed at helping the biomedical community discover, cite and reuse software written by their peers. The primary outcome of this workshop was the Software Discovery Index Meeting Report~\cite{software-discovery-index}. The authors of the report cite discuss what framework would be required for supporting a Software Discovery Index including the need for unique identifiers, how citations to these would be handled by publishers and the critical need for metadata to describe software packages.
+In the life sciences: In May 2014, the NIH held a workshop aimed at helping the
+biomedical community discover, cite, and reuse software written by their peers.
+The primary outcome of this workshop was the Software Discovery Index Meeting
+Report~\cite{software-discovery-index}. The authors of the report discuss
+what framework would be required for supporting a Software Discovery Index
+including the need for unique identifiers, how citations to these would be
+handled by publishers, and the critical need for metadata to describe software
+packages.
 
-In the geosciences: The Ontosoft~\cite{ontosoft} project describes itself as `A Community Software Commons for the Geosciences'. Lots of attention given to the metadata
-required to describe, discover and execute research software. NSF geosciences workshop around data lifecycle, management and citation~\cite{nsf-geo-data}. This report includes many recommendations for data citation.
-\LJHnote{ The Seismological Research Letters, Electronic Seismologists publishes papers on software.} %text needs to be cleaned up LJH%
+In the geosciences: The Ontosoft~\cite{ontosoft} project describes itself as ``A
+Community Software Commons for the Geosciences.'' Much attention was given to the
+metadata required to describe, discover, and execute research software. NSF sponsored
+Geo-Data Workshop 2011~\cite{nsf-geo-data} revolved around data lifecycle, management, and
+citation. The workshop report includes many recommendations for data
+citation. \LJHnote{ The Seismological Research Letters, Electronic Seismologists
+publishes papers on software.} %text needs to be cleaned up LJH% dy
 
 \subsection{Existing efforts around metadata standards}
 
-Producing detailed specifications and recommendations for possible metadata standards to support software citation was not within the scope of this working group. However some discussion on the topic did occur and there is significant interest in the wider community to produce standards for describing research software.
+Producing detailed specifications and recommendations for possible metadata
+standards to support software citation was not within the scope of this working
+group. However some discussion on the topic did occur and there was significant
+interest in the wider community to produce standards for describing research
+software metadata.
 
-Notable examples around metadata include DOAP~\cite{DOAP}, an early metadata term set used by the Open Source Community, as well as more recent community efforts like the AAS workshop~\cite{aas-software-index}, Project CRediT~\cite{casrai-credit}, Ontosoft~\cite{ontosoft}, CodeMeta~\cite{codemeta}, or the terms and classes defined at \url{schema.org} related to the \url{https://schema.org/SoftwareApplication} class.
+Notable examples around metadata include DOAP~\cite{DOAP}, an early metadata
+term set used by the Open Source Community, as well as more recent community
+efforts like the AAS workshop~\cite{aas-software-index}, Project
+CRediT~\cite{casrai-credit}, Ontosoft~\cite{ontosoft}, CodeMeta~\cite{codemeta},
+or the terms and classes defined at \href{https://schema.org}{www.schema.org} related to the
+\href{https://schema.org/SoftwareApplication}{\texttt{SoftwareApplication}} class.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion}
