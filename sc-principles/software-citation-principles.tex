@@ -297,22 +297,25 @@ tenure-track faculty member) and research software engineers.
 and\slash or software papers as well as archives such as Zenodo that directly
 publish software.
 
-\item ``Repository'' refers to public software repositories such as Astronomy
-Source Code Library (ASCL)~\cite{ascl}, GitHub, Netlib, Comprehensive R Archive
-Network (CRAN), institutional repositories.
-
 \item ``Funder'' is a group that funds software or work using software.
 
 \item ``Indexer'' examples include Scopus, Web of Science, Google Scholar,
 and Microsoft Academic Search.
 
-\item ``Domain group'' includes bioCADDIE~\cite{bioCADDIE}, Computational
-Infrastructure for Geodynamics (CIG)~\cite{CIG}, etc..
+\item ``Domain group\slash library\slash archive'' includes the Astronomy Source Code Library (ASCL)~\cite{ascl}, 
+bioCADDIE~\cite{bioCADDIE}, Computational Infrastructure for Geodynamics (CIG)~\cite{CIG}, libraries, institutional archives, etc.
 
-\item ``Unique identifier'' refers to identifiers such as a DOI, ARK, or PURL.
+\item ``Repository'' refers to public software repositories such as GitHub, Netlib, Comprehensive R Archive
+Network (CRAN), and institutional repositories.
 
-\item``Reproduce'' can mean reproduction, replication, verification, validation,
-repeatability, and\slash or utility.
+\item ``Unique identifier'' refers to unique, persistent, and machine-actionable identifiers such as a DOI, ARK, or PURL.
+
+\item ``Reproduce'' can mean actions focused on reproduction, replication, verification, validation, repeatability, and\slash or utility.
+
+\item ``Citation manager`` refers to people and organizations that create scholarly reference 
+management software and websites including Zotero, Mendeley, EndNote, RefWorks, BibDesk, etc., 
+that manage citation information and semi-automatically insert those citations into research products.
+
 \end{itemize}
 
 \newcommand*\rot[1]{\begin{turn}{90} #1 \end{turn}}%
@@ -336,24 +339,24 @@ repeatability, and\slash or utility.
 \toprule
  & & \multicolumn{9}{c}{Requirements} \\
  \cmidrule{3-11}
-Stakeholder & wants to 	&  \rot{Software name} & \rot{Author(s)} & \rot{Version number} & \rot{Release date} & \rot{Location\slash repository} & \rot{Unique identifier} & \rot{Indexed citations} & \rot{Contributor role} & \rot{Software license}  \\
+Stakeholder & wants to 	& \rot{Unique identifier} &  \rot{Software name} & \rot{Author(s)} & \rot{Contributor role} & \rot{Version number} & \rot{Release date} & \rot{Location\slash repository} & \rot{Indexed citations} & \rot{Software license}  \\
 \midrule
-Researcher            & use someone else's software for a paper      & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &             &             & \textbullet \\
-Researcher            & use someone else's software for new software & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &             &             & \textbullet \\
-Researcher            & contribute to software                   & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet\\
-Researcher            & find citations of software               & \textbullet &             &             &             &             & \textbullet & \textbullet &            & \\
-Researcher            & get credit for software development          & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet  \\
-Researcher            & ``reproduce'' analysis                   & \textbullet &             & \textbullet & \textbullet & \textbullet & \textbullet &             &            & \textbullet \\
-Researcher            & benchmark software                       & \textbullet &             & \textbullet & \textbullet & \textbullet & \textbullet &             &            & \textbullet \\
-Researcher            & find software to implement task          & \textbullet & \textbullet &             &             & \textbullet & \textbullet & \textbullet &             & \textbullet \\
-Publisher                  & publish software paper                   & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &             &             & \\
-Publisher                  & publish papers that cite software        & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &             & \\
-Indexer                     & build catalog of software               & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &            & \textbullet \\
-Domain group           & build catalog of software                & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &             &            & \textbullet \\
-Library\slash archive  & build catalog of software                & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &             &            & \textbullet \\
-Repository                 & show scientific impact of holdings       & \textbullet &             &             &             &             & \textbullet & \textbullet &             &             \\
-Funder                       & show how funded software has been used   & \textbullet &             &             &             &             & \textbullet & \textbullet &             &             \\
-Evaluator                   & evaluate contributions of researcher   &                  & \textbullet &             & \textbullet &             & \textbullet & \textbullet & \textbullet &             \\
+Researcher            & 1.\ use someone else's software for a paper      & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet &             &             \\
+Researcher            & 2.\ use someone else's software for new software & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet &             & \textbullet \\
+Researcher            & 3.\ contribute to software                   & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet &             & \textbullet \\
+Researcher            & 4.\ find citations of software               & \textbullet & \textbullet &             &             &             &             &             & \textbullet &             \\
+Researcher            & 5.\ get credit for software development      & \textbullet & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet &             & \textbullet \\
+Researcher            & 6.\ ``reproduce'' analysis                   & \textbullet & \textbullet &             &             & \textbullet & \textbullet & \textbullet &             & \textbullet \\
+Researcher            & 7.\ benchmark software                       & \textbullet & \textbullet &             &             & \textbullet & \textbullet & \textbullet &             & \textbullet \\
+Researcher            & 8.\ find software to implement task          & \textbullet & \textbullet & \textbullet &             &             &             & \textbullet & \textbullet & \textbullet \\
+Publisher             & 9.\ publish software paper                   & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet &             &             \\
+Publisher             & 10.\ publish papers that cite software        & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet & \textbullet &             \\
+Indexer               & 11.\ build catalog of software                & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet & \textbullet & \textbullet \\
+Domain group\slash library\slash archive          & 12.\ build software catalog\slash registry                & \textbullet & \textbullet & \textbullet &             &             &             & \textbullet &             &             \\
+Repository            & 13.\ show scientific impact of holdings       & \textbullet & \textbullet &             &             &             &             &             & \textbullet &             \\
+Funder                & 14.\ show how funded software has been used   & \textbullet & \textbullet &             &             &             &             &             & \textbullet &             \\
+Evaluator             & 15.\ evaluate contributions of researcher     & \textbullet &             & \textbullet & \textbullet &             & \textbullet &             & \textbullet &             \\
+Citation manager      & 16.\ store software entry        			 & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet & \textbullet &             \\
 \bottomrule
 \end{tabular}
 \label{tab:use_cases}
