@@ -62,7 +62,6 @@ If you are interested in joining the group, please:
 | Alberto Accomazzi ([@aaccomazzi](https://github.com/aaccomazzi)) | Harvard-Smithsonian CfA | Participant |
 | Alice Allen ([@owlice](https://github.com/owlice)) | Astrophysics Source Code Library | Participant |
 | Micah Altman ([@maltman](https://github.com/maltman)) | Program on Information Science, MIT | Participant |
-
 | Jay Jay Billings ([@jayjaybillings](https://github.com/jayjaybillings)) | Oak Ridge National Laboratory | Participant |
 | Carl Boettiger ([@cboettig](https://github.com/cboettig)) | UC Berkeley | Participant |
 | Jed Brown ([@jedbrown](https://github.com/jedbrown)) | CU Boulder | Participant |
