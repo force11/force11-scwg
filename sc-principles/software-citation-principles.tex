@@ -498,12 +498,18 @@ group. However some discussion on the topic did occur and there was significant
 interest in the wider community to produce standards for describing research
 software metadata.
 
-Notable examples around metadata include DOAP~\cite{DOAP}, an early metadata
+Content specifications for software metadata vary across communities, and include 
+include DOAP~\cite{DOAP}, an early metadata
 term set used by the Open Source Community, as well as more recent community
 efforts like the AAS workshop~\cite{aas-software-index}, Project
-CRediT~\cite{casrai-credit}, Ontosoft~\cite{ontosoft}, CodeMeta~\cite{codemeta},
+CRediT~\cite{casrai-credit}, Ontosoft~\cite{ontosoft}, 
 or the terms and classes defined at \href{https://schema.org}{www.schema.org} related to the
-\href{https://schema.org/SoftwareApplication}{\texttt{SoftwareApplication}} class.
+\href{https://schema.org/SoftwareApplication}{\texttt{SoftwareApplication}} class.   In addition, 
+language-specific software metadata schemes are in widespread use, including the Debian 
+package format~\cite{Debian_policy}, Python package descriptions~\cite{pypi}, and R package descriptions~\cite{wickham_r_2015}, but these are typically
+conceived for software build, packaging,and distribution rather than citation.  CodeMeta~\cite{codemeta} 
+has created a crosswalk among these software metadata schemes and an exchange format that 
+allows software repositories to effectively interoperate.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion}
