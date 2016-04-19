@@ -332,6 +332,11 @@ that manage citation information and semi-automatically insert those citations i
 
 \end{itemize}
 
+All use cases assume the existence of a citable software object, typically created by the authors\slash developers of the software.
+Developers can achieve this by, e.g., uploading a software release to Figshare or Zenodo~\cite{github-citable-code-guide} to obtain a DOI.
+Necessary metadata should then be included in a \texttt{CITATION} file~\cite{ssi-citation-files} or machine-readable \texttt{CITATION.jsonld} file~\cite{transitive_credit_json-ld}.
+When software is not freely available (e.g., commercial software), alternative means may be used to create citable objects via identifiers such as RRIDs, although these topics are discussed more in \S\ref{sec:identification} and \S\ref{sec:access}.
+
 \newcommand*\rot[1]{\begin{turn}{90} #1 \end{turn}}%
 \rowcolors{4}{gray!25}{white}
 \begin{table}[tbhp]
@@ -582,6 +587,7 @@ This set of software citation principles, if followed, will cause the number of 
 limits.
 
 \subsection{Unique identification}
+\label{sec:identification}
 
 The Unique Identification principle~(\ref{principle:uid}) calls for ``a method for identification that is machine actionable, globally unique, interoperable, and recognized by a community.''
 What this means for data is discussed in detail in the ``Unique Identification'' section of a report by the FORCE11 Data Citation Implementation Group (DCIG)~\cite{10.7717/peerj-cs.1}, which calls for ``unique identification in a manner that is machine-resolvable on the Web and demonstrates a long-term commitment to persistence.''
@@ -625,6 +631,7 @@ as source code.  However, we recognize that some software is only available as a
 
 
 \subsection{Access to software}
+\label{sec:access}
 
 The Accessibility principle (\ref{principle:accessibility}) states that ``software citations should permit and facilitate access to the software itself.''
 This does not mean that the software must be freely available.
