@@ -81,6 +81,7 @@ If you are interested in joining the group, please:
 | Robert Hanisch ([@rjhanisch](https://github.com/rjhanisch)) | NIST/ODI | Participant |
 | Edwin Henneken ([@ehenneken](https://github.com/ehenneken)) | Harvard-Smithsonian CfA | Participant |
 | Ivan Herman ([@iherman](https://github.com/iherman)) | W3C | Participant |
+| Konrad Hinsen ([@khinsen](https://github.com/khinsen)) | CNRS | Participant |
 | James Howison ([@jameshowison](https://github.com/jameshowison)) | UTexas | Participant |
 | Lorraine Hwang ([@ljhwang](https://github.com/ljhwang)) | UC Davis| Participant |
 | Thomas Ingraham ([@tingraham](https://github.com/tingraham)) | F1000Research | Participant |
