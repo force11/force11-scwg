@@ -29,11 +29,11 @@ Comments made via Hypothesis on the principles:
 
 GitHub issues:
 
- * #143: On persistence of identifier vs. persistence of software: The persistence principle outlined in (4) is a key element in making software citeable. Where software has become part of the record of science not only the identifier and metadata of the software should be persistent, it should also be the goal to keep a persistent copy of the source code, where applicable. This links with the accessibility principle (5).
+ * On persistence of identifier vs. persistence of software (#143): The persistence principle outlined in (4) is a key element in making software citeable. Where software has become part of the record of science not only the identifier and metadata of the software should be persistent, it should also be the goal to keep a persistent copy of the source code, where applicable. This links with the accessibility principle (5).
 
  There are still many open questions about how to resolve package dependencies in the long term, therefore I would not make the persistent access to code a hard requirement but may add something more specific towards preserving the record of science.
 
- * #140: Granularity of the citation: one of the key issues with any citation, whether document, individual, or software is the specificity of what is being cited. in the case of publications, there is almost zero specificity most of the time.
+ * Granularity of the citation (#140): one of the key issues with any citation, whether document, individual, or software is the specificity of what is being cited. in the case of publications, there is almost zero specificity most of the time.
 
  it's very easy to cite an entire package even though one function was used. part of this problem is being solved in the Python world through this project (https://github.com/duecredit/duecredit).
 
@@ -41,7 +41,7 @@ GitHub issues:
 
  the citation/url should therefore allow for greater specificity within a code base. in general though, a provenance record of the workflow would be significantly more useful than a citation from a research perspective.
 
- * #138: "Software citations should permit ... access to the software itself": Under the "Access" header, the data declaration states that:
+ * "Software citations should permit ... access to the software itself" (#138): Under the "Access" header, the data declaration states that:
 
  > "Data citations should facilitate access to the data themselves"
 
@@ -53,7 +53,7 @@ GitHub issues:
 
  It doesn't seem like a good idea to make access a requirement for discovery, so "permit" might not be helpful in this sentence.
 
- * #137: Access to software: free vs commercial: The section talks about software that is “free” as well as “commercial” software. I am not sure whether this is about free as in freedom (or just gratis or freely available), since it is compared with commercial software, which is unrelated in general, see http://www.gnu.org/philosophy/words-to-avoid.html#Commercial
+ * Access to software: free vs commercial (#137): The section talks about software that is “free” as well as “commercial” software. I am not sure whether this is about free as in freedom (or just gratis or freely available), since it is compared with commercial software, which is unrelated in general, see http://www.gnu.org/philosophy/words-to-avoid.html#Commercial
 
  I suppose that “free” should be replaced by “gratis” and “commercial” be replaced by “non-free” in that section.
 
