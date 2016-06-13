@@ -111,3 +111,6 @@ Here we will address these comments or discuss planned changes in response to th
  https://gist.github.com/mhucka/44921ea1e9a01697dbd0591d872b7b22
 
  **Our response:** 
+
+Thanks - this is helpful.  We've added this link to the bibliography as well.
+
