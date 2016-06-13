@@ -36,6 +36,7 @@ Here we will address these comments or discuss planned changes in response to th
 
  **Our response:**
 
+ We've made the bullet more general, just about credit, discussing academic credit and adding a sentence about non-academic credit as well.
 
 
 
