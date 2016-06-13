@@ -1,5 +1,7 @@
+This document contains comments made by the FORCE11 community on the draft Software Citation Principles, either directly on the [posted draft document](https://www.force11.org/software-citation-principles), via [GitHub issues](https://github.com/force11/force11-scwg/issues), or sent via email.
+Here we will address these comments or discuss planned changes in response to them.
 
-Comments made via Hypothesis on the principles:
+## Comments made via Hypothesis on the principles:
 
  * On unique identification: I know this suggestion of a single unique identifier comes from the DOI perspective where it works pretty well, but I'm wondering if something different in the way of identification should be used for software. For creative works generally there is the FRBR model - https://en.wikipedia.org/wiki/Functional_Requirements_for_Bibliographic_Records - which defines several levels for a creative entity - "work", "expression", "manifestation", and "item". I think something along these lines are particularly relevant for software - it is useful to be able to locate all uses of a particular piece of software no matter what version (the "work" level - software identified by a particular name and purpose over a period of time), but it is also important to specify the particular version used in any given work ("expression" - the source code at the time of use) and in some cases also the platform ("manifestation" - the compiled bytes including libraries, for example a docker image). "Item" probably isn't relevant for software. That is, I think a software citation perhaps could use THREE distinct unique identifiers, one for the work itself, one for the specific version (source code), and possibly an additional one for the actual downloadable binary image that can be run. Rather than leave it implicit I think recognizing the different levels of citable record would be helpful here. #F11SC
 
@@ -27,7 +29,7 @@ Comments made via Hypothesis on the principles:
  * Additional thoughts (not sure what section this applies to): The principles do not address virtual machines. As these are becoming more common and relevant when addressing the reproducibility of research, it is important this “form” of software is acknowledged. The question remains in which cases should authors cite the current version, which the static archived version, and in which the virtual machine? In this way software is very much a unique evolving research object and might not fit perfectly into the same citation practices and structure as other research objects. In addition, software citation could possibly occur within the virtual machine. This could be added as a use case.
 
 
-GitHub issues:
+## GitHub issues:
 
  * On persistence of identifier vs. persistence of software (#143): The persistence principle outlined in (4) is a key element in making software citeable. Where software has become part of the record of science not only the identifier and metadata of the software should be persistent, it should also be the goal to keep a persistent copy of the source code, where applicable. This links with the accessibility principle (5).
 
@@ -57,7 +59,8 @@ GitHub issues:
 
  I suppose that “free” should be replaced by “gratis” and “commercial” be replaced by “non-free” in that section.
 
-From Mike Hucka:
+## From Mike Hucka:
+
  1. On the topic of persistent identifiers: we've faced similar problems in the area of biology.  An example situation is that annotations within a computational model point to data references, but the physical locations of those data items may change; the models can't reasonably be updated all the time, so we needed a scheme for uniform persistent identifiers that get resolved to the right thing.  Some close colleagues of mine developed http://identifiers.org for this purpose.  It was then natural to use this machinery when we developed a scheme for identifying the specifications for data formats in COMBINE: http://co.mbine.org/standards/specification-infrastructure . What struck me while reading Section 5.7 in your paper is that the same approach could be used to identify software, both specific versions as well as the software in general.
 
  What I imagine is creating identifiers along the following lines, as a start:
