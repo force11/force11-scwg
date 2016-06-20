@@ -117,6 +117,7 @@ If you are interested in joining the group, please:
 | Stijn Van Hoey ([@StijnVanHoey](https://github.com/stijnvanhoey)) | Ghent University | Participant |
 | Belinda Weaver ([@weaverbel](https://github.com/weaverbel)) | The University of Queensland | Participant |
 | Nic Weber ([@nniiicc](https://github.com/nniiicc)) | University of Washington iSchool | Participant |
+| Marijane White ([@marijane](https://github.com/marijane)) | OHSU | Participant |
 | Qian Zhang ([@paopao74cn](https://github.com/paopao74cn)) | University of Illinois | Participant|
 
 (this list is in alphabetic order by surname; please keep it that way when making additions)
