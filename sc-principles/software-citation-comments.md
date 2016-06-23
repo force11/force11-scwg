@@ -7,25 +7,21 @@ Here we will address these comments or discuss planned changes in response to th
 
  Reply: I interpret the requirement for 'global uniqueness' as referring to the identifier itself. Two different people can have the same name (not globally unique) but cannot share a single ORCID (globally unique). Global uniqueness of the identifier does not preclude multiple identifiers pointing to the same person. I think the suggestion of differentiating between different software expressions/manifestations/items is a reasonable one, but I don't think it relaxes the requirement for identifiers to be globally unique.
 
- **Our response:**
-
-
+ **Our response:** We agree that there are valid points here, but on balance we don't feel that the rewards from implementing this outweigh the practical challenges.
 
 
  * On accessibility: Should this document address this in further detail? For example, "permit and facilitate access" could be explored further. Should this be done through open access licensing? repositories? who's responsible for providing this access?
 
  I am also wondering if this is a separate issue since "citing" traditionally pointed to publications but did not necessarily address access. DOI, for example is stated, but doesn't guarantee "access", so does this simply restating point 3, or should it provide something new?
 
- **Our response:**
+ **Our response:** We agree that accessibility should receive further attention, which the follow-on group focusing on implementation will provide. However, this is out of scope for the document outlining the principles.
 
-
+ To the second point, accessibility provides information about access, but does not guarantee access itself (e.g., paywalled article).
 
 
  * On specificity: I am wondering if this should be folded into number 3 "Unique Identification". Both seem to deal with the issue of identification and access.
 
- **Our response:**
-
-
+ **Our response:** A unique software identifier *can* point to the specific version/variant of software, but it can also identify other things (collection of versions, repository, etc.), while this principle deals with the need to identify the specific version of software used (via citation).
 
 
  * On academic credit: A lot of software that were developed by non-academic engineers also contribute to academic research indirectly. Their names and contributions should also be credited. So removing "Academic" makes more sense?
@@ -37,31 +33,26 @@ Here we will address these comments or discuss planned changes in response to th
  **Our response:**  We've made the bullet more general, just about credit, discussing academic credit and adding a sentence about non-academic credit as well.
 
 
-
  * On citations in text: Although the focus here is on citations in the references, as a publisher, our experience is that most common practice of “citation” of data and software for authors is typically in the main body of the text. In order to encourage software to be treated and valued as a first-class research object, it is important that citations to it be positioned in the references as citations to articles and books are. However, it would be a missed opportunity if we did not leverage current practices of authors. This will also likely arise during implementation, as it has for the Data Citation Implementation Publisher Early Adopters Pilot. This could be addressed in future work on implementation.
 
- **Our response:**
-
-
+ **Our response:** In the principles, we propose that software should be cited in the references list, to recognize the primary role of software in research. However, this practice is not mutually exclusive with *also* referencing/citing software in the main body of a paper—as long as the software is cited in the references.
 
 
  * On unique identification: Clearer instructions will be needed for authors on which version to cite. For BioMed Central journals, we ask authors to cite two versions of the software, an archived version (eg on Zenodo) as well as the current version (eg on GitHub). This is to ensure accessibility. However, if repositories and archives were to include a persistent link to the current version of the software, publishers could then instruct authors to cite only software with a UID, which wouldn’t point to a current version, but would point to the version(s) used and would be a more accurate version of scientific record. Related to this point is the idea of group object identifiers. A need for group identifiers has been identified in the area of data (eg in the case of meta-analyses), and one could also identify a use case for these in the case of software, collecting metadata around all versions of a given software package. See blog here (https://blog.datacite.org/to-better-understand-research-communication-we-need-a-groid-group-object-identifier/).
 
- **Our response:**
-
-
+ **Our response:** We recommend citing the specific version of the software that was used. We expect that the unique identifier (e.g., DOI) will point to a landing page that directs to the repository/current version. However, this is more of a convenience issue that the software developers should address, rather than the author citing the software they used.
 
 
  * On future work: For implementation we would recommend both consulting with adopters as well as developing metadata standards simultaneously rather than developing metadata standards and then pursuing early adopters implementation. The work early adopters are doing now for data citation will be able to be leveraged for software citation and the changes needed to do so could happen now. There is no need to wait on approval of new tagging for a specific metadata standard. Many publishers will have their own preferred metadata standards and so implementation could begin now with publishers, as long as we know what we want to capture. Future implementation groups might also consider levels of contribution. This is particularly relevant for software. Who is considered an author? For example, to what extent should authors of pull requests receive attribution? This might be considered in an FAQs group, or possibly an early adopters group.
 
- **Our response:**
+ **Our response:** We agree that metadata standards should be developed with the input of adopters, and have updated this text accordingly.
 
 
 
 
  * Additional thoughts (not sure what section this applies to): The principles do not address virtual machines. As these are becoming more common and relevant when addressing the reproducibility of research, it is important this “form” of software is acknowledged. The question remains in which cases should authors cite the current version, which the static archived version, and in which the virtual machine? In this way software is very much a unique evolving research object and might not fit perfectly into the same citation practices and structure as other research objects. In addition, software citation could possibly occur within the virtual machine. This could be added as a use case.
 
- **Our response:**
+ **Our response:** We feel this has been addressed in Section 5.8, with the explicit addition of virtual machines in addition to executables and containers. This is also an issue that should be addressed further by the follow-on implementation working group.
 
 
 
@@ -73,9 +64,7 @@ Here we will address these comments or discuss planned changes in response to th
 
  There are still many open questions about how to resolve package dependencies in the long term, therefore I would not make the persistent access to code a hard requirement but may add something more specific towards preserving the record of science.
 
- **Our response:**
-
-
+ **Our response:** Our goal is for software citations to point to (persistent) archived source code, but we are not—nor could we—require this.
 
 
  * Granularity of the citation (#140): one of the key issues with any citation, whether document, individual, or software is the specificity of what is being cited. in the case of publications, there is almost zero specificity most of the time.
@@ -86,7 +75,7 @@ Here we will address these comments or discuss planned changes in response to th
 
  the citation/url should therefore allow for greater specificity within a code base. in general though, a provenance record of the workflow would be significantly more useful than a citation from a research perspective.
 
- **Our response:**
+ **Our response:** We agree that greater specificity is desirable in some cases, but we do not believe this rises to the level of what should be specified or discussed in the principles at this time.
 
 
 
@@ -103,7 +92,7 @@ Here we will address these comments or discuss planned changes in response to th
 
  It doesn't seem like a good idea to make access a requirement for discovery, so "permit" might not be helpful in this sentence.
 
- **Our response:**
+ **Our response:** To avoid confusion, we removed "permit and" from the accessibility principle.
 
 
 
@@ -112,41 +101,4 @@ Here we will address these comments or discuss planned changes in response to th
 
  I suppose that “free” should be replaced by “gratis” and “commercial” be replaced by “non-free” in that section.
 
- **Our response:**
-
-
-
-
-## From Mike Hucka:
-
- 1. On the topic of persistent identifiers: we've faced similar problems in the area of biology.  An example situation is that annotations within a computational model point to data references, but the physical locations of those data items may change; the models can't reasonably be updated all the time, so we needed a scheme for uniform persistent identifiers that get resolved to the right thing.  Some close colleagues of mine developed http://identifiers.org for this purpose.  It was then natural to use this machinery when we developed a scheme for identifying the specifications for data formats in COMBINE: http://co.mbine.org/standards/specification-infrastructure . What struck me while reading Section 5.7 in your paper is that the same approach could be used to identify software, both specific versions as well as the software in general.
-
- What I imagine is creating identifiers along the following lines, as a start:
-
- http://identifiers.org/software/name
- http://identifiers.org/software/name.X
- http://identifiers.org/software/name.X.Y
- http://identifiers.org/software/name.X.Y.Z
-
- For instance (this does not exist -- just to illustrate the line of thinking):
-
- http://identifiers.org/software/libsbml
- http://identifiers.org/software/libsbml.5
- http://identifiers.org/software/libsbml.5.13
- http://identifiers.org/software/libsbml.5.13.0
-
- Since identifiers.org id's are both unique identifiers (in the URI sense) and resolvable (in the URL sense), they could be both the identifier of the software as well as a way for people to click on links and be sent to locations where the software is found (or alternatively, described somehow).
-
- The above examples are obviously incomplete in terms of a scheme -- this is just an initial idea, and I only mean to bring it up as something that could potentially be done.  I'd be interested in pursuing this further if you are interested.
-
- **Our response:**
-
-
-
-
- 2. On p.6, the paper mentions the NIH Software Discovery Index meeting report, but the online copy of the report is a poor copy of what used to be online.  I happened to have saved a copy of the report as PDFs of the web pages shortly before the end of the NIH comment period.  In case it's of any use to anyone, I put a copy here:
-
- https://gist.github.com/mhucka/44921ea1e9a01697dbd0591d872b7b22
-
- **Our response:**  Thanks - this is helpful.  We've added this link to the bibliography as well.
-
+ **Our response:** We think this is sufficiently clear as written.
