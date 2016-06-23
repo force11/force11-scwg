@@ -336,7 +336,7 @@ that manage citation information and semi-automatically insert those citations i
 \end{itemize}
 
 All use cases assume the existence of a citable software object, typically created by the authors\slash developers of the software.
-Developers can achieve this by, e.g., uploading a software release to Figshare or Zenodo~\cite{github-citable-code-guide} to obtain a DOI.
+Developers can achieve this by, e.g., uploading a software release to Figshare~\cite{figshare} or Zenodo~\cite{github-citable-code-guide} to obtain a DOI.
 Necessary metadata should then be included in a \texttt{CITATION} file~\cite{ssi-citation-files} or machine-readable \texttt{CITATION.jsonld} file~\cite{transitive_credit_json-ld}.
 When software is not freely available (e.g., commercial software) or when there is no clear identifier
 to use, alternative means may be used to create citable objects as discussed in \S\ref{sec:access}.
@@ -647,6 +647,16 @@ Rather, the metadata should provide enough information that the software can be 
 If the software is free, the metadata will likely provide an identifier that can be resolved to a URL pointing to the specific version of the software being cited.
 For commercial software, the metadata should still provide information on how to access the specific software, but this may be a company's product number or a link to a web site that allows the software be purchased.
 As stated in the Persistence principle~(\ref{principle:persistence}), we recognize that the software version may no longer be available, but it still should be cited along with information about how it was accessed.
+
+\subsection{What identifier should resolve to}
+
+While citing an identifier that points to, e.g., a GitHub repository can satisfy the principles of Unique Identification (3), Accessibility (5), and Specificity (6), such a repository cannot guarantee Persistence (4).
+\textit{Therefore, we recommend that the software identifier should resolve to a persistent landing page that shows metadata and a link to the software itself, rather than directly to the source code files, repository, or executable.}
+This ensures longevity of the software metadata---even perhaps beyond the lifespan of the software they describe.
+This is currently offered by services such as Figshare~\cite{figshare} and Zenodo~\cite{github-citable-code-guide}, which both generate persistent DataCite DOIs for submitted software.
+In addition, such landing pages can contain both human-readable metadata (e.g., the types shown by Table~\ref{tab:use_cases}) as well as content-negotiable formats such as RDF or DOAP~\cite{DOAP}.
+
+% issue 144
 
 
 %\LJHnote{recognize that some software is proprietary, not all is open source}
