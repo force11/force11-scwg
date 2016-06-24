@@ -135,7 +135,7 @@ should facilitate access to the software itself and to its
 associated metadata, documentation, data, and other materials necessary
 for both humans and machines to make informed use of the referenced software.
 
-\item \textbf{Specificity}: Software citations should facilitate identification
+\item \textbf{Specificity}: \label{principle:specificity} Software citations should facilitate identification
 of, and access to, the specific version of software that was used. Software
 identification should be as specific as necessary, such as using version
 numbers, revision numbers, or variants such as platforms.
@@ -648,10 +648,10 @@ If the software is free, the metadata will likely provide an identifier that can
 For commercial software, the metadata should still provide information on how to access the specific software, but this may be a company's product number or a link to a web site that allows the software be purchased.
 As stated in the Persistence principle~(\ref{principle:persistence}), we recognize that the software version may no longer be available, but it still should be cited along with information about how it was accessed.
 
-\subsection{What identifier should resolve to}
+\subsection{What an identifier should resolve to}
 
-While citing an identifier that points to, e.g., a GitHub repository can satisfy the principles of Unique Identification (3), Accessibility (5), and Specificity (6), such a repository cannot guarantee Persistence (4).
-\textit{Therefore, we recommend that the software identifier should resolve to a persistent landing page that shows metadata and a link to the software itself, rather than directly to the source code files, repository, or executable.}
+While citing an identifier that points to, e.g., a GitHub repository can satisfy the principles of Unique Identification (\ref{principle:uid}), Accessibility (\ref{principle:accessibility}), and Specificity (\ref{principle:specificity}), such a repository cannot guarantee Persistence (\ref{principle:persistence}).
+\textit{Therefore, we recommend that the software identifier should resolve to a persistent landing page that contains metadata and a link to the software itself, rather than directly to the source code files, repository, or executable.}
 This ensures longevity of the software metadata---even perhaps beyond the lifespan of the software they describe.
 This is currently offered by services such as figshare~\cite{figshare} and Zenodo~\cite{github-citable-code-guide}, which both generate persistent DataCite DOIs for submitted software.
 In addition, such landing pages can contain both human-readable metadata (e.g., the types shown by Table~\ref{tab:use_cases}) as well as content-negotiable formats such as RDF or DOAP~\cite{DOAP}.
