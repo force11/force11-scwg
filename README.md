@@ -83,6 +83,7 @@ If you are interested in joining the group, please:
 | Ivan Herman ([@iherman](https://github.com/iherman)) | W3C | Participant |
 | Konrad Hinsen ([@khinsen](https://github.com/khinsen)) | CNRS | Participant |
 | James Howison ([@jameshowison](https://github.com/jameshowison)) | UTexas | Participant |
+| Michael Hucka ([@mhucka](https://github.com/mhucka)) | Caltech | Participant |
 | Lorraine Hwang ([@ljhwang](https://github.com/ljhwang)) | UC Davis| Participant |
 | Thomas Ingraham ([@tingraham](https://github.com/tingraham)) | F1000Research | Participant |
 | Matthew B. Jones ([@mbjones](https://github.com/mbjones)) | NCEAS, UC Santa Barbara | Participant |
