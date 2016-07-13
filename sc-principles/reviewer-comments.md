@@ -46,7 +46,9 @@ The use cases described in Section 3 form the main method to answer the implicit
 ## Validity of the findings
 
 As noted above, the logical structure of the paper is unclear, and therefore it is not clear what exactly the main findings are. I think the main findings should be the principles stated in the beginning, and the use cases would then form the main method to arrive at these findings. Alternatively, one could label the principles as "assumptions" and apply the use case study to validate these assumptions. In any case, I think the findings are valid but they should be labeled as preliminary, as it is not possible to arrive at a final conclusion for such kinds of questions. Only the future can tell whether software citations really work out.
-Comments for the Author
+
+## Comments for the Author
+
 Below are some more specific comments.
 
  - line 88: "which will be presented ..." > "which was presented ..."
