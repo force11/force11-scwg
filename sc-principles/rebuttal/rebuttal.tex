@@ -45,6 +45,10 @@
 
 \usepackage{url,breakurl}
 
+\newcommand{\katznote}[1]{ {\textcolor{blue} { ***DSK: #1 }}} % Dan
+\newcommand{\niemnote}[1]{ {\textcolor{orange} { ***KEN: #1 }}} % Kyle
+\newcommand{\asnote}[1]{ {\textcolor{red} { ***AMS: #1 }}} %Arfon
+
 \usepackage{todonotes}
 
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
@@ -61,7 +65,8 @@
 \begin{document}
 
 We thank the editor and reviewers for their helpful comments, and have addressed their requests and questions here.
-Specific changes or additions in the marked revision in response to the Editor, Reviewer \#1, and Reviewer \#2 are respectively highlighted in the marked manuscript in \hly{yellow}, \hlb{blue}, and \hlg{green}.
+Specific changes or additions can be found in the marked revision.
+% in response to the Editor, Reviewer \#1, and Reviewer \#2 are respectively highlighted in the marked manuscript in \hly{yellow}, \hlb{blue}, and \hlg{green}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -73,42 +78,44 @@ Specific changes or additions in the marked revision in response to the Editor, 
 
 \emph{However, there are some aspects that should be clarified in the revision. In particular:}
 
-\textbf{Comment:}
+\begin{enumerate}
+\item  \textbf{Comment:}
+%\textbf{1. Comment:}
 \emph{I would like to see a new section that describes the presentation of these principles at FORCE 2016, and includes also a summary of the most important outcomes derived from the discussion the authors have done during the conference. Did such outcomes change some of the principles and/or other claims in this paper?}
 
 \textbf{Our response:}
 
 
 
-\textbf{Comment:}
+\item \textbf{Comment:}
 \emph{The link between the principles and the requirements should be introduced explicitly, since it is not entirely clear how ones are connected to the others.}
 
 \textbf{Our response:}
 
 
 
-\textbf{Comment:}
+\item \textbf{Comment:}
 \emph{A clear research question should be announced explicitly from the very beginning, and accompanied by a text that explains how the authors would like to address it.}
 
 \textbf{Our response:}
 
 
 
-\textbf{Comment:}
+\item \textbf{Comment:}
 \emph{I suggest to include one or more appendixes with all the details about the use cases presented. This would make the paper more self-contained.}
 
 \textbf{Our response:}
+\niemnote{I will add the full use cases text as an appendix}
 
 
-
-\textbf{Comment:}
+\item \textbf{Comment:}
 \emph{The reviewers did not agree on some aspects described in the paper, e.g. "if the software authors ask that a paper should be cited, that should typically be respected". I would like to see an appropriate discussion on these points, so as to clearly address these disagreements.}
 
 \textbf{Our response:}
 
 
 
-
+\end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -119,155 +126,161 @@ Specific changes or additions in the marked revision in response to the Editor, 
 
 \emph{While I think this is a very useful paper, I see the following problems with the current version:}
 
-\textbf{Reviewer comment:}
+
+\begin{enumerate}
+\item \textbf{Reviewer comment:}
 \emph{The logical connections between the different parts of the paper are not clear. For example, how do the ``basic requirements'' of Table 2 map to the ``principles'' in Section 1? And are the principles presented in the beginning the *outcome* of this research (this is what lines 29+ seem to suggest) or are they *assumptions* of the approach to be discussed and evaluated (this is how they seem to be treated in Section 5).}
 
 \textbf{Our response:}
 
 
 
-\textbf{Reviewer comment:}
+\item \textbf{Reviewer comment:}
 \emph{It is not clear whether the authors consider software citations to be just the first step towards a long-term vision, or whether they consider software citations the overall final solution. It seems that the first is the case, but the long-term vision is not discussed.}
 
 \textbf{Our response:}
 
 
 
-\textbf{Reviewer comment:}
+\item \textbf{Reviewer comment:}
 \emph{This paper doesn't have an experimental design in the strict sense, as it is more of a position paper than a research article. The PeerJ guidelines state that "the submission should clearly define the research question", which is currently not the case for this paper. However, I see a research question between the lines, which could be phrased as "how can citations be applied to software products to account for their increasing importance in scientific research?". By making such a research question explicit, the PeerJ requirements can be met.}
 
 \textbf{Our response:}
 
 
 
-\textbf{Reviewer comment:}
+\item \textbf{Reviewer comment:}
 \emph{The use cases described in Section 3 form the main method to answer the implicit research question. Given the importance of these use cases for this paper, I think reference [18] with the details about these use cases should be published in a more official way, either on a site like ArXiv or FigShare, or maybe even as supplemental material or appendix for this paper. I think having these use cases in the appendix of this paper would be the best solution, which would also increase the impact of these use cases and would strengthen the paper in general.}
 
 \textbf{Our response:}
+\niemnote{I will add the full use cases text as an appendix}
 
 
-
-\textbf{Reviewer comment:}
+\item \textbf{Reviewer comment:}
 \emph{As noted above, the logical structure of the paper is unclear, and therefore it is not clear what exactly the main findings are. I think the main findings should be the principles stated in the beginning, and the use cases would then form the main method to arrive at these findings. Alternatively, one could label the principles as "assumptions" and apply the use case study to validate these assumptions. In any case, I think the findings are valid but they should be labeled as preliminary, as it is not possible to arrive at a final conclusion for such kinds of questions. Only the future can tell whether software citations really work out.}
 
 \textbf{Our response:}
 
 
 
-\textbf{Reviewer comment:}
+\item \textbf{Reviewer comment:}
 \emph{line 88: ``which will be presented ...'' > ``which was presented ...''}
 
 \textbf{Our response:}
+We agree, and have made this change.
 
 
-\textbf{Reviewer comment:}
+\item \textbf{Reviewer comment:}
 \emph{line 89: ``We expect that this discussion may lead to a second, final version'': So this paper is not the final version? Please clarify.}
 
 \textbf{Our response:}
+Thank you for pointing this error out---we have corrected this statement to indicate that the past discussion led to a second version (what was submitted).
 
 
-\textbf{Reviewer comment:}
+\item \textbf{Reviewer comment:}
 \emph{line 97: ``the need for credit for application software underscores the need to overhaul the system of credit for all research products.'': Very true and very important. But then maybe the concept of a ``citation'' is obsolete altogether, and we shouldn't be advocating ``software citations'', but something new altogether? Some more discussion on this would be valuable, I think. This relates to my comment above about a long-term vision.}
 
 \textbf{Our response:}
 
 
 
-\textbf{Reviewer comment:}
+\item \textbf{Reviewer comment:}
 \emph{line 238: ``Citation is a record of software that is important to a research outcome'': This is another important issue, but not much more is said about this. What makes a software ``important'' to a research outcome? Or, more generally, what is the semantics of a software citation?}
 
 \textbf{Our response:}
 
 
 
-\textbf{Reviewer comment:}
+\item \textbf{Reviewer comment:}
 \emph{line 254: ``In addition, if the software authors ask that a paper should be cited, that should typically be respected'': I think I disagree with that. Whether a paper should be cited or not should *not* depend on whether the given software package tells you to do so. Such pointers can be useful as suggestions, but not more than that in my opinion.}
 
 \textbf{Our response:}
 
 
 
-\textbf{Reviewer comment:}
+\item \textbf{Reviewer comment:}
 \emph{Lines 308+: You don't imply that this list is complete, but wouldn't an identifier of a software *branch* be another important type of identifier? For example, the Windows ``version'' of a software package. Also, I see in what situation one would use (1) or (2) with respect to software citations, but what is the purpose of (3) in the context of citations?}
 
 \textbf{Our response:}
 
 
 
-\textbf{Reviewer comment:}
+\item \textbf{Reviewer comment:}
 \emph{Line 325: ``other software may be available as a service'': This makes a huge difference, doesn't it? I think some more discussion on this would be helpful. For example, with software services it can be hard to find out what the official name of the software is, let alone the developers or version numbers. Also, does a software that is only available as a service (e.g. REST API) violate the Accessibility principle (5)?}
 
 \textbf{Our response:}
 
 
 
-\textbf{Reviewer comment:}
+\item \textbf{Reviewer comment:}
 \emph{I find it a bit weird to quote passages from the same paper like ``The Accessibility principle (5) states that ?....?'' (line 329 and others).}
 
 \textbf{Our response:}
 
 
 
-\textbf{Reviewer comment:}
+\item \textbf{Reviewer comment:}
 \emph{In the discussion about Unique identification (lines 292+), I miss the discussion of hash values as version identifiers, as applied by Git for instance. As the first author is affiliated with GitHub, I assume this aspect was left out intentionally, but why? As basically all software is nowadays maintained with version control systems such as Git, these identifiers come for free and are by design unique. So, I would think they are an important aspect to discuss for software citations.}
 
 \textbf{Our response:}
 
 
-
+\end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{Reviewer \#2 (Graham Klyne):}
 
-\textbf{Reviewer comment:}
+\begin{enumerate}
+
+\item \textbf{Reviewer comment:}
 \emph{The two tables are relevant and helpful, though I did have a slight problem with the legibility of my printed copy of Table 2 (page 5). The distinction between solid and open circles was not immediately clear to me, and I might suggest using a slightly larger version of these symbols.}
 
 \textbf{Our response:}
+We agree, and have changed the open symbol to a plus sign to improve legibility.
 
 
-
-\textbf{Reviewer comment:}
+\item \textbf{Reviewer comment:}
 \emph{The paper does not present a specific research finding, and as such does not feature a research question and experimental procedure that are expected of such papers. However, I think it makes in important contribution to the acceptance of software as part of the process and output of research activity, and reflects a consensus formed among a significant community of researchers. As such, I believe it justifies a place in the formally published literature.}
 
 \textbf{Our response:}
+We agree with the reviewer's description of our paper, and appreciate the view that it should be formally published.
 
 
-
-\textbf{Reviewer comment:}
+\item \textbf{Reviewer comment:}
 \emph{Lines 32--35: as a justification for treating software differently from data, I found this passage raised more questions than answers, and that the comments here were uncompelling and unsupported. For example, some published data is updated on a frequency comparable with some software (e.g. the bi-monthly release schedule of FlyBase is comparable with many software projects - \url{http://flybase.org/static_pages/docs/release_schedule.html}). Also, I think the distinction between data and software is less clear-cut than the authors suggest (e.g. is a schema or stylesheet data or software?). I would see the difference between software and data as more akin to the difference between research methods and research findings, but that is just a personal opinion. My suggestion would be that this justification is not really necessary to the overall purpose of the paper, and might be dropped without significant loss of value.}
 
-\textbf{Our response:}
+\item \textbf{Our response:}
 
 
 
 
-\textbf{Reviewer comment:}
+\item \textbf{Reviewer comment:}
 \emph{Line 57, et seq: [Nit] I would find this easier to read if the sentence introducing the list of reasons were moved to the same page as the list itself.}
 
 \textbf{Our response:}
+\niemnote{The formatting will change in the final published paper, so this might not need to be addressed. Or, we can bring in some of the commented statements from above the table}
 
 
-
-\textbf{Reviewer comment:}
+\item \textbf{Reviewer comment:}
 \emph{Line 88: ``will be presented'' refers to an event now in the past: change to ``was presented''?}
 
 \textbf{Our response:}
+We agree, and have made this change.
 
-
-
-\textbf{Reviewer comment:}
+\item \textbf{Reviewer comment:}
 \emph{Line 113: [Nit] ``work using software'' appears to be very broadly scoped, and could apply to just about any activity using a computer. Suggest ``research using software''.}
 
 \textbf{Our response:}
+We agree, and have made this change.
 
 
-\textbf{Reviewer comment:}
+\item \textbf{Reviewer comment:}
 \emph{Table 2, page 5: I had a problem with the legibility of my printed copy of this table. The distinction between solid and open circles was not immediately clear to me. I might suggest using a slightly larger version of these symbols, or maybe more distinct symbol shapes.}
 
 \textbf{Our response:}
+We agree, and have replaced the open bullet with a plus sign for better legibility.
 
-
-\textbf{Reviewer comment:}
+\item \textbf{Reviewer comment:}
 \emph{Table 2, page 5: [Comment] This table contains a lot of information, and much food for debate. I was surprised by some omissions, which may mean that I wasn't fully understanding the concepts being presented:\\
 \\
 (a) I find it hard to imagine any of the use cases not benefiting from availability of a ``Description'', especially 1, 2, 9, and 16.\\
@@ -280,34 +293,39 @@ Specific changes or additions in the marked revision in response to the Editor, 
 \textbf{Our response:}
 
 
-\textbf{Reviewer comment:}
+
+\item \textbf{Reviewer comment:}
 \emph{Line 175: [Nit] ``in(1)'' Missing space?}
 
 \textbf{Our response:}
+This has been fixed.
 
-
-\textbf{Reviewer comment:}
+\item \textbf{Reviewer comment:}
 \emph{Lines 241--242: ``Similarly, the software metadata that is recorded as part of data provenance should be a superset of the metadata recorded as part of software citation.'' I found this non sequitur (or am not seeing the logical connection). I can imagine reasons to cite software that does not form part of the provenance chain of results presented (e.g. alternatives considered).}
 
 \textbf{Our response:}
 
 
-\textbf{Reviewer comment:}
+\item \textbf{Reviewer comment:}
 \emph{Lines 245--247: ``In general, we intend the software citation principles to cover the minimum of what is necessary for software citation for the purpose of software identification. Other use cases (e.g., provenance, reproducibility) may lead to additional requirements (i.e., enhanced metadata).'' This statement feels to me to be at odds with table 2, which presents ``Use cases and basic metadata requirements for software citation'', which includes ``reproducibility'' as a use-case. This leaves me wondering if the use cases in table 2 are going beyond what is strictly needed for the purposes of software citation.}
 
 \textbf{Our response:}
 
 
-\textbf{Reviewer comment:}
+\item \textbf{Reviewer comment:}
 \emph{Line 327--328: ``When software exists as both source code and another type, we recommend that the source code be cited''. The term ``exists'' here doesn't seem quite right to me. E.g., proprietary software may ``exist'' as source code, but be unavailable. Suggest ``exists and is accessible'' or just ``is accessible''?}
 
 \textbf{Our response:}
+Agreed; this change has been been.
 
 
-\textbf{Reviewer comment:}
+\item \textbf{Reviewer comment:}
 \emph{Line 348: ``Updates to this document''. This paper is being presented for consideration as a part of the formal academic record - as such, I don't think ``this document'' is something which may be updated. Suggest ``Updates to these principles''.}
 
 \textbf{Our response:}
+Agreed; this change has been been.
+
+\end{enumerate}
 
 %\bibliography{}
 %\bibliographystyle{}
