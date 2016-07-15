@@ -841,6 +841,272 @@ Belinda Weaver, The University of Queensland
 
 Nic Weber, University of Washington iSchool
 
+\section{Software citation use cases}
+\label{app:usecases}
+
+This appendix records an edited, extended description of the use cases discussed in~\S\ref{sec:use_cases}, originally found in~\cite{SC-Use-Cases}.
+
+\subsection{Researcher who uses someone else's software for a paper}
+
+One of the most common use cases may be researchers who use someone else's software and want to cite it in a technical paper. 
+This will be similar to existing practices for citing research artifacts in papers.
+
+``Requirements'' for researcher:
+\begin{itemize}
+\item Name of software
+\item Names of software authors/contributors
+\item Software version number and release date, or download date
+\item Location/repository, or contact name/email (if not publicly available)
+\item Citable DOI of software
+\item Format for citing software in text and in bibliography
+\end{itemize}
+
+Possible steps:
+\begin{enumerate} \setcounter{enumi}{0}
+\item Software developers create CITATION file and associate with source code release/repository.
+\item Researcher finds and uses software for research paper.
+\item Researcher identifies citation metadata file (e.g., ``CITATION'' file) associated with downloaded/installed software source code or in online repository/published location. CITATION file includes necessary citation metadata. CITATION file may include BibTeX entry, suggested citation format
+\item Researcher cites software appropriately, e.g. in methodology section; reference included in bibliography.
+\end{enumerate}
+
+\subsection{Researcher who uses someone else's software for new software}
+
+In this case, a researcher develops new software that incorporates or depends on existing software. 
+In order to credit the developer(s), the researcher will include citations in his/her source code, documentation, or other metadata in a similar manner to papers
+
+Requirements for researcher:
+\begin{itemize}
+\item Name of software
+\item Names of software authors/contributors
+\item Software version number and release date
+\item Location/repository
+\item Citable DOI of software
+\item Format for citing software in source code, documentation, or citation metadata file
+\end{itemize}
+
+Possible steps:
+\begin{enumerate} \setcounter{enumi}{0}
+\item Assume that software developers have created a CITATION file and associated with the source code release/repository.
+\item Researcher finds and uses software in the development of new software.
+\item Researcher identifies citation metadata file (e.g., ''CITATION'' file) associated with downloaded/installed software source code or in online repository/published location. CITATION file includes necessary citation metadata. CITATION file may include BibTeX entry, suggested citation format.
+\item Researcher cites software in source code, documentation, or other metadata-containing file.
+\end{enumerate}
+
+\subsection{Researcher who contributes to someone else's software (open source project)}
+ 
+maybe a variant of above\niemnote{add more to this?}
+
+\subsection{Researcher who wants to know who uses the researcher's software}
+
+This case is similar to a researcher who wants to find other papers/publications that cite a particular paper.
+A researcher wants to gauge the usage of her software within or across communities and measure its impact on research for both credit and funding.
+
+Requirements:
+\begin{itemize}
+\item Uniquely identify software
+\item Indexed citations of software 
+\item Indexed papers that use software
+\end{itemize}
+
+Steps:
+\begin{enumerate}
+\item Researcher finds software official name or unique DOI in metadata associated with downloaded/installed source code or in online repository/published location.
+\item Researcher searches for software, may use online indexer (e.g., Scopus, Web of Science, Google Scholar) using software name or DOI.
+\item Online indexer presents entry for software with list of citations, if any.
+Ideally, entry will also include metadata contained in software CITATION file and citation example.
+\end{enumerate}
+
+\subsection{Researcher who wants to publish about a piece of software}
+
+The research wants to publish about a version of software they have produced.
+A key part of this use case is to be able to connect the given narrative to a specific version of the software in questions and connect that in large story. 
+
+Requirements:
+\begin{itemize}
+\item Name of software
+\item Names of software authors/contributors
+\item Location/repository
+\item Citable DOI of Software
+\item Links to older versions of software
+\end{itemize}
+	
+\subsection{Publisher who wants to publish papers that cite software}
+
+\niemnote{add description?}
+
+Requirements for publisher:
+\begin{itemize}
+\item Name of software
+\item Names of software authors/contributors
+\item Location/repository
+\item Citable DOI of software
+\item Format for citing software in, e.g., JATS, as well as references in the text itself
+\end{itemize}
+
+\subsection{Indexer (e.g., Scopus, WoS, Scholar, MS Academic Search) who wants to build a catalog of software}
+
+Provide an index over the software that is used within the research domain. Track how that software is being used by different groups of researchers and to what ends. 
+
+Requirements:
+\begin{itemize}
+\item Uniquely identify pieces of software used by the research literature
+\item Connect authors and organizations to that software
+\item Connect various software versions together
+\end{itemize}
+
+\subsection{Domain group (e.g., ASCL, bioCADDIE), Libraries, and Archives (e.g., University library, laboratory archive, etc.) wants to build a catalog\slash registry of institutional or domain software}
+
+There are two different examples here: One is building a catalog/archive of software produced by those affiliated with the institution.
+The other is along the lines of Sayeed Choudhury's note that ``data are the new special collections.''
+An institution may choose to build a catalog/archive of many things within a single topic or subject in order to secure all the software on a certain topic or build a collection that may draw users to their establishment, much like special collections now do for university libraries and archives. 
+
+\subsection{Repository showing scientific impact of holdings}
+
+A repository that archives and/or maintains a collection of software.
+The repository would like to address usage and impact of software in its holding.
+Usage would aid potential users whether the software is being actively maintained or developed or has been superseded.
+Both would help repository know how to direct resources, e.g., maintenance, training etc.
+
+Requirements:
+\begin{itemize}
+\item Code name ideally, a unique identifier
+\item Relationships to previous versions
+\item Connect to repository
+\item Connect to research
+\end{itemize}
+
+similar to Funder case
+
+mineable via repository name, code name, DOI, or citation.\niemnote{complete?}
+
+\subsection{Funder who wants to know how software they funded has been used}
+
+steps/requirements\niemnote{add more to this?}
+
+\subsection{Researcher gets credit for software development at the academic\slash governmental institution, in professional career, etc.}
+
+\niemnote{add description?}
+
+Requirements for researcher:
+\begin{itemize}
+\item Name of software
+\item Names of software authors/contributors
+\item Location/repository
+\item Citable DOI of software
+\item Format for citing software in an official CV, in a departmental/institutional review report, etc.
+\item Role in the software creation, that is linked to version or component
+\item Role in contributing to the software as a ``package'' (not just lines of code) development of benchmarks, testing, documentation, tutorials etc.
+\end{itemize}
+
+\subsection{Researcher who wants to ``reproduce'' another person\slash group's analysis}
+
+\niemnote{add description?}
+
+Requirements for researcher:
+\begin{itemize}
+\item Name of software
+\item Location/repository for the exact release that was used 
+\item DOI or other persistent handle for that specific release
+\item Release has all components necessary for reproducing the work (note that this ideally also means sample inputs and outputs)
+\end{itemize}
+
+\subsection{Researcher who benchmarks someone else's software with or without modification on one or many hardware platforms for publication}
+
+\niemnote{add description?}
+
+Requirements for researcher:
+\begin{itemize}
+\item Name of software
+\item Names of software authors/contributors
+\item Software version number and release date
+\item Location/repository
+\item Citable DOI of software or paper recommended for citation
+\item Format for citing software in source code or citation metadata file
+\end{itemize}
+
+Possible steps:
+\begin{enumerate} \setcounter{enumi}{0}
+\item Software developers create CITATION file and associate with source code release/repository.
+\item Researcher finds and uses software in the development of new software.
+\item Researcher identifies citation metadata file (e.g., CITATION file) associated with downloaded/installed software source code or in online repository/published location. CITATION file includes necessary citation metadata. CITATION file may include BibTeX entry, suggested citation format.
+\item Researcher cites software in source code, documentation, or other metadata-containing file.
+\end{enumerate}
+
+\subsection{Reference management system used by researchers to author a manuscript}
+
+\niemnote{add description?}
+
+Requirements for reference manager:
+\begin{itemize}
+\item Names of software authors/contributors
+\item Software version number and release date
+\item Location/repository
+\item Citable DOI of software or paper recommended for citation
+\item Format for citing software in citation metadata file
+\item Citation metadata tags embedded in DOI landing page/software project page for easy ingest
+\end{itemize}
+
+Possible steps:
+\begin{enumerate}
+\item Reference management system such as EndNote, Mendeley, Zotero, etc. builds affordances for software references.
+\item Researcher finds software citation and adds it to their reference manager library, by (a) importing from the CITATION file (e.g., BibTeX, RIS), or (b) clicking on, e.g., an ``add to Zotero library'' widget in web browser.
+\item Researcher writes a paper and uses the reference manager to generate citations or bibliography.
+\end{enumerate}
+
+\subsection{Researcher who wants to find a piece of software to implement a task}
+
+This is the case where a research is looking for software to use but wants to understand whether it is being used in a scholarly fashion.
+For example, a researcher searches through a software repository and finds a package that might be useful.
+They look to find whether it has been used by others in the scientific literature. 
+
+Requirements
+\begin{itemize}
+\item Either the software documentation page has a reference to existing literature that makes use of it. 
+\item There is a mechanism to look it up.
+\end{itemize}
+
+
+\subsection{Researcher wants to record the software that generated some data}
+
+This is the case where a researcher is using some software to perform an analysis, either of a physical sample or of data.
+The researcher needs to know which version was used, for example in case a bug was fixed.
+Note that knowing the software and its version is not sufficient to determine the ``conditions'' of the analysis, but they are essential.
+
+Requirement:
+The analysis, or the generated data, has information about the software used.
+
+\subsection{Researcher who wants to reproduce experience of use of a particular software implementation in context}
+
+\niemnote{This one was not adopted into table; should we keep it, remote here, or somehow indicate why it was not adopted?}
+
+Researcher is engaged in historical/cultural research -- e.g., study of video games as cultural artifacts.
+
+Requirements
+\begin{itemize}
+\item Name of software
+\item Software version number
+\item Documentation of the execution environment/context
+\item Location/repository for virtual machine (or equivalent) comprising both software and execution environment/context
+\item Persistent identifier associated with virtual machine instance (or equivalent) comprising both software and execution environment/context
+\end{itemize}
+
+Possible steps
+\begin{enumerate}
+\item Researcher obtains persistent ID from citation
+\item Research uses a persistent ID resolution service to resolve ID to a location of  an executable VM instance in a repository 
+\item Researcher obtains VM in the repository, executes it, and interacts with software 
+\end{enumerate}
+
+%References:
+%Use case examples and commentary
+%Library of congress report on software preservation:
+%http://www.digitalpreservation.gov/meetings/preservingsoftware2013.html
+%CASPAR Report on Software Significant Properties
+%http://sigsoft.dcc.rl.ac.uk/twiki/pub/Main/SigSoftTalks/SignificantPropertiesofSoftware-r1.doc
+%Examples of VM archiving and repositories
+%https://olivearchive.org/
+%https://archive.org/details/internetarcade 
+
 \bibliographystyle{abbrv}
 \bibliography{software-citation-principles}
 
