@@ -166,7 +166,7 @@ While I think this is a very useful paper, I see the following problems with the
 \niemnote{If we need to formulate the paper as a research paper, then describing the principles as main findings and use cases\slash discussion as the methods to arrive at them seems an interesting way to do it.}
 
 \item \textbf{Reviewer comment:}
-\emph{line 88: ``which will be presented ...'' > ``which was presented ...''}
+\emph{line 88: ``which will be presented ...'' to ``which was presented ...''}
 
 \textbf{Our response:}
 We agree, and have made this change.
@@ -205,23 +205,28 @@ Thank you for pointing this error out---we have corrected this statement to indi
 \emph{Lines 308+: You don't imply that this list is complete, but wouldn't an identifier of a software *branch* be another important type of identifier? For example, the Windows ``version'' of a software package. Also, I see in what situation one would use (1) or (2) with respect to software citations, but what is the purpose of (3) in the context of citations?}
 
 \textbf{Our response:}
+Principle (6) states that ``Software identification should be as specific as necssary'', and we consider that the specific version includes the branch.
 
-\niemnote{I think that we should make it clear that unique identifier includes the branch or version, for the first point.}
+We agree that (3) is not relevant in the context of citation, and have removed it from the discussion.
+However, it is a valid identifier that could be used in other contexts.
 
 \item \textbf{Reviewer comment:}
 \emph{Line 325: ``other software may be available as a service'': This makes a huge difference, doesn't it? I think some more discussion on this would be helpful. For example, with software services it can be hard to find out what the official name of the software is, let alone the developers or version numbers. Also, does a software that is only available as a service (e.g. REST API) violate the Accessibility principle (5)?}
 
 \textbf{Our response:}
+Software as a service is a fact, and we need a method to cite it---even though some metadata may not exist or be available, we need to do the best we can.
+The same issues would hold for commerical software or that available only as an executable.
+If you can't find the name of software, should be able to find the name of the service\slash endpoint or function being used.
 
+Regarding accessibility, ideally we would like the source to be available, but if not we still need a way to cite.
+In this case, the Accessibility principle would apply to the service itself, rather than the source.
 
 
 \item \textbf{Reviewer comment:}
 \emph{I find it a bit weird to quote passages from the same paper like ``The Accessibility principle (5) states that ?....?'' (line 329 and others).}
 
 \textbf{Our response:}
-
-\katznote{we're sorry if this seems weird to the reviewer, but rather than just pointing back to a previous part of the paper, it seems more clear to us to quote the basis by which we are making follow-on comments}
-
+We feel it is more clear to a reader to quote the basis by which we are making follow-on comments, rather than pointing back to a previous part of the paper.
 
 
 \item \textbf{Reviewer comment:}
@@ -258,13 +263,13 @@ We agree with the reviewer's description of our paper, and appreciate the view t
 \textbf{Our response:}
 
 \niemnote{I think we all would agree that software is a research method and data are research findings, but I do think we need some explanation of the differences---if only to justify why software citation may be different than data citation}
-
+\niemnote{Dan: work on this}
 
 \item \textbf{Reviewer comment:}
 \emph{Line 57, et seq: [Nit] I would find this easier to read if the sentence introducing the list of reasons were moved to the same page as the list itself.}
 
 \textbf{Our response:}
-\niemnote{The formatting will change in the final published paper, so this might not need to be addressed. Or, we can bring in some of the commented statements from above the table}
+We agree that this would be easier to read, but believe the formatting will change in the final published paper.
 
 
 \item \textbf{Reviewer comment:}
@@ -307,7 +312,7 @@ Table 2, page 5: [Comment] This table contains a lot of information, and much fo
 \item \niemnote{I think what we had originally makes sense, but perhaps there needs to be more explanation?}
 \item \niemnote{no, indexed citations not really relevant for catalog/registry, unless it wants to display citations of software---but that is use case 4}
 \item \niemnote{no, I don't think those things would be stored---because they aren't included in the citation itself}
-\item \niemnote{Is this different than 7, ``Find software to implement task''? I suppose it's not exactly the same, and I'm fine with adding a new one to appease the reviewer}
+\item We intended ``find'' to mean more than discovery, but since the appendix was not present in the first submission this was not clear. We have altered the use case to be ``Find/choose software to implement task'' to make it clear that this use case goes beyond discovery.
 \end{enumerate}
 
 \item \textbf{Reviewer comment:}
@@ -321,7 +326,7 @@ This has been fixed.
 
 \textbf{Our response:}
 
-\katznote{this is a good point - we probably need to change our text a bit}
+\katznote{this is a good point - I probably need to change our text a bit}
 
 \item \textbf{Reviewer comment:}
 \emph{Lines 245--247: ``In general, we intend the software citation principles to cover the minimum of what is necessary for software citation for the purpose of software identification. Other use cases (e.g., provenance, reproducibility) may lead to additional requirements (i.e., enhanced metadata).'' This statement feels to me to be at odds with table 2, which presents ``Use cases and basic metadata requirements for software citation'', which includes ``reproducibility'' as a use-case. This leaves me wondering if the use cases in table 2 are going beyond what is strictly needed for the purposes of software citation.}
@@ -329,19 +334,20 @@ This has been fixed.
 \textbf{Our response:}
 
 \niemnote{The table collects use cases that relate to or depend on software citation, but certainly each use case has additional dependencies that are not and cannot be contained in the table. So, perhaps we can rephrase somewhere to emphasize that the table requirements are only for the citation of software related to each use case, and not meant to be exhaustive about everything actually required for the use case beyond citation?}
+The requirements in the use cases table only indicate the metadata needed for citation related to each use case, and not necessarily everything needed to complete each use case. For example, use case 7 ``Benchmark software'' does not include information about actual benchmarking, or the need for similar hardware, etc.
 
 \item \textbf{Reviewer comment:}
 \emph{Line 327--328: ``When software exists as both source code and another type, we recommend that the source code be cited''. The term ``exists'' here doesn't seem quite right to me. E.g., proprietary software may ``exist'' as source code, but be unavailable. Suggest ``exists and is accessible'' or just ``is accessible''?}
 
 \textbf{Our response:}
-Agreed; this change has been been.
+Agreed; this change has been made.
 
 
 \item \textbf{Reviewer comment:}
 \emph{Line 348: ``Updates to this document''. This paper is being presented for consideration as a part of the formal academic record - as such, I don't think ``this document'' is something which may be updated. Suggest ``Updates to these principles''.}
 
 \textbf{Our response:}
-Agreed; this change has been been.
+Agreed; this change has been made.
 
 \end{enumerate}
 
