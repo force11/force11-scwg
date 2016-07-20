@@ -289,7 +289,7 @@ practices in member disciplines; gather materials from workshops and other repor
 review those materials, identifying overlaps and differences; and subsequently draft an initial version of this document.
 The draft Software Citation Principles document was discussed in a day-long workshop and presented at the FORCE2016 Conference~\cite{force2016} in April 2016.
 Members of the workshop and greater FORCE11 community gave feedback, which we recorded here in Appendix~\ref{app:force16-feedback}.
-This discussion led to a second, final version.
+This discussion led to some changes in the use cases and discussion, although the principles themselves were not modified.
 We also plan to initiate a follow-on working group that will work with stakeholders to ensure that these principles impact the research process.
 
 The principles in this document should guide further development of software citation
@@ -919,19 +919,70 @@ Steps:
 Ideally, entry will also include metadata contained in software CITATION file and citation example.
 \end{enumerate}
 
-\subsection{Researcher who wants to publish about a piece of software}
+\subsection{Researcher gets credit for software development at the academic\slash governmental institution, in professional career, etc.}
 
-The research wants to publish about a version of software they have produced.
-A key part of this use case is to be able to connect the given narrative to a specific version of the software in questions and connect that in large story.
+\niemnote{add description?}
 
-Requirements:
+Requirements for researcher:
 \begin{itemize}
 \item Name of software
 \item Names of software authors/contributors
 \item Location/repository
-\item Citable DOI of Software
-\item Links to older versions of software
+\item Citable DOI of software
+\item Format for citing software in an official CV, in a departmental/institutional review report, etc.
+\item Role in the software creation, that is linked to version or component
+\item Role in contributing to the software as a ``package'' (not just lines of code) development of benchmarks, testing, documentation, tutorials etc.
 \end{itemize}
+
+\subsection{Researcher who wants to ``reproduce'' another person\slash group's analysis}
+
+\niemnote{add description?}
+
+Requirements for researcher:
+\begin{itemize}
+\item Name of software
+\item Location/repository for the exact release that was used
+\item DOI or other persistent handle for that specific release
+\item Release has all components necessary for reproducing the work (note that this ideally also means sample inputs and outputs)
+\end{itemize}
+
+\subsection{Researcher who benchmarks someone else's software with or without modification on one or many hardware platforms for publication}
+
+\niemnote{add description?}
+
+Requirements for researcher:
+\begin{itemize}
+\item Name of software
+\item Names of software authors/contributors
+\item Software version number and release date
+\item Location/repository
+\item Citable DOI of software or paper recommended for citation
+\item Format for citing software in source code or citation metadata file
+\end{itemize}
+
+Possible steps:
+\begin{enumerate} \setcounter{enumi}{0}
+\item Software developers create CITATION file and associate with source code release/repository.
+\item Researcher finds and uses software in the development of new software.
+\item Researcher identifies citation metadata file (e.g., CITATION file) associated with downloaded/installed software source code or in online repository/published location. CITATION file includes necessary citation metadata. CITATION file may include BibTeX entry, suggested citation format.
+\item Researcher cites software in source code, documentation, or other metadata-containing file.
+\end{enumerate}
+
+\subsection{Researcher who wants to find a piece of software to implement a task}
+
+This is the case where a research is looking for software to use but wants to understand whether it is being used in a scholarly fashion.
+For example, a researcher searches through a software repository and finds a package that might be useful.
+They look to find whether it has been used by others in the scientific literature.
+
+Requirements
+\begin{itemize}
+\item Either the software documentation page has a reference to existing literature that makes use of it.
+\item There is a mechanism to look it up.
+\end{itemize}
+
+\subsection{Publisher wants to publish a software paper}
+
+\niemnote{add description}
 
 \subsection{Publisher who wants to publish papers that cite software}
 
@@ -986,54 +1037,9 @@ mineable via repository name, code name, DOI, or citation.\niemnote{complete?}
 
 steps/requirements\niemnote{add more to this?}
 
-\subsection{Researcher gets credit for software development at the academic\slash governmental institution, in professional career, etc.}
+\subsection{Evaluator or funder wants to evaluate contributions of a researcher}
 
-\niemnote{add description?}
-
-Requirements for researcher:
-\begin{itemize}
-\item Name of software
-\item Names of software authors/contributors
-\item Location/repository
-\item Citable DOI of software
-\item Format for citing software in an official CV, in a departmental/institutional review report, etc.
-\item Role in the software creation, that is linked to version or component
-\item Role in contributing to the software as a ``package'' (not just lines of code) development of benchmarks, testing, documentation, tutorials etc.
-\end{itemize}
-
-\subsection{Researcher who wants to ``reproduce'' another person\slash group's analysis}
-
-\niemnote{add description?}
-
-Requirements for researcher:
-\begin{itemize}
-\item Name of software
-\item Location/repository for the exact release that was used
-\item DOI or other persistent handle for that specific release
-\item Release has all components necessary for reproducing the work (note that this ideally also means sample inputs and outputs)
-\end{itemize}
-
-\subsection{Researcher who benchmarks someone else's software with or without modification on one or many hardware platforms for publication}
-
-\niemnote{add description?}
-
-Requirements for researcher:
-\begin{itemize}
-\item Name of software
-\item Names of software authors/contributors
-\item Software version number and release date
-\item Location/repository
-\item Citable DOI of software or paper recommended for citation
-\item Format for citing software in source code or citation metadata file
-\end{itemize}
-
-Possible steps:
-\begin{enumerate} \setcounter{enumi}{0}
-\item Software developers create CITATION file and associate with source code release/repository.
-\item Researcher finds and uses software in the development of new software.
-\item Researcher identifies citation metadata file (e.g., CITATION file) associated with downloaded/installed software source code or in online repository/published location. CITATION file includes necessary citation metadata. CITATION file may include BibTeX entry, suggested citation format.
-\item Researcher cites software in source code, documentation, or other metadata-containing file.
-\end{enumerate}
+\niemnote{add description}
 
 \subsection{Reference management system used by researchers to author a manuscript}
 
@@ -1056,21 +1062,36 @@ Possible steps:
 \item Researcher writes a paper and uses the reference manager to generate citations or bibliography.
 \end{enumerate}
 
-\subsection{Researcher who wants to find a piece of software to implement a task}
+\subsection{Repository wants to publish mixed data\slash software packages}
 
-This is the case where a research is looking for software to use but wants to understand whether it is being used in a scholarly fashion.
-For example, a researcher searches through a software repository and finds a package that might be useful.
-They look to find whether it has been used by others in the scientific literature.
+\niemnote{add description; came from \url{https://github.com/force11/force11-scwg/issues/128}}
+Domain and institutional data repositories have both data and software
+artifacts, and want to link these together in a provenance trace that can
+be cited. Sometimes the software is a separately identified artifact, but at
+other times software is included inside of data packages, and the researcher
+wants to cite the combined product.
 
-Requirements
+\subsection*{Use cases not adopted in the table:}
+
+\subsection{Researcher who wants to publish about a piece of software}
+
+\niemnote{this seems the same as use case 1}
+The research wants to publish about a version of software they have produced.
+A key part of this use case is to be able to connect the given narrative to a specific version of the software in questions and connect that in large story.
+
+Requirements:
 \begin{itemize}
-\item Either the software documentation page has a reference to existing literature that makes use of it.
-\item There is a mechanism to look it up.
+\item Name of software
+\item Names of software authors/contributors
+\item Location/repository
+\item Citable DOI of Software
+\item Links to older versions of software
 \end{itemize}
 
 
 \subsection{Researcher wants to record the software that generated some data}
 
+\niemnote{Is this distinct from 6? Or should it be a new one?}
 This is the case where a researcher is using some software to perform an analysis, either of a physical sample or of data.
 The researcher needs to know which version was used, for example in case a bug was fixed.
 Note that knowing the software and its version is not sufficient to determine the ``conditions'' of the analysis, but they are essential.
