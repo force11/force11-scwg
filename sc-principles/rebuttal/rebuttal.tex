@@ -84,32 +84,40 @@ However, there are some aspects that should be clarified in the revision. In par
 \asnote{This seems relatively straightforward? We had a workshop where we reviewed the principles with a group of FORCE11 participants (Dan - do we have a list of edits we made that day based on feedback?) and then presented (in ~5 mins) to the main FORCE11 session. I don't think the presentations/review at FORCE 2016 changed the principles significantly as they'd already been through pretty substantial review during the drafting process.}
 \katznote{we would have to go back through git versions.  I know that there were changes to the principles themselves in the group phone calls, but not after that - ie, not in the workshop or general presentation.  there were some smallish changes to the high level text describing each principle later.}
 
+\niemnote{I will attempt this}
+
 \item \textbf{Comment:}
 \emph{The link between the principles and the requirements should be introduced explicitly, since it is not entirely clear how ones are connected to the others.}
 
 \textbf{Our response:}
 \asnote{I think we just need to say that we thought it was important to draft the principles with the end-user(s) in mind, i.e. what different use cases/scenarios for software citation. The requirements table is an overview of these use cases and the metadata needs of each of these users/use cases.}
 
+\niemnote{Move paragraph at end of Section 1 to Section 3, and expand/merge with paragraph after mission statement; find text from FORCE2016 presentation about use cases and explaining produre to get principles}
+\niemnote{I will do this}
+
 
 \item \textbf{Comment:}
 \emph{A clear research question should be announced explicitly from the very beginning, and accompanied by a text that explains how the authors would like to address it.}
 
 \textbf{Our response:}
-
+We agree with Reviewer 2 on this issue, as this represents more of a position paper than an experimental paper.
+That said, we would be willing to add an explicit research question and discuss the ``experimental'' design if required, but feel this would be an artificial construct that doesn't add much to the paper.
 
 
 \item \textbf{Comment:}
 \emph{I suggest to include one or more appendixes with all the details about the use cases presented. This would make the paper more self-contained.}
 
 \textbf{Our response:}
-\niemnote{I will add the full use cases text as an appendix}
+\niemnote{I will add the full use cases text as an appendix, and revise to match the numbering in the table}
+\niemnote{I will also add the FORCE16 comments and responses}
 
+\niemnote{Dan \& Arfon: could you assist with adding descriptions to some of the use cases that don't have one?}
 
 \item \textbf{Comment:}
 \emph{The reviewers did not agree on some aspects described in the paper, e.g. ``if the software authors ask that a paper should be cited, that should typically be respected''. I would like to see an appropriate discussion on these points, so as to clearly address these disagreements.}
 
 \textbf{Our response:}
-
+We have either made appropriate changes or discussed these points.
 
 
 \end{enumerate}
@@ -132,7 +140,8 @@ While I think this is a very useful paper, I see the following problems with the
 \emph{The logical connections between the different parts of the paper are not clear. For example, how do the ``basic requirements'' of Table 2 map to the ``principles'' in Section 1? And are the principles presented in the beginning the *outcome* of this research (this is what lines 29+ seem to suggest) or are they *assumptions* of the approach to be discussed and evaluated (this is how they seem to be treated in Section 5).}
 
 \textbf{Our response:}
-\asnote{Discussed above.}
+
+\niemnote{This will be addressed somewhat by the changes discussed above; but Dan, could you help with this?}
 
 
 \item \textbf{Reviewer comment:}
@@ -141,7 +150,7 @@ While I think this is a very useful paper, I see the following problems with the
 \textbf{Our response:}
 \asnote{Perhaps we should be adding a short paragraph outlining how we believe that ultimately academic publishing should be moving towards sharing all of the products of researcher activity. This work is primarily about making software a citable entity which is just one part of a much larger change in the scholarly ecosystem.}
 
-\niemnote{Also, perhaps here we can discuss the long-term role of software citation for credit, reuse, reproducibility, etc.?}
+\niemnote{Dan, can you do this?}
 
 \item \textbf{Reviewer comment:}
 \emph{This paper doesn't have an experimental design in the strict sense, as it is more of a position paper than a research article. The PeerJ guidelines state that ``the submission should clearly define the research question'', which is currently not the case for this paper. However, I see a research question between the lines, which could be phrased as ``how can citations be applied to software products to account for their increasing importance in scientific research?''. By making such a research question explicit, the PeerJ requirements can be met.}
@@ -150,6 +159,9 @@ While I think this is a very useful paper, I see the following problems with the
 \asnote{The reviewer's suggested text sounds pretty good to me. Perhaps drop/change 'scientific' in that sentence?}
 
 \niemnote{Agreed on both counts}
+
+\niemnote{Let's say that}
+We agree that this paper is more of a position paper than research article, and thus that creating a research question would be an artificial construct. We are willing to make this change if required, but feel it wouldn't add much to the paper.
 
 \item \textbf{Reviewer comment:}
 \emph{The use cases described in Section 3 form the main method to answer the implicit research question. Given the importance of these use cases for this paper, I think reference [18] with the details about these use cases should be published in a more official way, either on a site like ArXiv or FigShare, or maybe even as supplemental material or appendix for this paper. I think having these use cases in the appendix of this paper would be the best solution, which would also increase the impact of these use cases and would strengthen the paper in general.}
@@ -164,6 +176,10 @@ While I think this is a very useful paper, I see the following problems with the
 \textbf{Our response:}
 
 \niemnote{If we need to formulate the paper as a research paper, then describing the principles as main findings and use cases\slash discussion as the methods to arrive at them seems an interesting way to do it.}
+
+\niemnote{We agree that the main findings are the principles, and the use cases/discussion are the main to reach those.  Don't agree that the principles are assumptions or preliminary, but reflect current knowledge and experience}
+
+\niemnote{I will work on this, but may need help}
 
 \item \textbf{Reviewer comment:}
 \emph{line 88: ``which will be presented ...'' to ``which was presented ...''}
@@ -185,6 +201,9 @@ Thank you for pointing this error out---we have corrected this statement to indi
 \textbf{Our response:}
 \asnote{We probably need to dig out some citations about improved/rich citation. I'm aware of some work that was going on in the PLOS Labs group about this but I'm not sure if that work was ever published.}
 
+\niemnote{Citations are going to go away---but format and how they fit in ecosystem may change.}
+
+\niemnote{Arfon: can you help here?}
 
 \item \textbf{Reviewer comment:}
 \emph{line 238: ``Citation is a record of software that is important to a research outcome'': This is another important issue, but not much more is said about this. What makes a software ``important'' to a research outcome? Or, more generally, what is the semantics of a software citation?}
@@ -193,13 +212,13 @@ Thank you for pointing this error out---we have corrected this statement to indi
 
 \niemnote{I think we have some citations about the importance of software to research we can add here (e.g., Hannay 2009), as well as the fact that research results depend on citation\slash proper version (Sufi 2014, Sandve 2013, Wilson 2014), and that errors in software or environment variations can effect results (Morin 2012, Soergel 2015). Although we probably want to avoid overlap with the challenge paper.} \katznote{basically, what is important is up the authors to define, and then reviewers to agree with, all in the context of community practices and `standards'}
 
+\niemnote{Add discussion of both points; Dan's note is already there in the text. I will work on this.}
+
 \item \textbf{Reviewer comment:}
 \emph{line 254: ``In addition, if the software authors ask that a paper should be cited, that should typically be respected'': I think I disagree with that. Whether a paper should be cited or not should *not* depend on whether the given software package tells you to do so. Such pointers can be useful as suggestions, but not more than that in my opinion.}
 
 \textbf{Our response:}
-\asnote{Perhaps we can rephrase this to make the reviewer happier. IMO there's no obviously correct answer here.}
-
-\niemnote{I'm also not sure exactly what to do here; our original statement came about from the working group discussion. We could simply remove this sentence, since it might not need to be said explicitly.}
+We have modified the text to make it clear that this is a recommendation from the working group; the statement reflects an agreed position of the entire working group. The modification should make it clear that this is a recommendation only.
 
 \item \textbf{Reviewer comment:}
 \emph{Lines 308+: You don't imply that this list is complete, but wouldn't an identifier of a software *branch* be another important type of identifier? For example, the Windows ``version'' of a software package. Also, I see in what situation one would use (1) or (2) with respect to software citations, but what is the purpose of (3) in the context of citations?}
@@ -234,7 +253,7 @@ We feel it is more clear to a reader to quote the basis by which we are making f
 
 \textbf{Our response:}
 
-\niemnote{I feel like I remember discussing this; perhaps we should just add it in the discussion? Certainly we'll still recommend DOI for reasons already mentioned.}
+\niemnote{Arfon: can you add some discussion here? We can add a sentence addressing git hashes and other version control identifiers, and point out that while they may be sufficient in some ways (globally unique), they aren't necessarily resolvable on the Web, and different VCS use different identifiers, etc. In other words, they could be used (especially in the absence of other identifier like DOI), but not sufficient or recommended.}
 
 \end{enumerate}
 
@@ -263,7 +282,8 @@ We agree with the reviewer's description of our paper, and appreciate the view t
 \textbf{Our response:}
 
 \niemnote{I think we all would agree that software is a research method and data are research findings, but I do think we need some explanation of the differences---if only to justify why software citation may be different than data citation}
-\niemnote{Dan: work on this}
+
+\niemnote{Dan: work on this. Bring in text from CodeMeta paper and your blog post.}
 
 \item \textbf{Reviewer comment:}
 \emph{Line 57, et seq: [Nit] I would find this easier to read if the sentence introducing the list of reasons were moved to the same page as the list itself.}
@@ -307,7 +327,7 @@ Table 2, page 5: [Comment] This table contains a lot of information, and much fo
 \textbf{Our response:}
 
 \begin{enumerate}[label={(\alph*)}]
-\item \niemnote{I'm fine with adding description to these, unless we had a reason not to. I think the decisions on these were fairly arbitrary}
+\item Agreed for 1 and 2.
 \item \niemnote{I think I agree, or at least benefit}
 \item \niemnote{I think what we had originally makes sense, but perhaps there needs to be more explanation?}
 \item \niemnote{no, indexed citations not really relevant for catalog/registry, unless it wants to display citations of software---but that is use case 4}
