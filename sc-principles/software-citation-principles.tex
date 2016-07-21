@@ -109,6 +109,8 @@ Working examples and possible technical solutions for how these principles can b
 \label{sec:principles}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\niemnote{Do we want a better introduction, to help with the structure of the paper?}
+
 The principles in this section are written fairly concisely, and discussed
 further later in this document (\S\ref{sec:discussion}). Here, for example,
 we do not define what software should be cited, but how it should be
@@ -158,22 +160,6 @@ numbers, revision numbers, or variants such as platforms.
 %\item \textbf{Interoperability and Flexibility}:
 %Software citation methods should be sufficiently flexible to accommodate the variant practices among communities, but should not differ so much that they compromise interoperability of software citation practices across communities.
 \end{enumerate}
-
-These software citation principles were originally based on an adaptation of the
-FORCE11 Data Citation Principles~\cite{data-citation-principles}, and then were
-modified based on discussions of the FORCE11 Software Citation Working
-Group (see Appendix~\ref{app:wg_members} for members), information from the use
-cases in \S\ref{sec:use_cases}, and the related work in \S\ref{sec:related_work}.
-The adaptations have been made
-because software, while similar to data in terms of not traditionally having
-been cited in publications, is also different than data in that it can be used
-to express or explain concepts, it is updated more frequently, and it is
-executable.
-% \katznote{are there any other difference between software and data that should be stated here?}
-Also, while software can be considered a type of data, the converse is not
-generally true.
-
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -260,6 +246,10 @@ configurations and platform issues are also needed.
 
 \end{itemize}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Process of creating principles}
+\label{sec:process}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The FORCE11 Software Citation Working Group~\cite{f11scwg} was created in April
 2015 with the following mission statement:
@@ -281,7 +271,6 @@ detailed specifications for implementation although it may review and discuss
 possible technical solutions.
 \end{italicquotes}
 
-
 The group gathered members (see Appendix~\ref{app:wg_members}) in April and May 2015,
 and then began work in June, with a number of meetings
 and some off-line work by group members to gather materials documenting existing
@@ -291,6 +280,21 @@ The draft Software Citation Principles document was discussed in a day-long work
 Members of the workshop and greater FORCE11 community gave feedback, which we recorded here in Appendix~\ref{app:force16-feedback}.
 This discussion led to some changes in the use cases and discussion, although the principles themselves were not modified.
 We also plan to initiate a follow-on working group that will work with stakeholders to ensure that these principles impact the research process.
+
+The software citation principles were originally based on an adaptation of the
+FORCE11 Data Citation Principles~\cite{data-citation-principles}, and
+modified based on discussions of the FORCE11 Software Citation Working
+Group (see Appendix~\ref{app:wg_members} for members), information from the use
+cases in \S\ref{sec:use_cases}, and the related work in \S\ref{sec:related_work}.
+The adaptations were made because software, while similar to data in terms of
+not traditionally having been cited in publications, is also different than
+data. Software can be used to express or explain concepts, it is typically
+updated more frequently than data\footnote{Datasets can of course be frequently
+updated, but each update likely represents the findings of a new or repeated
+study.}, and it is executable.
+\niemnote{Dan: can you add more here?}
+Also, while software can be considered a type of data, the converse is not
+generally true.
 
 The principles in this document should guide further development of software citation
 mechanisms and systems, and the reader should be able to look at any particular example
@@ -311,12 +315,13 @@ software citation principles being applied.
 \label{sec:use_cases}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-We have documented and analyzed a set of use cases related to software citation
-in \cite{SC-Use-Cases}. Table~\ref{tab:use_cases} summarizes these use cases and
+We documented and analyzed a set of use cases related to software citation
+in \cite{SC-Use-Cases} (recorded in Appendix~\ref{app:usecases} for completeness).
+Table~\ref{tab:use_cases} summarizes these use cases and
 makes clear what the requirements are for software citation in each case.
-Each example represents a particular stakeholder performing an activity related to citing software, with the given metadata as information needed to do that.
-In that table,
-we use the following definitions:
+Each example represents a particular stakeholder performing an activity
+related to citing software, with the given metadata as information needed to
+do that. In that table, we use the following definitions:
 \begin{itemize}
 
 \item ``Researcher'' includes both academic researchers (e.g., postdoc,
