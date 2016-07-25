@@ -418,17 +418,16 @@ Use case 	& \rot{Unique identifier} &  \rot{Software name} & \rot{Author(s)} & \
 4.\ Determine use\slash citations of software                   & \textbullet & \textbullet &             &             &             &             &             & \textbullet &             &             &             & Researcher, software engineer \\
 5.\ Get credit for software development          & \textbullet & \textbullet & \textbullet & + &             & \textbullet & \textbullet & + &             &             &             & Researcher, software engineer \\
 6.\ ``Reproduce'' analysis                       & \textbullet & \textbullet &             &             & \textbullet & \textbullet & \textbullet &             & + & + &             & Researcher \\
-7.\ Benchmark software                           & \textbullet & \textbullet &  \textbullet  &             & \textbullet & \textbullet & \textbullet &             & + & + &             & Researcher, software engineer \\
-8.\ Find software to implement task              & \textbullet & \textbullet & \textbullet &             &             &             & \textbullet & \textbullet & + & + & + & Researcher, software engineer \\
-9.\ Publish software paper                       & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet &             &             &             &             & Publisher \\
-10.\ Publish papers that cite software           & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet & \textbullet &             &             &             & Publisher \\
-11.\ Build catalog of software                   & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet & \textbullet & + & + & + & Indexer \\
-12.\ Build software catalog\slash registry       & \textbullet & \textbullet & \textbullet &             &             &             & \textbullet &             &             & + & + & Domain group, library, archive \\
-13.\ Show scientific impact of holdings          & \textbullet & \textbullet &             &             &             &             &             & \textbullet &             &             &             & Repository \\
-14.\ Show how funded software has been used      & \textbullet & \textbullet &             &             &             &             &             & \textbullet &             &             &             & Funder, policy maker \\
-15.\ Evaluate contributions of researcher        & \textbullet &             & \textbullet & + &             & \textbullet &             & \textbullet &             &             &             & Evaluator, funder \\
-16.\ Store software entry                        & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet &             &             & + & + & Citation manager \\
-17.\ Publish mixed data\slash software packages  & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet &             & + & + & + & Repository, library, archive \\
+7.\ Find software to implement task              & \textbullet & \textbullet & \textbullet &             &             &             & \textbullet & \textbullet & + & + & + & Researcher, software engineer \\
+8.\ Publish software paper                       & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet &             &             &             &             & Publisher \\
+9.\ Publish papers that cite software           & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet & \textbullet &             &             &             & Publisher \\
+10.\ Build catalog of software                   & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet & \textbullet & + & + & + & Indexer \\
+11.\ Build software catalog\slash registry       & \textbullet & \textbullet & \textbullet &             &             &             & \textbullet &             &             & + & + & Domain group, library, archive \\
+12.\ Show scientific impact of holdings          & \textbullet & \textbullet &             &             &             &             &             & \textbullet &             &             &             & Repository \\
+13.\ Show how funded software has been used      & \textbullet & \textbullet &             &             &             &             &             & \textbullet &             &             &             & Funder, policy maker \\
+14.\ Evaluate contributions of researcher        & \textbullet &             & \textbullet & + &             & \textbullet &             & \textbullet &             &             &             & Evaluator, funder \\
+15.\ Store software entry                        & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet &             &             & + & + & Citation manager \\
+16.\ Publish mixed data\slash software packages  & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet &             & + & + & + & Repository, library, archive \\
 \bottomrule
 \end{tabular}
 \label{tab:use_cases}
@@ -1013,31 +1012,6 @@ Requirements for researcher:
 \item Release has all components necessary for reproducing the work (Note: this ideally also means sample inputs and outputs)
 \end{itemize}
 
-\subsection{Researcher who benchmarks someone else's software with or without modification on one or many hardware platforms for publication}
-
-This case describes the need for a researcher who has contributed to software (by design, software engineering, development, testing, patching, documentation, training, evangelizing, etc.) to have their software work recognized by their employer or colleagues for the purpose of career advancement and increased professional reputation.
-
-\katznote{I think we should merge this with B.1, as suggested in the google doc - the bullets are all the same}
-\niemnote{the title and description are quite different---based on the description, this actually seems like 5} \katznote{somehow, the description is the same was copied from 5's - not sure why/how - but I don't think this matches the title at all.  The title matches 1.  It's a case of a researcher using someone else's software for a paper.  Unlike 1, which is general in terms of the use, likely a new science results, here the use of a benchmarking study, but again, the outcome is a paper that needs to cite the software.  I'm fairly confident we can delete this one entirely, as it is really subsumed within 1.  If we do this, we should do it in the google doc too.}
-
-Requirements for researcher:
-\begin{itemize}
-\item Name of software
-\item Names of software authors/contributors
-\item Software version number and release date
-\item Location/repository
-\item Citable DOI of software or paper recommended for citation
-\item Format for citing software in source code or citation metadata file
-\end{itemize}
-
-Possible steps:
-\begin{enumerate} \setcounter{enumi}{0}
-\item Software developers create CITATION file and associate with source code release/repository.
-\item Researcher finds and uses software in the development of new software.
-\item Researcher identifies citation metadata file (e.g., CITATION file) associated with downloaded/installed software source code or in online repository/published location. CITATION file includes necessary citation metadata. CITATION file may include BibTeX entry, suggested citation format.
-\item Researcher cites software in source code, documentation, or other metadata-containing file.
-\end{enumerate}
-
 \subsection{Researcher who wants to find a piece of software to implement a task}
 
 This is the case where a research is looking for software to use but wants to understand whether it is being used in a scholarly fashion.
@@ -1156,7 +1130,32 @@ wants to cite the combined product.
 
 \subsection*{Use cases not adopted in the table:}
 
-\subsection{Researcher who wants to publish about a piece of software}
+\subsection*{Researcher who benchmarks someone else's software with or without modification on one or many hardware platforms for publication}
+
+This case describes the need for a researcher who has contributed to software (by design, software engineering, development, testing, patching, documentation, training, evangelizing, etc.) to have their software work recognized by their employer or colleagues for the purpose of career advancement and increased professional reputation.
+
+\katznote{I think we should merge this with B.1, as suggested in the google doc - the bullets are all the same}
+\niemnote{the title and description are quite different---based on the description, this actually seems like 5} \katznote{somehow, the description is the same was copied from 5's - not sure why/how - but I don't think this matches the title at all.  The title matches 1.  It's a case of a researcher using someone else's software for a paper.  Unlike 1, which is general in terms of the use, likely a new science results, here the use of a benchmarking study, but again, the outcome is a paper that needs to cite the software.  I'm fairly confident we can delete this one entirely, as it is really subsumed within 1.  If we do this, we should do it in the google doc too.}
+
+Requirements for researcher:
+\begin{itemize}
+\item Name of software
+\item Names of software authors/contributors
+\item Software version number and release date
+\item Location/repository
+\item Citable DOI of software or paper recommended for citation
+\item Format for citing software in source code or citation metadata file
+\end{itemize}
+
+Possible steps:
+\begin{enumerate} \setcounter{enumi}{0}
+\item Software developers create CITATION file and associate with source code release/repository.
+\item Researcher finds and uses software in the development of new software.
+\item Researcher identifies citation metadata file (e.g., CITATION file) associated with downloaded/installed software source code or in online repository/published location. CITATION file includes necessary citation metadata. CITATION file may include BibTeX entry, suggested citation format.
+\item Researcher cites software in source code, documentation, or other metadata-containing file.
+\end{enumerate}
+
+\subsection*{Researcher who wants to publish about a piece of software}
 
 \niemnote{this seems the same as use case 1} \katznote{I thought it was the same as 6}
 \niemnote{6 is about reproducing, while this seems to be writing a software paper}
@@ -1173,7 +1172,7 @@ Requirements:
 \end{itemize}
 
 
-\subsection{Researcher wants to record the software that generated some data}
+\subsection*{Researcher wants to record the software that generated some data}
 
 \niemnote{Is this distinct from 6? Or should it be a new one?}
 This is the case where a researcher is using some software to perform an analysis, either of a physical sample or of data.
@@ -1183,7 +1182,7 @@ Note that knowing the software and its version is not sufficient to determine th
 Requirement:
 The analysis, or the generated data, has information about the software used.
 
-\subsection{Researcher who wants to reproduce experience of use of a particular software implementation in context}
+\subsection*{Researcher who wants to reproduce experience of use of a particular software implementation in context}
 
 \niemnote{This one was not adopted into table; should we keep it, remote here, or somehow indicate why it was not adopted?}
 
