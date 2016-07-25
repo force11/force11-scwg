@@ -778,7 +778,7 @@ Beyond the efforts of this new working group, additional effort should be focuse
 
 \section*{Acknowledgements}
 
-Work by Daniel S.~Katz was supported by the National Science Foundation (NSF) while working at the Foundation.
+Work by Daniel S.~Katz was supported in part by the National Science Foundation (NSF) while working at the Foundation.
 Any opinion, finding, and conclusions or recommendations expressed in this material are those of the author and do not necessarily reflect the views of the NSF.
 Work by Kyle E.~Niemeyer was supported in part by the NSF under grant ACI-1535065.
 
@@ -955,13 +955,21 @@ Possible steps:
 \begin{enumerate} \setcounter{enumi}{0}
 \item Assume that software developers have created a CITATION file and associated with the source code release/repository.
 \item Researcher finds and uses software in the development of new software.
-\item Researcher identifies citation metadata file (e.g., ''CITATION'' file) associated with downloaded/installed software source code or in online repository/published location. CITATION file includes necessary citation metadata. CITATION file may include BibTeX entry, suggested citation format.
+\item Researcher identifies citation metadata file (e.g., ``CITATION'' file) associated with downloaded/installed software source code or in online repository/published location. CITATION file includes necessary citation metadata. CITATION file may include BibTeX entry, suggested citation format.
 \item Researcher cites software in source code, documentation, or other metadata-containing file.
 \end{enumerate}
 
 \subsection{Researcher who contributes to someone else's software (open source project)}
 
-maybe a variant of above\niemnote{add more to this?}
+A researcher wants to contribute to someone else's software in the manner in which their contributions will be accepted and recognized.
+
+Possible steps:
+\begin{enumerate}
+\item Researcher finds information about the software, and how contributors will be recognized
+\item Researcher possibly submit a Contributor License Agreement (CLA) or Copyright Assignment Agreement (CAA) to allow the contributed content to be distributed with the software being contributed to
+\item Researcher contributes to the software
+\item Software maintainers accept contribution, recognize researcher's contribution, and update the software metadata as appropriate
+\end{enumerate}
 
 \subsection{Researcher who wants to know who uses the researcher's software}
 
@@ -1159,8 +1167,6 @@ that needs to cite the software.
 
 \subsection*{Researcher who wants to publish about a piece of software}
 
-\niemnote{this seems the same as use case 1} \katznote{I thought it was the same as 6}
-\niemnote{6 is about reproducing, while this seems to be writing a software paper}
 The research wants to publish about a version of software they have produced.
 A key part of this use case is to be able to connect the given narrative to a specific version of the software in questions and connect that in large story.
 
@@ -1173,10 +1179,12 @@ Requirements:
 \item Links to older versions of software
 \end{itemize}
 
+This is similar to use case 1, other than the fact that the software developer(s) and
+paper author(s) will likely be the same person\slash people here.
+
 
 \subsection*{Researcher wants to record the software that generated some data}
 
-\niemnote{Is this distinct from 6? Or should it be a new one?}
 This is the case where a researcher is using some software to perform an analysis, either of a physical sample or of data.
 The researcher needs to know which version was used, for example in case a bug was fixed.
 Note that knowing the software and its version is not sufficient to determine the ``conditions'' of the analysis, but they are essential.
@@ -1184,9 +1192,12 @@ Note that knowing the software and its version is not sufficient to determine th
 Requirement:
 The analysis, or the generated data, has information about the software used.
 
+This is also similar to use case 1, except in that case the research output is
+a paper, while here the output is a dataset.
+
 \subsection*{Researcher who wants to reproduce experience of use of a particular software implementation in context}
 
-Researcher is engaged in historical/cultural research -- e.g., study of video games as cultural artifacts.
+Researcher is engaged in historical/cultural research---e.g., study of video games as cultural artifacts.
 
 Requirements:
 \begin{itemize}
@@ -1204,8 +1215,8 @@ Possible steps:
 \item Researcher obtains VM in the repository, executes it, and interacts with software
 \end{enumerate}
 
-Due to overlaps with use case 6, reproducing analysis, we decided not to include
-this use case in the table.
+This overlaps with use case 6 (reproducing analysis), and so we decided not to
+include this as a distinct use case.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Feedback following FORCE2016}
