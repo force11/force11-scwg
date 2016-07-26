@@ -244,8 +244,18 @@ We feel it is more clear to a reader to quote the basis by which we are making f
 \emph{In the discussion about Unique identification (lines 292+), I miss the discussion of hash values as version identifiers, as applied by Git for instance. As the first author is affiliated with GitHub, I assume this aspect was left out intentionally, but why? As basically all software is nowadays maintained with version control systems such as Git, these identifiers come for free and are by design unique. So, I would think they are an important aspect to discuss for software citations.}
 
 \textbf{Our response:}
+While we believe there is value in including the explicit version (e.g. Git SHA1 hash, Subversion revision number) of the software in a software citation we believe there are a number of reasons that this is not sufficient alone for the purposes of software citation:
 
-\niemnote{Arfon: can you add some discussion here? We can add a sentence addressing git hashes and other version control identifiers, and point out that while they may be sufficient in some ways (globally unique), they aren't necessarily resolvable on the Web, and different VCS use different identifiers, etc. In other words, they could be used (especially in the absence of other identifier like DOI), but not sufficient or recommended.}
+- Version numbers are not guaranteed to be permanent: projects can be migrated to new version control systems (e.g. SVN to Git). In addition, it is possible to overwrite versions (e.g. Git force-pushing).
+- Stating a version number doesn't guarantee that the software is available at a particular (web-resolvable) URL
+
+``Unique identifier'' refers to unique, persistent, and machine-actionable identifiers such as a DOI, ARK, or PURL.
+
+We recommend that software citations capture the versions of the code expressed as (ideally) a SemVer number (http://semver.org/) as these are points in time at which the authors of the code made the explicit decision to release the code.
+
+A SemVer release number together with a DOI (and associated archive in e.g. Zenodo) is we feel the is the most robust & future-proof solution. That said, in the absence of `recommended' identifiers such as a DOI) a Git SHA together with a link to a Git repository would be preferable to not having this information.
+
+We would also like to point out that there is a follow-on working group that will be producing recommended implementations for software citations in a particular setting. Ultimately the decision to (optionally) include e.g. Git SHAs are left for the implementation group to consider.
 
 \end{enumerate}
 
