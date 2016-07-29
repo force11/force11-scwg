@@ -141,7 +141,7 @@ While I think this is a very useful paper, I see the following problems with the
 
 \textbf{Our response:}
 We view the principles presented at the beginning as the main outcomes\slash results of this work, with the process of producing them (discussed in the new Section 3) based on a synthesis of information from the use cases and related work. Then, Section 6 (previously 5) discusses the ``results''.
-Our modifications to the structure of the paper, and changes we hope improve the logical flow, should help indicate these connections better.
+Our modifications to the structure of the paper, and changes that we hope improve the logical flow, should help make these connections more clear.
 
 \item \textbf{Reviewer comment:}
 \emph{It is not clear whether the authors consider software citations to be just the first step towards a long-term vision, or whether they consider software citations the overall final solution. It seems that the first is the case, but the long-term vision is not discussed.}
@@ -149,7 +149,7 @@ Our modifications to the structure of the paper, and changes we hope improve the
 \textbf{Our response:}
 Ultimately we believe that software citation is just a part of a more complete
 solution for the sharing and citation of all products of scholarly research.
-We have updated the language in the first paragraph of \S 2 to reflect this.
+We have updated the language in the first paragraph of \S2 to reflect this.
 
 \item \textbf{Reviewer comment:}
 \emph{This paper doesn't have an experimental design in the strict sense, as it is more of a position paper than a research article. The PeerJ guidelines state that ``the submission should clearly define the research question'', which is currently not the case for this paper. However, I see a research question between the lines, which could be phrased as ``how can citations be applied to software products to account for their increasing importance in scientific research?''. By making such a research question explicit, the PeerJ requirements can be met.}
@@ -193,9 +193,9 @@ Thank you for pointing this error out. We have corrected this statement to indic
 \emph{line 97: ``the need for credit for application software underscores the need to overhaul the system of credit for all research products.'': Very true and very important. But then maybe the concept of a ``citation'' is obsolete altogether, and we shouldn't be advocating ``software citations'', but something new altogether? Some more discussion on this would be valuable, I think. This relates to my comment above about a long-term vision.}
 
 \textbf{Our response:}
-We have added new language to the Motivation section (\S 2) describing what a
+We have added new language to the Motivation section (\S2) describing what a
 more complete solution might look like, and also included an additional sentence
-and citation to existing work on this topic towards the end of \S 3.
+and citation to existing work on this topic towards the end of \S3.
 
 
 \item \textbf{Reviewer comment:}
@@ -219,7 +219,7 @@ We have modified the text to make it clear that this is a recommendation from th
 \emph{Lines 308+: You don't imply that this list is complete, but wouldn't an identifier of a software *branch* be another important type of identifier? For example, the Windows ``version'' of a software package. Also, I see in what situation one would use (1) or (2) with respect to software citations, but what is the purpose of (3) in the context of citations?}
 
 \textbf{Our response:}
-Principle (6) states that ``Software identification should be as specific as necssary'', and we consider that the specific version includes the branch.
+Principle (6) states that ``Software identification should be as specific as necessary'', and we consider that the specific version includes the branch.
 
 We agree that (3) is not relevant in the context of citation, and have removed it from the discussion.
 However, it is a valid identifier that could be used in other contexts.
@@ -229,7 +229,7 @@ However, it is a valid identifier that could be used in other contexts.
 
 \textbf{Our response:}
 Software as a service is a fact, and we need a method to cite it---even though some metadata may not exist or be available, we need to do the best we can.
-The same issues would hold for commerical software or that available only as an executable.
+The same issues would hold for commercial software or that available only as an executable.
 If you can't find the name of software, should be able to find the name of the service\slash endpoint or function being used.
 
 Regarding accessibility, ideally we would like the source to be available, but if not we still need a way to cite.
@@ -240,24 +240,24 @@ In this case, the Accessibility principle would apply to the service itself, rat
 \emph{I find it a bit weird to quote passages from the same paper like ``The Accessibility principle (5) states that ?....?'' (line 329 and others).}
 
 \textbf{Our response:}
-We feel it is more clear to a reader to quote the basis by which we are making follow-on comments, rather than pointing back to a previous part of the paper.
+We feel it is more clear to a reader to quote the basis by which we are making follow-on comments, rather than just pointing back to a previous part of the paper.
 
 
 \item \textbf{Reviewer comment:}
 \emph{In the discussion about Unique identification (lines 292+), I miss the discussion of hash values as version identifiers, as applied by Git for instance. As the first author is affiliated with GitHub, I assume this aspect was left out intentionally, but why? As basically all software is nowadays maintained with version control systems such as Git, these identifiers come for free and are by design unique. So, I would think they are an important aspect to discuss for software citations.}
 
 \textbf{Our response:}
-While we believe there is value in including the explicit version (e.g. Git SHA1 hash, Subversion revision number) of the software in a software citation we believe there are a number of reasons that this is not sufficient alone for the purposes of software citation:
+While we believe there is value in including the explicit version (e.g. Git SHA1 hash, Subversion revision number) of the software in a software citation, we also believe there are a number of reasons that this, by itself, is not sufficient for the purposes of software citation:
 
 - Version numbers are not guaranteed to be permanent: projects can be migrated to new version control systems (e.g. SVN to Git). In addition, it is possible to overwrite versions (e.g. Git force-pushing).
 - Stating a version number doesn't guarantee that the software is available at a particular (web-resolvable) URL
-- When we talk about a ``Unique identifier'' in the document, we're refering to unique, persistent, and machine-actionable identifiers such as a DOI, ARK, or PURL and we don't believe a repository address with a version number is sufficient.
+- When we talk about a ``Unique identifier'' in the document, we're referring to unique, persistent, and machine-actionable identifiers such as a DOI, ARK, or PURL; we don't believe a repository address with a version number is sufficient.
 
-We recommend that software citations capture the versions of the code expressed as (ideally) a SemVer number (http://semver.org/) as these are points in time at which the authors of the code made the explicit decision to release the code.
+We recommend that software citations capture the versions of the code expressed as (ideally) a semantic version (SemVer) number (http://semver.org/). These are points in time at which the authors of the code made the explicit decision to release the code.
 
-A SemVer release number together with a DOI (and associated archive in e.g. Zenodo) is we feel the is the most robust & future-proof solution. That said, in the absence of `recommended' identifiers such as a DOI) a Git SHA together with a link to a Git repository would be preferable to not having this information.
+We feel a SemVer release number together with a DOI (and associated archive in, e.g., Zenodo) is the most robust and future-proof solution. That said, in the absence of `recommended' identifiers such as a DOI) a Git SHA together with a link to a Git repository would be preferable to not having this information.
 
-We would also like to point out that there is a follow-on working group that will be producing recommended implementations for software citations in a particular setting. Ultimately the decision to (optionally) include e.g. Git SHAs are left for the implementation group to consider.
+We would also like to point out that there will be a follow-on working group that will produce recommended implementations for software citations in a particular setting. Ultimately, the decision to (optionally) include something like Git SHAs is left for that implementation group to consider.
 
 We have updated the paper text to reflect some of these ideas.
 
@@ -342,7 +342,7 @@ Table 2, page 5: [Comment] This table contains a lot of information, and much fo
 \item We agree for use cases 1 and 2, and have added ``Description'' as beneficial metadata. However, we feel that a description would not really be necessary for use case 9 from the perspective of a publisher, and that a citation manager would not really need or benefit much from the description.
 \item We agree that use case 5 could benefit from indexed citations, and added that as beneficial metadata.
 \item We feel that the metadata omitted would not be necessary from the perspective of the publisher, the stakeholder for this use case.
-\item We feel that indexed citations are not particularly relevant for a catalog or registry (based on input from adminstrators of such entities), unless they want to display citations of the software---but this would be use case 4. Thus, we prefer to leave this as is.
+\item We feel that indexed citations are not particularly relevant for a catalog or registry (based on input from administrators of such entities), unless they want to display citations of the software---but this would be use case 4. Thus, we prefer to leave this as is.
 \item We agree that indexed citations are not necessary for use case 16, and have removed this. We also agree that the use case could benefit from description and keywords, in the same way that citation managers likely contain an abstract and keywords for papers.
 \item We intended ``find'' to mean more than discovery, but since the appendix was not present in the first submission this was not clear. We have altered the use case to be ``Find/choose software to implement task'' to make it clear that this use case goes beyond discovery.
 \end{enumerate}
