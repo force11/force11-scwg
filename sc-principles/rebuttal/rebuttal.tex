@@ -247,17 +247,19 @@ We feel it is more clear to a reader to quote the basis by which we are making f
 \emph{In the discussion about Unique identification (lines 292+), I miss the discussion of hash values as version identifiers, as applied by Git for instance. As the first author is affiliated with GitHub, I assume this aspect was left out intentionally, but why? As basically all software is nowadays maintained with version control systems such as Git, these identifiers come for free and are by design unique. So, I would think they are an important aspect to discuss for software citations.}
 
 \textbf{Our response:}
-While we believe there is value in including the explicit version (e.g. Git SHA1 hash, Subversion revision number) of the software in a software citation, we also believe there are a number of reasons that this, by itself, is not sufficient for the purposes of software citation:
+While we agree there is value in including the explicit version (e.g., Git SHA1 hash, Subversion revision number) of the software in a software citation, we also believe there are a number of reasons that this, by itself, is not sufficient for the purposes of software citation:
 
-- Version numbers are not guaranteed to be permanent: projects can be migrated to new version control systems (e.g. SVN to Git). In addition, it is possible to overwrite versions (e.g. Git force-pushing).
-- Stating a version number doesn't guarantee that the software is available at a particular (web-resolvable) URL
-- When we talk about a ``Unique identifier'' in the document, we're referring to unique, persistent, and machine-actionable identifiers such as a DOI, ARK, or PURL; we don't believe a repository address with a version number is sufficient.
+\begin{itemize}
+\item Version numbers are not guaranteed to be permanent: projects can be migrated to new version control systems (e.g., SVN to Git). In addition, it is possible to overwrite versions (e.g., Git force-pushing).
+\item Stating a version number doesn't guarantee that the software is available at a particular (web-resolvable) URL.
+\item When we talk about a ``Unique identifier'' in the document, we are referring to unique, persistent, and machine-actionable identifiers such as a DOI, ARK, or PURL; we do not believe a repository address with a version number is sufficient.
+\end{itemize}
 
-We recommend that software citations capture the versions of the code expressed as (ideally) a semantic version (SemVer) number (http://semver.org/). These are points in time at which the authors of the code made the explicit decision to release the code.
+We recommend that software citations capture the versions of the code expressed as (ideally) a semantic version (SemVer) number (\url{http://semver.org/}). These are points in time at which the authors of the code made the explicit decision to release the code.
+We feel a SemVer release number together with a DOI (and associated archive in, e.g., Zenodo) is the most robust and future-proof solution. That said, in the absence of ``recommended'' identifiers (such as a DOI) a Git SHA together with a link to a Git repository would be preferable to not having this information.
 
-We feel a SemVer release number together with a DOI (and associated archive in, e.g., Zenodo) is the most robust and future-proof solution. That said, in the absence of `recommended' identifiers such as a DOI) a Git SHA together with a link to a Git repository would be preferable to not having this information.
-
-We would also like to point out that there will be a follow-on working group that will produce recommended implementations for software citations in a particular setting. Ultimately, the decision to (optionally) include something like Git SHAs is left for that implementation group to consider.
+We would also like to point out that there will be a follow-on working group that will produce recommended implementations for software citations in a particular setting.
+Ultimately, the decision to (optionally) include something like Git SHAs is left for that implementation group to consider.
 
 We have updated the paper text to reflect some of these ideas.
 
