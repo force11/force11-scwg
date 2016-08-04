@@ -1,4 +1,4 @@
-\documentclass[11pt, oneside]{amsart}
+\documentclass[12pt, oneside]{amsart}
 \pdfoutput=1
 
 \usepackage{amsmath}
@@ -8,8 +8,10 @@
 \usepackage{dcolumn}
 \usepackage{float}
 \usepackage{graphicx}
-\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{csquotes}
 \usepackage{lmodern}
 \usepackage{multirow}
 \usepackage{rotating}
@@ -22,6 +24,14 @@
 \usepackage{verbatim}
 \usepackage{booktabs,multicol}
 \usepackage[inline]{enumitem}
+
+% add line numbers for submission
+\usepackage{lineno}
+\linenumbers
+
+% change to Times font
+\usepackage{newtxtext,newtxmath}
+
 \usepackage{textcomp} % added for textopenbullet
 
 % The following three lines are used for displaying footnote in tables.
@@ -56,10 +66,10 @@
 
 % 15 characters / 2.5 cm => 100 characters / line
 % Using 11 pt => 94 characters / line
-\setlength{\paperwidth}{216 mm}
+%\setlength{\paperwidth}{216 mm}
 % 6 lines / 2.5 cm => 55 lines / page
 % Using 11pt => 48 lines / pages
-\setlength{\paperheight}{279 mm}
+%\setlength{\paperheight}{279 mm}
 \usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
 % You can use a baselinestretch of down to 0.9
 \renewcommand{\baselinestretch}{0.96}
@@ -68,7 +78,13 @@
 
 \title{Software Citation Principles}
 
-\author{FORCE11 Software Citation Working Group (Editors: Arfon M.~Smith, Daniel S.~Katz, Kyle E.~Niemeyer)}
+\author{Arfon M.~Smith$^1$, Daniel S.~Katz$^2$, Kyle E.~Niemeyer$^3$, and the FORCE11 Software Citation Working Group}
+
+\thanks{Corresponding author: Daniel S.~Katz$^2$, \href{mailto:d.katz@ieee.org}{d.katz@ieee.org}}
+
+\thanks{{}$^{1}$ GitHub, Inc., San Francisco, CA, USA}
+\thanks{{}$^{2}$ National Center for Supercomputing Applications (NCSA) \& Electrical and Computer Engineering (ECE) Department \& School of Information Sciences (iSchool), University of Illinois at Urbana--Champaign, Urbana, IL, USA}
+\thanks{{}$^{3}$ School of Mechanical, Industrial, and Manufacturing Engineering, Oregon State University, Corvallis, OR, USA}
 
 \date{}
 
@@ -78,7 +94,7 @@
 
 \vspace{-0.2cm}
 Software is a critical part of modern research and yet there is little support across the scholarly ecosystem for its acknowledgement and citation.
-Inspired by the activities of the FORCE11 working group focussed on data citation, this document summarizes the recommendations of the FORCE11 Software Citation Working Group and its activities between June 2015 and April 2016.
+Inspired by the activities of the FORCE11 working group focused on data citation, this document summarizes the recommendations of the FORCE11 Software Citation Working Group and its activities between June 2015 and April 2016.
 Based on a review of existing community practices, the goal of the working group was to produce a consolidated set of citation principles that may encourage broad adoption of a consistent policy for software citation across disciplines and venues.
 Our work is presented here as a set of software citation principles, a discussion of the motivations for developing the principles, reviews of existing community practice, and a discussion of the requirements these principles would place upon different stakeholders.
 Working examples and possible technical solutions for how these principles can be implemented will be discussed in a separate paper.
@@ -93,11 +109,23 @@ Working examples and possible technical solutions for how these principles can b
 \label{sec:principles}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The principles in this section are written fairly concisely, and discussed
-further later in this document (\S\ref{sec:discussion}). Here, for example,
-we do not define what software should be cited, but how it should be
-cited, and we talk about how such decisions might be made in the
-discussion section~(\S\ref{sec:discussion}).
+%\niemnote{Do we want a better introduction, to help with the structure of the paper?}
+%\katznote{We need to keep this short, I think.  I'm not sure what else we can easily do.}
+%\niemnote{How is this?} \katznote{good}
+
+The main contribution of this document are the software citation principles,
+written fairly concisely in this section and discussed further later in the
+document (\S\ref{sec:discussion}). In addition, we also motivate the creation
+of these principles (\S\ref{sec:intro}), describe the process by which they
+were created (\S\ref{sec:process}), summarize use cases related to software
+citation (\S\ref{sec:use_cases}), and review related work
+(\S\ref{sec:related_work}). We also lay out the necessary future work
+(\S\ref{sec:futurework}).
+%The principles in this section are written fairly concisely, and discussed
+%further later in this document (\S\ref{sec:discussion}). Here, for example,
+%we do not define what software should be cited, but how it should be
+%cited, and we talk about how such decisions might be made in the
+%discussion section~(\S\ref{sec:discussion}).
 
 %\katznote{consider changing the language in the principles to be more
 %requirements-like -- e.g. use ``shall'' a lot; related: consider making the
@@ -143,22 +171,6 @@ numbers, revision numbers, or variants such as platforms.
 %Software citation methods should be sufficiently flexible to accommodate the variant practices among communities, but should not differ so much that they compromise interoperability of software citation practices across communities.
 \end{enumerate}
 
-These software citation principles were originally based on an adaptation of the
-FORCE11 Data Citation Principles~\cite{data-citation-principles}, and then were
-modified based on discussions of the FORCE11 Software Citation Working
-Group (see Appendix~\ref{app:wg_members} for members), information from the use
-cases in \S\ref{sec:use_cases}, and the related work in \S\ref{sec:related_work}.
-The adaptations have been made
-because software, while similar to data in terms of not traditionally having
-been cited in publications, is also different than data in that it can be used
-to express or explain concepts, it is updated more frequently, and it is
-executable.
-% \katznote{are there any other difference between software and data that should be stated here?}
-Also, while software can be considered a type of data, the converse is not
-generally true.
-
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Motivation}
@@ -168,7 +180,7 @@ generally true.
 As the process of research\footnote{We use the term ``research'' in this document to include work intended to increase human knowledge and benefit society, in science, engineering, humanities, and other areas.} has become increasingly digital, research outputs
 and products have grown beyond simply papers and books to include software,
 data, and other electronic components such as presentation slides, posters,
-(interactive)  graphs, maps, websites (e.g., blogs and forums), and multimedia
+(interactive) graphs, maps, websites (e.g., blogs and forums), and multimedia
 (e.g., audio and  video lectures).  Research knowledge is embedded in these
 components. And papers and books themselves are also becoming increasingly
 digital, allowing them to become executable and reproducible. As we move towards
@@ -177,7 +189,13 @@ digital products, the characteristics and properties that developed for books
 and papers need to be applied to all digital products and possibly adjusted.
 Here, we are concerned specifically with the citation of software products. The
 challenge is not just the textual citation of software in a paper, but the more
-general identification of software used within the research process.
+general identification of software used within the research process. This work
+focuses on making software a citable entity in the scholarly ecosystem. While
+software products represent a small fraction of the sum total of
+research output, this work together with other efforts such as the FORCE11
+Data Citation Principles~\cite{data-citation-principles,10.7717/peerj-cs.1}
+collectively represent an effort to better describe (and cite) all outputs of
+research.
 
 Software and other digital resources currently appear in publications in very
 inconsistent ways. For example, a random sample of 90 articles in the biology
@@ -244,6 +262,10 @@ configurations and platform issues are also needed.
 
 \end{itemize}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Process of creating principles}
+\label{sec:process}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The FORCE11 Software Citation Working Group~\cite{f11scwg} was created in April
 2015 with the following mission statement:
@@ -265,22 +287,63 @@ detailed specifications for implementation although it may review and discuss
 possible technical solutions.
 \end{italicquotes}
 
+The group gathered members (see Appendix~\ref{app:wg_members}) in April and
+May 2015, and then began work in June. This materialized as a number of meetings
+and offline work by group members to document existing
+practices in member disciplines; gather materials from workshops and other
+reports; review those materials, identifying overlaps and differences;
+create a list of use cases related to software citation, recorded in
+Appendix~\ref{app:usecases}; and subsequently draft an initial version of this document.
+The draft Software Citation Principles document was discussed in a day-long
+workshop and presented at the FORCE2016 Conference~\cite{force2016} in April 2016.
+Members of the workshop and greater FORCE11 community gave feedback, which we
+recorded here in Appendix~\ref{app:force16-feedback}. This discussion led to
+some changes in the use cases and discussion, although the principles themselves
+were not modified. We also plan to initiate a follow-on working group that will
+work with stakeholders to ensure that these principles impact the research process.
 
-The group gathered members (see Appendix~\ref{app:wg_members}) in April and May 2015,
-and then began work in June, with a number of meetings
-and some off-line work by group members to gather materials documenting existing
-practices in member disciplines; gather materials from workshops and other reports;
-review those materials, identifying overlaps and differences; and subsequently draft this resulting document,
-which will be presented and discussed at the Force2016 Conference~\cite{force2016}
-in April 2016.  We expect that this discussion may lead to a second, final version, and we also
-plan to have a follow-on working group that will work with stakeholders to ensure that
-these principles impact the research process.
+The process of creating the software citation principles began by adapting
+the FORCE11 Data Citation Principles~\cite{data-citation-principles}. These
+were then modified based on discussions of the FORCE11 Software Citation
+Working Group (see Appendix~\ref{app:wg_members} for members), information from
+the use cases in \S\ref{sec:use_cases}, and the related work in
+\S\ref{sec:related_work}.
+We made the adaptations because software, while similar to data in terms of
+not traditionally having been cited in publications, is also different than
+data. Software can be considered a type of data, but the converse is not
+generally true. In addition:
+
+\begin{itemize}
+\item Software can be used to express or explain concepts, unlike data.
+\item Software is updated more frequently that papers or data\footnote{Datasets
+can of course be frequently updated, but each update likely represents the
+findings of a new or repeated study.}.
+\item Software is executable, unlike papers or data.
+\item Software suffers from a different type of bit rot than data---software
+must be constantly maintained so that it continues to function as both the
+hardware and software environments that it is used on changes, as developers
+find and fix bugs, and as user requirements demand new features and capabilities.
+\item Software is frequently built to use other software, leading to complex
+dependencies, and these dependent software packages also frequently change.
+\item Software is generally smaller than data, so a number of the storage and
+preservation constraints on data don't apply to software.
+\item Software teams can be large and multidisciplinary, and with varied roles
+that overlap and sometimes make contributions ambiguous---some of which
+can rise to a level equivalent to paper authorship.
+\item The lifetime of software is generally not as long as that of data.
+\end{itemize}
 
 The principles in this document should guide further development of software citation
 mechanisms and systems, and the reader should be able to look at any particular example
 of software citation and see if it meets the principles.
-Please note that while we strive to offer practical guidelines that acknowledge the current incentive system of academic citation, a more modern system of assigning credit is sorely needed.
-It is not that academic software needs a separate system from academic papers, but that the need for credit for application software underscores the need to overhaul the system of credit for all research products.
+While we strive to offer practical guidelines that acknowledge the current
+incentive system of academic citation, a more modern system of assigning credit
+is sorely needed. It is not that academic software needs a separate credit
+system from that of academic papers, but that the need for credit for
+research software underscores the need to overhaul the system of credit for
+all research products. One possible solution for a more complete description of the
+citations and associated credit is the transitive credit proposed by
+Katz and Smith~\cite{transitive_credit_original,transitive_credit_json-ld}.
 
 In the next section~(\S\ref{sec:use_cases}), we provide some detailed context in
 which software citation is important, by means of use cases. In
@@ -295,12 +358,13 @@ software citation principles being applied.
 \label{sec:use_cases}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-We have documented and analyzed a set of use cases related to software citation
-in \cite{SC-Use-Cases}. Table~\ref{tab:use_cases} summarizes these use cases and
+We documented and analyzed a set of use cases related to software citation
+in \cite{SC-Use-Cases} (recorded in Appendix~\ref{app:usecases} for completeness).
+Table~\ref{tab:use_cases} summarizes these use cases and
 makes clear what the requirements are for software citation in each case.
-Each example represents a particular stakeholder performing an activity related to citing software, with the given metadata as information needed to do that.
-In that table,
-we use the following definitions:
+Each example represents a particular stakeholder performing an activity
+related to citing software, with the given metadata as information needed to
+do that. In that table, we use the following definitions:
 \begin{itemize}
 
 \item ``Researcher'' includes both academic researchers (e.g., postdoc,
@@ -310,7 +374,7 @@ tenure-track faculty member) and research software engineers.
 and\slash or software papers as well as archives such as Zenodo that directly
 publish software.
 
-\item ``Funder'' is a group that funds software or work using software.
+\item ``Funder'' is a group that funds software or research using software.
 
 \item ``Indexer'' examples include Scopus, Web of Science, Google Scholar,
 and Microsoft Academic Search.
@@ -346,7 +410,7 @@ to use, alternative means may be used to create citable objects as discussed in 
 \begin{table}[tbhp]
 \caption{
 Use cases and basic metadata requirements for software citation, adapted from~\cite{SC-Use-Cases}.
-Solid circles (\textbullet) indicate that the use case depends on that metadata, while open circles (\textopenbullet) indicate that the use case would benefit from that metadata if available.
+Solid circles (\textbullet) indicate that the use case depends on that metadata, while plus signs (+) indicate that the use case would benefit from that metadata if available.
 }
 \centering
 \scriptsize\setlength{\tabcolsep}{2.5pt}
@@ -356,23 +420,22 @@ Solid circles (\textbullet) indicate that the use case depends on that metadata,
  \cmidrule{2-12}
 Use case 	& \rot{Unique identifier} &  \rot{Software name} & \rot{Author(s)} & \rot{Contributor role} & \rot{Version number} & \rot{Release date} & \rot{Location\slash repository} & \rot{Indexed citations} & \rot{Software license} & \rot{Description} & \rot{Keywords} & Example stakeholder(s) \\
 \midrule
-1.\ Use software for a paper                     & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet &             & \textopenbullet &             &             & Researcher \\
-2.\ Use software in\slash with new software      & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet &             & \textopenbullet &             &             & Researcher, software engineer \\
-3.\ Contribute to software                       & \textbullet & \textbullet & \textbullet & \textopenbullet & \textbullet & \textbullet & \textbullet &             & \textopenbullet & \textopenbullet &             & Researcher, software engineer \\
+1.\ Use software for a paper                     & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet &   & + & + &   & Researcher \\
+2.\ Use software in\slash with new software      & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet &   & + & + &   & Researcher, software engineer \\
+3.\ Contribute to software                       & \textbullet & \textbullet & \textbullet & + & \textbullet & \textbullet & \textbullet &             & + & + &             & Researcher, software engineer \\
 4.\ Determine use\slash citations of software                   & \textbullet & \textbullet &             &             &             &             &             & \textbullet &             &             &             & Researcher, software engineer \\
-5.\ Get credit for software development          & \textbullet & \textbullet & \textbullet & \textopenbullet &             & \textbullet & \textbullet &             &             &             &             & Researcher, software engineer \\
-6.\ ``Reproduce'' analysis                       & \textbullet & \textbullet &             &             & \textbullet & \textbullet & \textbullet &             & \textopenbullet & \textopenbullet &             & Researcher \\
-7.\ Benchmark software                           & \textbullet & \textbullet &             &             & \textbullet & \textbullet & \textbullet &             & \textopenbullet & \textopenbullet &             & Researcher, software engineer \\
-8.\ Find software to implement task              & \textbullet & \textbullet & \textbullet &             &             &             & \textbullet & \textbullet & \textopenbullet & \textopenbullet & \textopenbullet & Researcher, software engineer \\
-9.\ Publish software paper                       & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet &             &             &             &             & Publisher \\
-10.\ Publish papers that cite software           & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet & \textbullet &             &             &             & Publisher \\
-11.\ Build catalog of software                   & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet & \textbullet & \textopenbullet & \textopenbullet & \textopenbullet & Indexer \\
-12.\ Build software catalog\slash registry       & \textbullet & \textbullet & \textbullet &             &             &             & \textbullet &             &             & \textopenbullet & \textopenbullet & Domain group, library, archive \\
-13.\ Show scientific impact of holdings          & \textbullet & \textbullet &             &             &             &             &             & \textbullet &             &             &             & Repository \\
-14.\ Show how funded software has been used      & \textbullet & \textbullet &             &             &             &             &             & \textbullet &             &             &             & Funder, policy maker \\
-15.\ Evaluate contributions of researcher        & \textbullet &             & \textbullet & \textopenbullet &             & \textbullet &             & \textbullet &             &             &             & Evaluator, funder \\
-16.\ Store software entry                        & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet & \textbullet &             &             &             & Citation manager \\
-17.\ Publish mixed data\slash software packages  & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet &             & \textopenbullet & \textopenbullet & \textopenbullet & Repository, library, archive \\
+5.\ Get credit for software development          & \textbullet & \textbullet & \textbullet & + &             & \textbullet & \textbullet & + &             &             &             & Researcher, software engineer \\
+6.\ ``Reproduce'' analysis                       & \textbullet & \textbullet &             &             & \textbullet & \textbullet & \textbullet &             & + & + &             & Researcher \\
+7.\ Find software to implement task              & \textbullet & \textbullet & \textbullet &             &             &             & \textbullet & \textbullet & + & + & + & Researcher, software engineer \\
+8.\ Publish software paper                       & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet &             &             &             &             & Publisher \\
+9.\ Publish papers that cite software           & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet & \textbullet &             &             &             & Publisher \\
+10.\ Build catalog of software                   & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet & \textbullet & + & + & + & Indexer \\
+11.\ Build software catalog\slash registry       & \textbullet & \textbullet & \textbullet &             &             &             & \textbullet &             &             & + & + & Domain group, library, archive \\
+12.\ Show scientific impact of holdings          & \textbullet & \textbullet &             &             &             &             &             & \textbullet &             &             &             & Repository \\
+13.\ Show how funded software has been used      & \textbullet & \textbullet &             &             &             &             &             & \textbullet &             &             &             & Funder, policy maker \\
+14.\ Evaluate contributions of researcher        & \textbullet &             & \textbullet & + &             & \textbullet &             & \textbullet &             &             &             & Evaluator, funder \\
+15.\ Store software entry                        & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet &             &             & + & + & Citation manager \\
+16.\ Publish mixed data\slash software packages  & \textbullet & \textbullet & \textbullet &             & \textbullet & \textbullet & \textbullet &             & + & + & + & Repository, library, archive \\
 \bottomrule
 \end{tabular}
 \label{tab:use_cases}
@@ -398,11 +461,10 @@ submitted resources.
 \subsection{General community/non domain-specific activities}
 
 Some of the most actionable work has come from the UK Software Sustainability
-Institute (SSI) in the form of blog posts written by their community fellows:
-
-In a blog post from 2012, Jackson discusses some of the pitfalls of trying to
-cite software in publications~\cite{ssi-how-to-cite}. He includes useful
-guidance for when to consider citing software as well as some ways to help
+Institute (SSI) in the form of blog posts written by their community fellows.
+For example, in a blog post from 2012, Jackson discusses some of the pitfalls
+of trying to cite software in publications~\cite{ssi-how-to-cite}. He includes
+useful guidance for when to consider citing software as well as some ways to help
 ``convince'' journal editors to allow the inclusion of software citations.
 
 Wilson suggests that software authors include a \texttt{CITATION} file that
@@ -430,26 +492,26 @@ cite five core principles (Code, Copyright, Citation, Credit, Curation) for
 scientific software.
 
 Perhaps in recognition of the broad range of research domains struggling with
-the challenge of better recognizing the role of software, funders and agencies 
-in both the US (e.g., NSF, NIH, Alfred P.\ Sloan Foundation) and UK (e.g., 
-SFTC, JISC, Wellcome Trust) have sponsored or hosted a number of workshops with 
+the challenge of better recognizing the role of software, funders and agencies
+in both the US (e.g., NSF, NIH, Alfred P.\ Sloan Foundation) and UK (e.g.,
+SFTC, JISC, Wellcome Trust) have sponsored or hosted a number of workshops with
 participants from across a range of
-disciplines, specifically aimed at discussing issues around software 
+disciplines, specifically aimed at discussing issues around software
 citation~\cite{Sufi:2014en,Ahalt:2015ve,ssisoftwarecredit,aas-software-index,saga,Allen:2015ub}.
-In many cases these workshops produced strong recommendations for their 
-respective communities on how best to proceed. In addition, a number of common 
-themes arose in these workshops, including (1) the critical need for making 
-software more ``citable'' (and therefore actions authors and publishers 
-should take to improve the status quo), (2) how to better measure the impact 
-of software (and therefore attract appropriate funding), and (3) how to 
-properly archive software (where, how, and how often) and how this affects 
+In many cases these workshops produced strong recommendations for their
+respective communities on how best to proceed. In addition, a number of common
+themes arose in these workshops, including (1) the critical need for making
+software more ``citable'' (and therefore actions authors and publishers
+should take to improve the status quo), (2) how to better measure the impact
+of software (and therefore attract appropriate funding), and (3) how to
+properly archive software (where, how, and how often) and how this affects
 what to cite and when.
 
 
 Most notable of the community efforts are those of WSSSPE~\cite{wssspe} and
 SSI~\cite{ssi-workshops}, who between them have run a series of workshops aimed
-at gathering together community members with an interest in
-\begin{enumerate*}[series=InlineList, before=\hspace{-0.6ex}]
+at gathering together community members with an interest in~
+\begin{enumerate*}[series=InlineList]
     \item defining the set
 of problems related to the role of software and associated people in research
 settings, particularly academia,
@@ -465,7 +527,7 @@ relevant to this working group.  In addition, a number of academic publishers
 such as APA~\cite{APA-guidelines} have recommendations for submitting authors on
 how to cite software, and journals such as \emph{F1000Research}~\cite{F1000},
 \emph{SoftwareX}~\cite{softwareX}, \emph{Open Research Computation}~\cite{ORC}, and
-the \emph{Journal of Open Research Software} allow for submissions entirely 
+the \emph{Journal of Open Research Software} allow for submissions entirely
 focused on research software.
 
 \subsection{Domain-specific community activities}
@@ -505,7 +567,7 @@ packages.
 
 In the geosciences: The Ontosoft~\cite{ontosoft} project describes itself as ``A
 Community Software Commons for the Geosciences.'' Much attention was given to the
-metadata required to describe, discover, and execute research software. NSF sponsored
+metadata required to describe, discover, and execute research software. The NSF-sponsored
 Geo-Data Workshop 2011~\cite{nsf-geo-data} revolved around data lifecycle, management, and
 citation. The workshop report includes many recommendations for data
 citation.
@@ -527,7 +589,7 @@ or the terms and classes defined at \href{https://schema.org}{Schema.org} relate
 \href{https://schema.org/SoftwareApplication}{\texttt{SoftwareApplication}} class.   In addition,
 language-specific software metadata schemes are in widespread use, including the Debian
 package format~\cite{Debian_policy}, Python package descriptions~\cite{pypi}, and R package descriptions~\cite{wickham_r_2015}, but these are typically
-conceived for software build, packaging,and distribution rather than citation.  CodeMeta~\cite{codemeta}
+conceived for software build, packaging, and distribution rather than citation.  CodeMeta~\cite{codemeta}
 has created a crosswalk among these software metadata schemes and an exchange format that
 allows software repositories to effectively interoperate.
 
@@ -550,14 +612,25 @@ FORCE11 Data Citation Working Group principles, which state, ``In scholarly lite
 %We suggest that if Excel is used to simply store and plot data, it does not need to be cited, but if it is used for statistical analysis, it should be.  Similarly, general software for conducting library research (e.g., JSTOR Mobile App), writing research papers (e.g., \LaTeX), research presentations (e.g., Powerpoint) or communications (e.g., Skype) should not be cited.
 %This recommendation matches that of the Purdue Online Writing Lab: ``Do not cite standard office software (e.g. Word, Excel) or programming languages.  Provide references only for specialized software.''~\cite{powl-citing-software}  In other words, if using different software could produce different data or results, then the software used should be cited.
 
-Note that some software which is or could be captured as part of data provenance may not be cited.
-Citation is a record of software that is important to a research outcome, where provenance is a record of all steps (including software) used to generated particular data within the research process.
-This implies that for a data research product, provenance data will include all cited software, but not necessarily vice versa.
-Similarly, the software metadata that is recorded as part of data provenance should be a superset of the metadata recorded as part of software citation.
-The data recorded for reproducibility should also be a superset of the metadata recorded as part of software citation.
-These statements may also be true for software products.
-In general, we intend the software citation principles to cover the minimum of what is necessary for software citation for the purpose of software identification.
-Other use cases (e.g., provenance, reproducibility) may lead to additional requirements (i.e., enhanced metadata).
+Some software which is, or could be, captured as part of data provenance may not be cited.
+Citation is partly a record of software important to a research outcome\footnote{Citation
+can be used for many purposes, including for software: which software has been used in
+the work, which software has influenced the work, which software is the work superseding,
+which software is the work disproving, etc.}, where provenance is a record of all steps
+(including software) used to generated particular data within the research process.
+Research results, including data, increasingly depend on software~\cite{Hannay:2009wp},
+and thus may depend on the specific version
+used~\cite{Sandve:2013gh,Wilson:2014aa}. Furthermore, errors in software or
+environment variations can affect results~\cite{Morin:2012hz,Soergel:2015aa}.
+This implies that for a data research product, provenance data will include some of
+the cited software.
+Similarly, the software metadata recorded as part of data provenance will
+overlap the metadata recorded as part of software citation for the software that
+was used in the work. The data recorded for reproducibility should also overlap
+the metadata recorded as part of software citation.
+In general, we intend the software citation principles to cover the minimum of what is
+necessary for software citation for the purpose of software identification.
+Some use cases related to citation (e.g., provenance, reproducibility) might have additional requirements beyond the basic metadata needed for citation, as Table~\ref{tab:use_cases} shows.
 %\ssnote{from the data side, an example might be found in the National Climate Assessment (NASA, GCIS) where this is captured in PROV instead?}
 %\dmnote{ Mention that the principles are covering what's necessary, not necessarily what is sufficient for a given use case. So perhaps we should discuss things like configurations or bugs? }
 
@@ -570,8 +643,7 @@ As discussed in the Importance principle~(\ref{principle:importance}) and the di
 itself should be cited on the same basis as any other research product; authors should cite the appropriate set of software products}.
 If a software paper exists and it contains results (performance, validation, etc.) that are
 important to the work, then the software paper should also be cited.
-In addition, if the software authors ask that a paper should be cited, that should typically be respected and the paper cited \textit{in addition to} the software being cited.
-%There are situations where it is appropriate to cite the software, the software paper, or both.
+We believe that a request from the software authors to cite a paper should typically be respected, and the paper cited \textit{in addition to} the software.
 
 \subsection{Derived software}
 
@@ -597,15 +669,15 @@ minimal metadata needed to identify the software.
 
 \subsection{Citation format in reference list}
 
-Citations in references in the scholarly literature are formatted according to the citation 
-style (e.g., AMS, APA, Chicago, MLA) used by that publication. (Examples illustrating these 
-styles have been published by Lipson~\cite{lipson2011cite}; the follow-on Software Citation 
-Implementation Group will provide suggested examples.)  As these citations are typically sent 
-to publishers as text formatted in that citation style, not as structured metadata, and because 
-the citation style dictates how the human reader sees the software citation, \textit{we recommend 
+Citations in references in the scholarly literature are formatted according to the citation
+style (e.g., AMS, APA, Chicago, MLA) used by that publication. (Examples illustrating these
+styles have been published by Lipson~\cite{lipson2011cite}; the follow-on Software Citation
+Implementation Group will provide suggested examples.)  As these citations are typically sent
+to publishers as text formatted in that citation style, not as structured metadata, and because
+the citation style dictates how the human reader sees the software citation, \textit{we recommend
 that all text citation styles support the following:
-a) a label indicating that this is software, e.g., [Software], potentially with more information 
-such as [Software: Source Code], [Software: Executable], or [Software: Container], 
+a) a label indicating that this is software, e.g., [Software], potentially with more information
+such as [Software: Source Code], [Software: Executable], or [Software: Container],
 and b) support for version information, e.g., Version 1.8.7.}
 
 \subsection{Citations limits}
@@ -623,7 +695,15 @@ What this means for data is discussed in detail in the ``Unique Identification''
 This report also lists examples of identifiers that match these criteria including DOIs, PURLs, Handles, ARKS, and NBNs.
 For software, \textit{we recommend the use of DOIs as the unique identifier due to their common usage and acceptance, particularly as they are the standard for other digital products such as publications.}
 
-Note that the ``unique'' in a UID means that it points to a unique, specific software. However, multiple UIDs might point to the same software.
+While we believe there is value in including the explicit version (e.g., Git SHA1 hash, Subversion revision number) of the software in any software citation, there are a number of reasons that a commit reference together with a repository URL is not ideal for the purposes of software citation:
+
+\begin{enumerate}
+\item Version numbers/commit references are not guaranteed to be permanent. Projects can be migrated to new version control systems (e.g., SVN to Git). In addition, it is possible to overwrite/clobber a particular version (e.g., force-pushing in the case of Git).
+\item A repository address and version number does not guarantee that the software is available at a particular (resolvable) URL.
+\item A particular version number/commit reference may not represent a ``preferred'' point at which to cite the software from the perspective of the package authors.
+\end{enumerate}
+
+Note that the ``unique'' in a UID means that it points to a unique, specific software version. However, multiple UIDs might point to the same software.
 This is not recommended, but is possible.
 \textit{We strongly recommend that if there is already a UID for a version of software, no additional UID should be created.}
 Multiple UIDs can lead to split credit, which goes against the Credit and Attribution principle (\ref{principle:credit}).
@@ -642,7 +722,7 @@ It is possible that a given piece of software may have identifiers of all three 
 there may be one or more software papers, each with an identifier.
 
 While we often need to cite a specific version of software, we may also need a way to cite the
-software in general, or the latest version, and to link multiple releases together, perhaps for
+software in general and to link multiple releases together, perhaps for
 the purpose of understanding citations to the software.  The principles in \S\ref{sec:principles} are
 intended to be applicable at all levels, and to all types of identifiers, such as DOIs, RRIDs, etc.,
 though we again recommend when possible the use of DOIs that identify specific versions of
@@ -656,8 +736,8 @@ There is currently a lack of consensus on the use of RRIDs for software.
 \subsection{Types of software}
 
 The principles and discussion in this document have generally been written to focus on software
-as source code.  However, we recognize that some software is only available as an executable, a container, or a virtual machine image, while other software may be available as a service.  We believe the principles apply to all of these forms of software, though the implementation of them will certainly differ based on software type.  
-\textit{When software exists as both source code and another type, we recommend that the source code be cited.}
+as source code.  However, we recognize that some software is only available as an executable, a container, or a virtual machine image, while other software may be available as a service.  We believe the principles apply to all of these forms of software, though the implementation of them will certainly differ based on software type.
+\textit{When software is accessible as both source code and another type, we recommend that the source code be cited.}
 
 
 \subsection{Access to software}
@@ -684,9 +764,9 @@ In addition, such landing pages can contain both human-readable metadata (e.g., 
 %
 %\katznote{recognize that more is needed for reproducibility, such as configuration information and runtime environment} \LJHnote{concept of enhance metadata to support this goal?}
 
-\subsection{Updates to this document}
+\subsection{Updates to these principles}
 
-As this set of software citation principles has been created by the FORCE11 Software Citation Working Group, which will cease work and dissolve after these principles have been published,
+As this set of software citation principles has been created by the FORCE11 Software Citation Working Group, which will cease work and dissolve after publication of these principles,
 any updates will require a different FORCE11 working group to make them.
 As mentioned in \S\ref{sec:futurework}, we expect a follow-on working group to be established to promote the implementation of
 these principles, and it is possible that this group might find items that need correction or addition
@@ -694,8 +774,6 @@ in these principles.
 \textit{We recommend that this Software Citation Implementation Working Group be charged, in part,
 with updating these principles during its lifetime, and that FORCE11 should listen to community requests for later updates and respond by creating a new working group.}
 
-%\dmnote{Any provisions for updating the principles?}
-%\LJHnote{may require feedback from "Implementation Group" and some time to put into practice to find gaps. Most of the time revisions are frequent in the beginning of the lifecycle to cover gaps and become less frequent.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Future work}
@@ -713,6 +791,10 @@ of the FORCE11 Data Citation Working Group.
 Beyond the efforts of this new working group, additional effort should be focused on updating the overall academic credit\slash citation system.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Acknowledgements}
+
+While D.~S.~Katz prepared this material while employed at the NSF, any opinion, finding, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the NSF.
 
 \appendix
 
@@ -828,6 +910,420 @@ Stijn Van Hoey, Ghent University
 Belinda Weaver, The University of Queensland
 
 Nic Weber, University of Washington iSchool
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Software citation use cases}
+\label{app:usecases}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+This appendix records an edited, extended description of the use cases
+discussed in~\S\ref{sec:use_cases}, originally found in~\cite{SC-Use-Cases}.
+This discussion is not fully complete, and in some cases, it may not be fully
+self-consistent, but it is part of this paper as a record of one of the inputs
+to the principles. We expect that the follow-on Software Citation
+Implementation Group will further develop these use cases, including explaining
+in more detail how the software citation principles can be applied
+to each as part of working with the stakeholders to persuade them to actually
+implement the principles in their standard workflows.
+
+
+\subsection{Researcher who uses someone else's software for a paper}
+
+One of the most common use cases may be researchers who use someone else's software and want to cite it in a technical paper.
+This will be similar to existing practices for citing research artifacts in papers.
+
+``Requirements'' for researcher:
+\begin{itemize}
+\item Name of software
+\item Names of software authors/contributors
+\item Software version number and release date, or download date
+\item Location/repository, or contact name/email (if not publicly available)
+\item Citable DOI of software
+\item Format for citing software in text and in bibliography
+\end{itemize}
+
+Possible steps:
+\begin{enumerate} \setcounter{enumi}{0}
+\item Software developers create CITATION file and associate with source code release/repository.
+\item Researcher finds and uses software for research paper.
+\item Researcher identifies citation metadata file (e.g., ``CITATION'' file) associated with downloaded/installed software source code or in online repository/published location. CITATION file includes necessary citation metadata. CITATION file may include BibTeX entry, suggested citation format
+\item Researcher cites software appropriately, e.g., in methodology section; reference included in bibliography.
+\end{enumerate}
+
+\subsection{Researcher who uses someone else's software for new software}
+
+In this case, a researcher develops new software that incorporates or depends on existing software.
+In order to credit the developer(s), the researcher will include citations in his/her source code, documentation, or other metadata in a similar manner to papers
+
+Requirements for researcher:
+\begin{itemize}
+\item Name of software
+\item Names of software authors/contributors
+\item Software version number and release date
+\item Location/repository
+\item Citable DOI of software
+\item Format for citing software in source code, documentation, or citation metadata file
+\end{itemize}
+
+Possible steps:
+\begin{enumerate} \setcounter{enumi}{0}
+\item Assume that software developers have created a CITATION file and associated with the source code release/repository.
+\item Researcher finds and uses software in the development of new software.
+\item Researcher identifies citation metadata file (e.g., ``CITATION'' file) associated with downloaded/installed software source code or in online repository/published location. CITATION file includes necessary citation metadata. CITATION file may include BibTeX entry, suggested citation format.
+\item Researcher cites software in source code, documentation, or other metadata-containing file.
+\end{enumerate}
+
+\subsection{Researcher who contributes to someone else's software (open source project)}
+
+A researcher wants to contribute to someone else's software in the manner in which their contributions will be accepted and recognized.
+
+Possible steps:
+\begin{enumerate}
+\item Researcher finds information about the software, and how contributors will be recognized
+\item Researcher possibly submit a Contributor License Agreement (CLA) or Copyright Assignment Agreement (CAA) to allow the contributed content to be distributed with the software being contributed to
+\item Researcher contributes to the software
+\item Software maintainers accept contribution, recognize researcher's contribution, and update the software metadata as appropriate
+\end{enumerate}
+
+\subsection{Researcher who wants to know who uses the researcher's software}
+
+This case is similar to a researcher who wants to find other papers/publications that cite a particular paper.
+A researcher wants to gauge the usage of her software within or across communities and measure its impact on research for both credit and funding.
+
+Requirements:
+\begin{itemize}
+\item Uniquely identify software
+\item Indexed citations of software
+\item Indexed papers that use software
+\end{itemize}
+
+Steps:
+\begin{enumerate}
+\item Researcher finds software official name or unique DOI in metadata associated with downloaded/installed source code or in online repository/published location.
+\item Researcher searches for software, may use online indexer (e.g., Scopus, Web of Science, Google Scholar) using software name or DOI.
+\item Online indexer presents entry for software with list of citations, if any.
+Ideally, entry will also include metadata contained in software CITATION file and citation example.
+\end{enumerate}
+
+\subsection{Researcher gets credit for software development at the academic\slash governmental institution, in professional career, etc.}
+
+This case describes the need for a researcher who has contributed to software (by design, software engineering, development, testing, patching, documentation, training, evangelizing, etc.)
+to have their software work recognized by their employer or colleagues for the purpose of career advancement and increased professional reputation.
+
+Requirements for researcher:
+\begin{itemize}
+\item Name of software
+\item Names of software authors/contributors
+\item Location/repository
+\item Citable DOI of software
+\item Format for citing software in an official CV, in a departmental/institutional review report, etc.
+\item Role in the software creation, that is linked to version or component
+\item Role in contributing to the software as a ``package'' (not just lines of code) development of benchmarks, testing, documentation, tutorials etc.
+\end{itemize}
+
+\subsection{Researcher who wants to ``reproduce'' another person\slash group's analysis}
+
+When a researcher wants to understand or verify a research results from another researcher, they
+would like to use the same software.  Note that accessing the exact same software is necessary but not sufficient for reproducibility.
+
+Requirements for researcher:
+\begin{itemize}
+\item Name of software
+\item Location/repository for the exact release that was used
+\item DOI or other persistent handle for that specific release
+\item Release has all components necessary for reproducing the work (Note: this ideally also means sample inputs and outputs)
+\end{itemize}
+
+\subsection{Researcher who wants to find a piece of software to implement a task}
+
+This is the case where a research is looking for software to use but wants to understand whether it is being used in a scholarly fashion.
+For example, a researcher searches through a software repository and finds a package that might be useful.
+They look to find whether it has been used by others in the scientific literature.
+
+Requirements
+\begin{itemize}
+\item Either the software documentation page has a reference to existing literature that makes use of it.
+\item There is a mechanism to look it up.
+\end{itemize}
+
+\subsection{Publisher wants to publish a software paper}
+
+This case asks what information regarding software is needed for a publisher who wants to publish a paper describing that software.
+
+Requirements
+\begin{itemize}
+\item Name of software
+\item Names of software authors/contributors
+\item Location/repository
+\item Citable DOI of software
+\item Format for citing software in JATS, for example, as well as references in the text itself
+\end{itemize}
+
+\subsection{Publisher who wants to publish papers that cite software}
+
+This case asks what information regarding software is needed for a publisher who wants to publish papers that cite that software.
+
+Requirements for publisher:
+\begin{itemize}
+\item Name of software
+\item Names of software authors/contributors
+\item Location/repository
+\item Citable DOI of software
+\item Format for citing software in, e.g., JATS, as well as references in the text itself
+\end{itemize}
+
+\subsection{Indexer (e.g., Scopus, WoS, Scholar, MS Academic Search) who wants to build a catalog of software}
+
+Provide an index over the software that is used within the research domain. Track how that software is being used by different groups of researchers and to what ends.
+
+Requirements:
+\begin{itemize}
+\item Uniquely identify pieces of software used by the research literature
+\item Connect authors and organizations to that software
+\item Connect various software versions together
+\end{itemize}
+
+\subsection{Domain group (e.g., ASCL, bioCADDIE), Libraries, and Archives (e.g., University library, laboratory archive, etc.) wants to build a catalog\slash registry of institutional or domain software}
+
+There are two different examples here: One is building a catalog/archive of software produced by those affiliated with the institution.
+The other is along the lines of Sayeed Choudhury's note that ``data are the new special collections.''
+An institution may choose to build a catalog/archive of many things within a single topic or subject in order to secure all the software on a certain topic or build a collection that may draw users to their establishment, much like special collections now do for university libraries and archives.
+
+\subsection{Repository showing scientific impact of holdings}
+
+A repository that archives and/or maintains a collection of software.
+The repository would like to address usage and impact of software in its holding.
+Usage would aid potential users whether the software is being actively maintained or developed or has been superseded.
+Both would help repository know how to direct resources, e.g., maintenance, training etc.
+This is similar to the case of a funder wanting to know the impact of funded work.
+
+Requirements:
+\begin{itemize}
+\item Code name, or a unique identifier
+\item Relationships to previous versions
+\item Connect to repository
+\item Connect to research
+\end{itemize}
+
+\subsection{Funder who wants to know how software they funded has been used}
+
+This use case is similar to ``Repository showing scientific impact of holdings'',
+where a funder wants to find out the use and impact and software that they
+supported.  It is also similar to ``Researcher who wants to know who uses the researcher's software.''
+
+
+\subsection{Evaluator or funder wants to evaluate contributions of a researcher}
+
+In this use case, an evaluator (e.g., academic administrator) or funder wants
+to evaluate the contributions of a researcher who develops software. This case
+is related to those where researchers want to get credit for software
+development, or where organizations want to evaluate the impact of software
+itself.
+
+\subsection{Reference management system used by researchers to author a manuscript}
+
+Reference management systems may need to be updated to internally understand that their is a software reference type, and to be able to output references to software in common formats.
+
+Requirements for reference manager:
+\begin{itemize}
+\item Names of software authors/contributors
+\item Software version number and release date
+\item Location/repository
+\item Citable DOI of software or paper recommended for citation
+\item Format for citing software in citation metadata file
+\item Citation metadata tags embedded in DOI landing page/software project page for easy ingest
+\end{itemize}
+
+Possible steps:
+\begin{enumerate}
+\item Reference management system such as EndNote, Mendeley, Zotero, etc. builds affordances for software references.
+\item Researcher finds software citation and adds it to their reference manager library, by (a) importing from the CITATION file (e.g., BibTeX, RIS), or (b) clicking on, e.g., an ``add to Zotero library'' widget in web browser.
+\item Researcher writes a paper and uses the reference manager to generate citations or bibliography.
+\end{enumerate}
+
+\subsection{Repository wants to publish mixed data\slash software packages}
+
+Domain and institutional data repositories have both data and software
+artifacts, and want to link these together in a provenance trace that can
+be cited. Sometimes the software is a separately identified artifact, but at
+other times software is included inside of data packages, and the researcher
+wants to cite the combined product.
+
+\subsection*{Use cases not adopted in the table:}
+
+\subsection*{Researcher who benchmarks someone else's software with or without modification on one or many hardware platforms for publication}
+
+This case describes the need for a researcher who has contributed to software (by design, software engineering, development, testing, patching, documentation, training, evangelizing, etc.) to have their software work recognized by their employer or colleagues for the purpose of career advancement and increased professional reputation.
+
+Requirements for researcher:
+\begin{itemize}
+\item Name of software
+\item Names of software authors/contributors
+\item Software version number and release date
+\item Location/repository
+\item Citable DOI of software or paper recommended for citation
+\item Format for citing software in source code or citation metadata file
+\end{itemize}
+
+Possible steps:
+\begin{enumerate} \setcounter{enumi}{0}
+\item Software developers create CITATION file and associate with source code release/repository.
+\item Researcher finds and uses software in the development of new software.
+\item Researcher identifies citation metadata file (e.g., CITATION file) associated with downloaded/installed software source code or in online repository/published location. CITATION file includes necessary citation metadata. CITATION file may include BibTeX entry, suggested citation format.
+\item Researcher cites software in source code, documentation, or other metadata-containing file.
+\end{enumerate}
+
+After review of this use case, we decided that based on the title this falls under
+use case 1, where a researcher uses someone else's software for a paper.
+Unlike use case 1, which is general in terms of the use of software, here the
+use leads to a benchmarking study---but the outcome in both cases is a paper
+that needs to cite the software.
+
+\subsection*{Researcher who wants to publish about a piece of software}
+
+The research wants to publish about a version of software they have produced.
+A key part of this use case is to be able to connect the given narrative to a specific version of the software in questions and connect that in large story.
+
+Requirements:
+\begin{itemize}
+\item Name of software
+\item Names of software authors/contributors
+\item Location/repository
+\item Citable DOI of Software
+\item Links to older versions of software
+\end{itemize}
+
+This is similar to use case 1, other than the fact that the software developer(s) and
+paper author(s) will likely be the same person\slash people here.
+
+
+\subsection*{Researcher wants to record the software that generated some data}
+
+This is the case where a researcher is using some software to perform an analysis, either of a physical sample or of data.
+The researcher needs to know which version was used, for example in case a bug was fixed.
+Note that knowing the software and its version is not sufficient to determine the ``conditions'' of the analysis, but they are essential.
+
+Requirement:
+The analysis, or the generated data, has information about the software used.
+
+This is also similar to use case 1, except in that case the research output is
+a paper, while here the output is a dataset.
+
+\subsection*{Researcher who wants to reproduce experience of use of a particular software implementation in context}
+
+Researcher is engaged in historical/cultural research, e.g., a study of video games as cultural artifacts.
+
+Requirements:
+\begin{itemize}
+\item Name of software
+\item Software version number
+\item Documentation of the execution environment/context
+\item Location/repository for virtual machine (or equivalent) comprising both software and execution environment/context
+\item Persistent identifier associated with virtual machine instance (or equivalent) comprising both software and execution environment/context
+\end{itemize}
+
+Possible steps:
+\begin{enumerate}
+\item Researcher obtains persistent ID from citation
+\item Research uses a persistent ID resolution service to resolve ID to a location of  an executable VM instance in a repository
+\item Researcher obtains VM in the repository, executes it, and interacts with software
+\end{enumerate}
+
+This overlaps use case 6 (reproducing analysis), and so we decided not to
+include this as a distinct use case.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Feedback following FORCE2016}
+\label{app:force16-feedback}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+This appendix contains a record of comments made by the FORCE11 community on the draft Software Citation Principles, either directly via Hypothesis on the draft document\footnote{\url{https://www.force11.org/software-citation-principles}} posted following the FORCE2016 conference~\cite{force2016} or via GitHub issues\footnote{\url{https://github.com/force11/force11-scwg/issues}}, and the responses to these comments.
+
+\subsection{On unique identification:} I know this suggestion of a single unique identifier comes from the DOI perspective where it works pretty well, but I'm wondering if something different in the way of identification should be used for software. For creative works generally there is the FRBR model ( \url{https://en.wikipedia.org/wiki/Functional_Requirements_for_Bibliographic_Records}) which defines several levels for a creative entity - ``work'', ``expression'', ``manifestation'', and ``item''. I think something along these lines are particularly relevant for software - it is useful to be able to locate all uses of a particular piece of software no matter what version (the ``work'' level - software identified by a particular name and purpose over a period of time), but it is also important to specify the particular version used in any given work (``expression'' - the source code at the time of use) and in some cases also the platform (``manifestation'' - the compiled bytes including libraries, for example a docker image). ``Item'' probably isn't relevant for software. That is, I think a software citation perhaps could use THREE distinct unique identifiers, one for the work itself, one for the specific version (source code), and possibly an additional one for the actual downloadable binary image that can be run. Rather than leave it implicit I think recognizing the different levels of citable record would be helpful here. \#{F11SC}
+
+\emph{Reply:} I interpret the requirement for ``global uniqueness'' as referring to the identifier itself. Two different people can have the same name (not globally unique) but cannot share a single ORCID (globally unique). Global uniqueness of the identifier does not preclude multiple identifiers pointing to the same person. I think the suggestion of differentiating between different software expressions\slash manifestations\slash items is a reasonable one, but I don't think it relaxes the requirement for identifiers to be globally unique.
+
+\textbf{Our response:}
+We agree that there are valid points here, but on balance we don't feel that the rewards from implementing this outweigh the practical challenges.
+
+\subsection{On accessibility:} Should this document address this in further detail? For example, ``permit and facilitate access'' could be explored further. Should this be done through open access licensing? repositories? Who's responsible for providing this access?
+
+I am also wondering if this is a separate issue since ``citing'' traditionally pointed to publications but did not necessarily address access. DOI, for example is stated, but doesn't guarantee ``access'', so does this simply restating point 3, or should it provide something new?
+
+\textbf{Our response:}
+We agree that accessibility should receive further attention, which the follow-on group focusing on implementation will provide. However, this is out of scope for the document outlining the principles.
+
+To the second point, accessibility provides information about access, but does not guarantee access itself (e.g., paywalled article).
+
+\subsection{On specificity:} I am wondering if this should be folded into number 3 ``Unique Identification''. Both seem to deal with the issue of identification and access.
+
+\textbf{Our response:} A unique software identifier \textbf{can} point to the specific version\slash variant of software, but it can also identify other things (collection of versions, repository, etc.), while this principle deals with the need to identify the specific version of software used (via citation).
+
+\subsection{On academic credit:} A lot of software that were developed by non-academic engineers also contribute to academic research indirectly. Their names and contributions should also be credited. So removing ``Academic'' makes more sense?
+
+\emph{Reply:} This is a good point, though I think academic and non-academic credit are different, so perhaps we can add to this regarding non-academic credit, rather than removing ``academic''.
+
+\emph{Reply:} I agree with Daniel on this. Keep Academic and add non-academic.
+
+\textbf{Our response:} We've made the bullet more general, just about credit, discussing academic credit and adding a sentence about non-academic credit as well.
+
+\subsection{On citations in text:} Although the focus here is on citations in the references, as a publisher, our experience is that most common practice of ``citation'' of data and software for authors is typically in the main body of the text. In order to encourage software to be treated and valued as a first-class research object, it is important that citations to it be positioned in the references as citations to articles and books are. However, it would be a missed opportunity if we did not leverage current practices of authors. This will also likely arise during implementation, as it has for the Data Citation Implementation Publisher Early Adopters Pilot. This could be addressed in future work on implementation.
+
+\textbf{Our response:} In the principles, we propose that software should be cited in the references list, to recognize the primary role of software in research. However, this practice is not mutually exclusive with \textbf{also} referencing\slash citing software in the main body of a paper---as long as the software is cited in the references.
+
+\subsection{On unique identification:} Clearer instructions will be needed for authors on which version to cite. For BioMed Central journals, we ask authors to cite two versions of the software, an archived version (e.g., on Zenodo) as well as the current version (e.g., on GitHub). This is to ensure accessibility. However, if repositories and archives were to include a persistent link to the current version of the software, publishers could then instruct authors to cite only software with a UID, which wouldn't point to a current version, but would point to the version(s) used and would be a more accurate version of scientific record. Related to this point is the idea of group object identifiers. A need for group identifiers has been identified in the area of data (e.g., in the case of meta-analyses), and one could also identify a use case for these in the case of software, collecting metadata around all versions of a given software package. See blog here (\url{https://blog.datacite.org/to-better-understand-research-communication-we-need-a-groid-group-object-identifier/}).
+
+\textbf{Our response:} We recommend citing the specific version of the software that was used. We expect that the unique identifier (e.g., DOI) will point to a landing page that directs to the repository\slash current version. However, this is more of a convenience issue that the software developers should address, rather than the author citing the software they used.
+
+\subsection{On future work:} For implementation we would recommend both consulting with adopters as well as developing metadata standards simultaneously rather than developing metadata standards and then pursuing early adopters implementation. The work early adopters are doing now for data citation will be able to be leveraged for software citation and the changes needed to do so could happen now. There is no need to wait on approval of new tagging for a specific metadata standard. Many publishers will have their own preferred metadata standards and so implementation could begin now with publishers, as long as we know what we want to capture. Future implementation groups might also consider levels of contribution. This is particularly relevant for software. Who is considered an author? For example, to what extent should authors of pull requests receive attribution? This might be considered in an FAQs group, or possibly an early adopters group.
+
+\textbf{Our response:} We agree that metadata standards should be developed with the input of adopters, and have updated this text accordingly.
+
+\subsection{Additional thoughts (not sure what section this applies to):} The principles do not address virtual machines. As these are becoming more common and relevant when addressing the reproducibility of research, it is important this ``form'' of software is acknowledged. The question remains in which cases should authors cite the current version, which the static archived version, and in which the virtual machine? In this way software is very much a unique evolving research object and might not fit perfectly into the same citation practices and structure as other research objects. In addition, software citation could possibly occur within the virtual machine. This could be added as a use case.
+
+\textbf{Our response:} We feel this has been addressed in Section 5.8, with the explicit addition of virtual machines in addition to executables and containers. This is also an issue that should be addressed further by the follow-on implementation working group.
+
+\subsection{On persistence of identifier vs.\ persistence of software:} The persistence principle outlined in (4) is a key element in making software citeable. Where software has become part of the record of science not only the identifier and metadata of the software should be persistent, it should also be the goal to keep a persistent copy of the source code, where applicable. This links with the accessibility principle (5).
+
+There are still many open questions about how to resolve package dependencies in the long term, therefore I would not make the persistent access to code a hard requirement but may add something more specific towards preserving the record of science.
+
+\textbf{Our response:} Our goal is for software citations to point to (persistent) archived source code, but we are not---nor could we---require this.
+
+\subsection{Granularity of the citation:} One of the key issues with any citation, whether document, individual, or software is the specificity of what is being cited. In the case of publications, there is almost zero specificity most of the time.
+
+It's very easy to cite an entire package even though one function was used. Part of this problem is being solved in the Python world through this project (\url{https://github.com/duecredit/duecredit}).
+
+Any citation should have the ability to specify more than just the obvious, but even the obvious would be a good starting point.
+
+The citation\slash url should therefore allow for greater specificity within a code base. In general though, a provenance record of the workflow would be significantly more useful than a citation from a research perspective.
+
+\textbf{Our response:} We agree that greater specificity is desirable in some cases, but we do not believe this rises to the level of what should be specified or discussed in the principles at this time.
+
+
+\subsection{``Software citations should permit \ldots access to the software itself'':} Under the ``Access'' header, the data declaration states that:
+
+\begin{displayquote}
+    Data citations should facilitate access to the data themselves
+\end{displayquote}
+
+Under the same header, the software declaration states:
+
+\begin{displayquote}
+    Software citations should permit and facilitate access to the software itself
+\end{displayquote}
+
+The addition of ``permit'' suggests that software citations should also grant the user with permission to access the software. Is this intentional?
+
+It doesn't seem like a good idea to make access a requirement for discovery, so ``permit'' might not be helpful in this sentence.
+
+\textbf{Our response:} To avoid confusion, we removed ``permit and'' from the accessibility principle.
+
+\subsection{Access to software: free vs commercial:} The section talks about software that is ``free'' as well as ``commercial'' software. I am not sure whether this is about free as in freedom (or just gratis or freely available), since it is compared with commercial software, which is unrelated in general, see \url{http://www.gnu.org/philosophy/words-to-avoid.html#Commercial}
+
+I suppose that ``free'' should be replaced by ``gratis'' and ``commercial'' be replaced by ``non-free'' in that section.
+
+\textbf{Our response:} We think this is sufficiently clear as written.
+
 
 \bibliographystyle{abbrv}
 \bibliography{software-citation-principles}

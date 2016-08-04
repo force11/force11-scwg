@@ -16,6 +16,9 @@
 # *.eps
 # *.pdf
 
+rebuttal.pdf
+software-citation-principles.pdf
+
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
 *.bcf
