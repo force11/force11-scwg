@@ -1,0 +1,203 @@
+\pdfoutput=1
+\pdfminorversion=4
+\documentclass{article}
+\usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+\geometry{letterpaper}
+\usepackage{graphicx, caption}
+\usepackage{latexsym,url,amscd, amssymb, amsmath}
+\usepackage{epstopdf}
+
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{fancyvrb}
+
+\usepackage[version=3]{mhchem} % Formula subscripts using \ce{}, e.g., \ce{H2SO4}
+
+\usepackage[english]{babel}
+\usepackage{textcomp}
+
+\usepackage{siunitx}
+\sisetup{group-separator={,},
+         detect-all,
+         binary-units,
+         list-units = single,
+         range-units = single,
+         tophrase = --,
+         per-mode = symbol-or-fraction,
+         separate-uncertainty = true
+%        scientific-notation = fixed
+}
+\DeclareSIUnit\atm{atm}
+\DeclareSIUnit\CA{CA}
+\DeclareSIUnit\rpm{rpm}
+
+%to highlight text
+\usepackage{soul}
+\usepackage[usenames, dvipsnames]{xcolor}
+\newcommand{\hly}[1]{{\sethlcolor{yellow}\hl{#1}}}
+\newcommand{\hlb}[1]{{\sethlcolor{SkyBlue}\hl{#1}}}
+\newcommand{\hlg}[1]{{\sethlcolor{green}\hl{#1}}}
+
+\usepackage[sort&compress]{natbib}
+\bibpunct{[}{]}{,}{n}{}{;}
+\usepackage[linkcolor=blue, citecolor=blue, colorlinks=true, breaklinks=true]{hyperref}
+
+\usepackage{url,breakurl}
+\usepackage{enumitem}
+
+\newcommand{\katznote}[1]{ {\textcolor{blue} { ***DSK: #1 }}} % Dan
+\newcommand{\niemnote}[1]{ {\textcolor{orange} { ***KEN: #1 }}} % Kyle
+\newcommand{\asnote}[1]{ {\textcolor{red} { ***AMS: #1 }}} %Arfon
+
+
+%\date{}                                           % Activate to display a given date or no date
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{0.4cm}
+
+%%% BEGIN DOCUMENT
+\begin{document}
+
+We thank the editor and reviewers for their helpful comments, and have addressed their requests and questions here.
+Specific changes or additions can be found in the marked revision.
+% in response to the Editor, Reviewer \#1, and Reviewer \#2 are respectively highlighted in the marked manuscript in \hly{yellow}, \hlb{blue}, and \hlg{green}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Editor:}
+
+{\itshape
+First of all, I would like to thank the authors for having addressed all my
+comments and reviewers' suggestions in their revision (and clearly explained
+their modifications in their response letter), and thanks again to the
+reviewers for their wonderful job.
+
+While the paper is now in a good shape for being published, there are just
+minor issues that should be properly addressed before having it accepted
+for the final publication. Such issues are highlighted by the reviewer, and
+concern the new parts the authors have added, in particular:
+
+\begin{enumerate}
+\item the comparison between software and data;
+\item the assignment of an identifier for explicit versions of a software by
+means of repository capabilities (e.g. hashes).
+\end{enumerate}
+
+This is not a huge amount of work to add, as far as I can see, but a clear
+discussion (even supported by appropriate references) would be beneficial
+for the article.
+
+Thanks again for your wonderful work.
+}
+
+\textbf{Our response:}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Reviewer \#1 (Tobias Kuhn):}
+
+{\itshape
+The authors followed most of my suggestions, and where they did not, they
+mostly presented convincing arguments. I like in particular that there is
+now an appendix with the use cases.
+
+However, there are two aspects of the latest version that I find not very
+convincing:
+}
+
+\begin{enumerate}
+
+\item \textbf{Reviewer comment:}
+\emph{The listed differences between software and data (lines 100--114) are not
+convincing in my opinion:}
+
+\begin{itemize}
+
+\item \emph{``'Software can be used to express or explain concepts, unlike
+data'': I don't understand this.}
+
+\item \emph{``'Software is updated more frequently that papers or data''
+(typo: ``''that'' instead of ``than''): This was questioned also by the
+second reviewer, and I don't think the issue is resolved. The footnote is
+unsupported and seems to partly contradict the main point. (I can imagine that
+maybe only *popular* software tends to be updated frequently, whereas
+*popular* dataset are often not.)}
+
+\item \emph{``'Software suffers from a different type of bit rot than data'':
+I am not convinced that this is really a different *type* of bit rot.
+In particular datasets in proprietary formats seem to suffer from exactly the
+same problems.}
+
+\item \emph{``Software is frequently built to use other software'': True,
+though similar things can occur in datasets too, in particular with respect to
+Linked Data, where datasets typically use a number of third-party ontologies and
+vocabularies.}
+
+\item \emph{``Software is generally smaller than data'': Another unsupported
+claim, and I am not fully convinced that this is true. There must be a large
+number of very small spreadsheets of data. So, on average data might be smaller
+than software. The difference is certainly true on the upper end of the scale
+though: the largest datasets are larger than the largest pieces of software.}
+
+\item{``Software teams can be large and multidisciplinary, \ldots'': I think
+this applies to data too.}
+
+\item{``The lifetime of software is generally not as long as that of data.'':
+Again unsupported, and again I can imagine this to be false. Many datasets, in
+particular small ones, might be stillbirths (i.e.\ they are never used). The
+same might be true for software, but possibly to a lesser degree. And software
+might commonly evolve, whereas data might more often be replaced by a
+different and newer dataset, in which case evolving software would live
+longer.}
+
+\end{itemize}
+
+\item \textbf{Reviewer comment:}
+\emph{I am also not convinced by the arguments against hashes as identifiers:}
+
+\begin{itemize}
+
+\item \emph{``commit references are not guaranteed to be permanent'':
+identifiers consisting of strong hash values *are* guaranteed to be permanent
+in the sense that they can forever only represent what they were meant to
+represent, i.e. the bits and bytes on which the hash was calculated (which, in
+the case of Git, is the entire version history).}
+
+\item \emph{``A repository address and version number does not guarantee that
+the software is available at a particular (resolvable) URL''. It depends. A URL
+like \url{https://github.com/torvalds/linux/commit/a0cba2179ea4c1820fce2ee046b6ed90ecc56196}
+*does* come with a hash and can be resolved to get to the actual software.
+There is no guarantee that github.com will be available forever, but this is
+also true for publisher sites and therefore DOIs.}
+
+\item \emph{``A particular version number/commit reference may not represent a
+``preferred'' point at which to cite the software from the perspective of the
+package authors.'': Hashes certainly don't prevent you from defining preferred
+versions for future reference. But they come with the *possibility* to identify
+all versions, which I would in fact consider an important feature. If I want to
+make my research perfectly reproducible, I should be able to cite the exact
+version that I used, whether that happens to be a preferred version or not.}
+
+\item \emph{``When we talk about a ``Unique identifier'' in the document, we
+are referring to unique, persistent, and machine-actionable identifiers such as
+a DOI, ARK, or PURL; we do not believe a repository address with a version
+number is sufficient.'' [from the rebuttal letter]: Identifiers that include
+hashes are in important ways *more* unique, *more* persistent, and *more*
+machine-actionable than DOIs or PURLs. Strong hashing algorithms guarantee
+uniqueness (no other input can be constructed for the same hash), are in
+practice probably more persistent (for example, there exist independent
+complete copies of all GitHub content, so even if github.com closes for good,
+the cited software could still be found), and can be automatically verified
+against their supposed content. (The above holds for *strong* hash functions,
+and Git's SHA-1 is no longer considered strong - even though not a single
+collision has been found until now - but this doesn't invalidate the general
+points.)}
+
+\end{itemize}
+
+\end{enumerate}
+
+%\bibliography{}
+%\bibliographystyle{}
+
+\end{document}
