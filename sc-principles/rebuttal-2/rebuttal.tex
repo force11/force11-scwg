@@ -242,7 +242,10 @@ make my research perfectly reproducible, I should be able to cite the exact
 version that I used, whether that happens to be a preferred version or not.}
 
 \textbf{Our response:}
-
+As stated in our general response above and reflected in our changes to the
+manuscript, we agree hashes (combined with a
+repository URL) could be used when citing a version of software that does not
+have an associated DOI.
 
 \item \emph{``When we talk about a ``Unique identifier'' in the document, we
 are referring to unique, persistent, and machine-actionable identifiers such as
@@ -260,7 +263,13 @@ collision has been found until now - but this doesn't invalidate the general
 points.)}
 
 \textbf{Our response:}
-
+\niemnote{Something like:} We chose DOIs as the primary unique identifier\slash
+locator to satisfy the principles of unique identification, persistence, and
+accessibility. While strong hashing algorithms (which Git does not use) are
+unique, they cannot currently be used with GitHub repo URLs (e.g.). In addition,
+we prefer a persistent solution that doesn't depend on outside solutions if
+(e.g.) GitHub goes away---the DOI system ensures persistence regardless of the
+original ``owner''\slash naming authority.
 
 \end{itemize}
 
