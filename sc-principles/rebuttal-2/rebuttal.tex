@@ -116,6 +116,9 @@ convincing in my opinion:}
 \item \emph{``'Software can be used to express or explain concepts, unlike
 data'': I don't understand this.}
 
+\textbf{Our response:}
+
+
 \item \emph{``'Software is updated more frequently that papers or data''
 (typo: ``''that'' instead of ``than''): This was questioned also by the
 second reviewer, and I don't think the issue is resolved. The footnote is
@@ -123,15 +126,24 @@ unsupported and seems to partly contradict the main point. (I can imagine that
 maybe only *popular* software tends to be updated frequently, whereas
 *popular* dataset are often not.)}
 
+\textbf{Our response:}
+
+
 \item \emph{``'Software suffers from a different type of bit rot than data'':
 I am not convinced that this is really a different *type* of bit rot.
 In particular datasets in proprietary formats seem to suffer from exactly the
 same problems.}
 
+\textbf{Our response:}
+
+
 \item \emph{``Software is frequently built to use other software'': True,
 though similar things can occur in datasets too, in particular with respect to
 Linked Data, where datasets typically use a number of third-party ontologies and
 vocabularies.}
+
+\textbf{Our response:}
+
 
 \item \emph{``Software is generally smaller than data'': Another unsupported
 claim, and I am not fully convinced that this is true. There must be a large
@@ -139,8 +151,14 @@ number of very small spreadsheets of data. So, on average data might be smaller
 than software. The difference is certainly true on the upper end of the scale
 though: the largest datasets are larger than the largest pieces of software.}
 
+\textbf{Our response:}
+
+
 \item{``Software teams can be large and multidisciplinary, \ldots'': I think
 this applies to data too.}
+
+\textbf{Our response:}
+
 
 \item{``The lifetime of software is generally not as long as that of data.'':
 Again unsupported, and again I can imagine this to be false. Many datasets, in
@@ -149,6 +167,9 @@ same might be true for software, but possibly to a lesser degree. And software
 might commonly evolve, whereas data might more often be replaced by a
 different and newer dataset, in which case evolving software would live
 longer.}
+
+\textbf{Our response:}
+
 
 \end{itemize}
 
@@ -163,12 +184,19 @@ in the sense that they can forever only represent what they were meant to
 represent, i.e. the bits and bytes on which the hash was calculated (which, in
 the case of Git, is the entire version history).}
 
+\textbf{Our response:}
+It is possible to overwrite\slash clobber a particular commit (e.g, using a
+git force-push), and so access to that hash may not be persistent.\niemnote{is this true?}
+
 \item \emph{``A repository address and version number does not guarantee that
 the software is available at a particular (resolvable) URL''. It depends. A URL
 like \url{https://github.com/torvalds/linux/commit/a0cba2179ea4c1820fce2ee046b6ed90ecc56196}
 *does* come with a hash and can be resolved to get to the actual software.
 There is no guarantee that github.com will be available forever, but this is
 also true for publisher sites and therefore DOIs.}
+
+\textbf{Our response:}
+
 
 \item \emph{``A particular version number/commit reference may not represent a
 ``preferred'' point at which to cite the software from the perspective of the
@@ -177,6 +205,9 @@ versions for future reference. But they come with the *possibility* to identify
 all versions, which I would in fact consider an important feature. If I want to
 make my research perfectly reproducible, I should be able to cite the exact
 version that I used, whether that happens to be a preferred version or not.}
+
+\textbf{Our response:}
+
 
 \item \emph{``When we talk about a ``Unique identifier'' in the document, we
 are referring to unique, persistent, and machine-actionable identifiers such as
@@ -192,6 +223,9 @@ against their supposed content. (The above holds for *strong* hash functions,
 and Git's SHA-1 is no longer considered strong - even though not a single
 collision has been found until now - but this doesn't invalidate the general
 points.)}
+
+\textbf{Our response:}
+
 
 \end{itemize}
 
