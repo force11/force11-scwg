@@ -695,13 +695,18 @@ What this means for data is discussed in detail in the ``Unique Identification''
 This report also lists examples of identifiers that match these criteria including DOIs, PURLs, Handles, ARKS, and NBNs.
 For software, \textit{we recommend the use of DOIs as the unique identifier due to their common usage and acceptance, particularly as they are the standard for other digital products such as publications.}
 
-While we believe there is value in including the explicit version (e.g., Git SHA1 hash, Subversion revision number) of the software in any software citation, there are a number of reasons that a commit reference together with a repository URL is not ideal for the purposes of software citation:
+While we believe there is value in including the explicit version (e.g., Git SHA1 hash, Subversion revision number) of the software in any software citation, there are a number of reasons that a commit reference together with a repository URL is not recommended for the purposes of software citation:
 
 \begin{enumerate}
 \item Version numbers/commit references are not guaranteed to be permanent. Projects can be migrated to new version control systems (e.g., SVN to Git). In addition, it is possible to overwrite/clobber a particular version (e.g., force-pushing in the case of Git).
-\item A repository address and version number does not guarantee that the software is available at a particular (resolvable) URL.
+\item A repository address and version number does not guarantee that the software is available at a particular (resolvable) URL, especially as it is possible for authors to remove their content from e.g. GitHub.
 \item A particular version number/commit reference may not represent a ``preferred'' point at which to cite the software from the perspective of the package authors.
 \end{enumerate}
+
+We recognize however that there are certain situations where it may not be possible for follow the recommended best-practice.
+For example, if (1) the software authors did not register a DOI and/or release a specific version or (2) the version of the
+software used does not match what is available to cite. In those cases, falling back on a combination of the repository URL and
+version number/commit hash would be an appropriate way to cite the software used.
 
 Note that the ``unique'' in a UID means that it points to a unique, specific software version. However, multiple UIDs might point to the same software.
 This is not recommended, but is possible.
