@@ -212,7 +212,8 @@ the case of Git, is the entire version history).}
 
 \textbf{Our response:}
 It is possible to overwrite\slash clobber a particular commit (e.g, using a
-git force-push), and so access to that hash may not be persistent.\niemnote{is this true?}
+git force-push), or remove a repository entirely, and so access to that hash
+may not be persistent.
 
 \item \emph{``A repository address and version number does not guarantee that
 the software is available at a particular (resolvable) URL''. It depends. A URL
@@ -257,9 +258,7 @@ As stated in our general response above and reflected in our changes to the
 manuscript, we agree hashes (combined with a
 repository URL) could be used when citing a version of software that does not
 have an associated DOI.
-
-\asnote{Should we say that this is something we expect the implementation WG to
-work on?}
+We do expect the follow-on implementation working group to work further on these solutions.
 
 
 \item \emph{``When we talk about a ``Unique identifier'' in the document, we
@@ -278,7 +277,7 @@ collision has been found until now - but this doesn't invalidate the general
 points.)}
 
 \textbf{Our response:}
-\niemnote{Something like:} We chose DOIs as the primary unique identifier\slash
+The working group focused on DOIs as the primary unique identifier\slash
 locator to satisfy the principles of unique identification, persistence, and
 accessibility. While strong hashing algorithms (which Git does not use) are
 unique, they cannot currently be used with GitHub repo URLs (e.g.). In addition,
