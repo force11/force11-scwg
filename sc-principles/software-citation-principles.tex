@@ -144,8 +144,8 @@ a paper or a book, that is, authors should cite the appropriate set of software
 products just as they cite the appropriate set of papers.
 
 \item \textbf{Credit and Attribution}: \label{principle:credit}
-Software citations should facilitate giving scholarly credit and normative
-and legal attribution to all contributors to the software, recognizing
+Software citations should facilitate giving scholarly credit and normative,
+legal attribution to all contributors to the software, recognizing
 that a single style or mechanism of attribution may not be applicable to
 all software.
 
@@ -183,11 +183,11 @@ and products have grown beyond simply papers and books to include software,
 data, and other electronic components such as presentation slides, posters,
 (interactive) graphs, maps, websites (e.g., blogs and forums), and multimedia
 (e.g., audio and  video lectures).  Research knowledge is embedded in these
-components. And papers and books themselves are also becoming increasingly
+components. Papers and books themselves are also becoming increasingly
 digital, allowing them to become executable and reproducible. As we move towards
 this future where research is performed in and recorded as a variety of linked
 digital products, the characteristics and properties that developed for books
-and papers need to be applied to all digital products and possibly adjusted.
+and papers need to be applied to, and possibly adjusted for,  all digital products.
 Here, we are concerned specifically with the citation of software products. The
 challenge is not just the textual citation of software in a paper, but the more
 general identification of software used within the research process. This work
@@ -202,7 +202,7 @@ Software and other digital resources currently appear in publications in very
 inconsistent ways. For example, a random sample of 90 articles in the biology
 literature found seven different ways that software was mentioned, including
 simple names in the full-text, URLs in footnotes, and different kinds of
-mentions in references lists: project names or websites, user manuals,
+mentions in references lists: project names or websites, user manuals, or
 publications that describe or introduce the software~\cite{howison2015jasist}.
 Table~\ref{tab:mentions} shows examples of these varied forms of software
 mentions and the frequency with which they were encountered.
@@ -258,7 +258,7 @@ software for different purposes, leading to credit for those responsible for the
 software.
 
 \item Reproducibility: Citation of specific software used is necessary for
-reproducibility, but is not sufficient. Additional information such as
+reproducibility, although not sufficient. Additional information such as
 configurations and platform issues are also needed.
 
 \end{itemize}
@@ -300,7 +300,7 @@ workshop and presented at the FORCE2016 Conference~\cite{force2016} in April 201
 Members of the workshop and greater FORCE11 community gave feedback, which we
 recorded here in Appendix~\ref{app:force16-feedback}. This discussion led to
 some changes in the use cases and discussion, although the principles themselves
-were not modified. We also plan to initiate a follow-on working group that will
+were not modified. We also plan to initiate a follow-on implementation working group that will
 work with stakeholders to ensure that these principles impact the research process.
 
 The process of creating the software citation principles began by adapting
@@ -327,7 +327,7 @@ underway~\cite{software-vs-data}.
 
 The principles in this document should guide further development of software citation
 mechanisms and systems, and the reader should be able to look at any particular example
-of software citation and see if it meets the principles.
+of software citation to see if it meets the principles.
 While we strive to offer practical guidelines that acknowledge the current
 incentive system of academic citation, a more modern system of assigning credit
 is sorely needed. It is not that academic software needs a separate credit
@@ -427,7 +427,7 @@ Use case 	& \rot{Unique identifier} &  \rot{Software name} & \rot{Author(s)} & \
 
 In some cases, if particular metadata are not available, alternatives may be provided.
 For example, if the version number and release date are not available, the download date can be used.
-And the contact name\slash email is an alternative to the location\slash repository.
+Similarly the contact name\slash email is an alternative to the location\slash repository.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -455,7 +455,7 @@ Wilson suggests that software authors include a \texttt{CITATION} file that
 documents exactly how the authors of the software would like to be cited by
 others~\cite{ssi-citation-files}. While this is not a formal metadata
 specification (e.g., it is not machine readable) this does offer a solution for
-authors wishing to give explicit instructions to potential citing authors and as
+authors wishing to give explicit instructions to potential citing authors, and as
 noted in the motivation section (\S\ref{sec:intro}), there is evidence that
 authors follow instructions if they exist~\cite{10.1371/journal.pone.0136631}.
 
@@ -475,7 +475,7 @@ part of ``The Research Software Impact Manifesto.'' In the
 cite five core principles (Code, Copyright, Citation, Credit, Curation) for
 scientific software.
 
-Perhaps in recognition of the broad range of research domains struggling with
+Perhaps in light of the broad range of research domains struggling with
 the challenge of better recognizing the role of software, funders and agencies
 in both the US (e.g., NSF, NIH, Alfred P.\ Sloan Foundation) and UK (e.g.,
 SFTC, JISC, Wellcome Trust) have sponsored or hosted a number of workshops with
@@ -511,7 +511,7 @@ relevant to this working group.  In addition, a number of academic publishers
 such as APA~\cite{APA-guidelines} have recommendations for submitting authors on
 how to cite software, and journals such as \emph{F1000Research}~\cite{F1000},
 \emph{SoftwareX}~\cite{softwareX}, \emph{Open Research Computation}~\cite{ORC}, and
-the \emph{Journal of Open Research Software} allow for submissions entirely
+the \emph{Journal of Open Research Software}~\cite{jors} allow for submissions entirely
 focused on research software.
 
 \subsection{Domain-specific community activities}
@@ -569,7 +569,7 @@ include DOAP~\cite{DOAP}, an early metadata
 term set used by the Open Source Community, as well as more recent community
 efforts like Research Objects~\cite{Bechhofer2013599}, The Software Ontology~\cite{Malone2014}, EDAM Ontology~\cite{Ison15052013}, Project
 CRediT~\cite{casrai-credit}, the OpenRIF Contribution Role Ontology~\cite{Gutzman2016}, Ontosoft~\cite{ontosoft}, RRR\slash JISC guidelines~\cite{JISC2015},
-or the terms and classes defined at \href{https://schema.org}{Schema.org} related to the
+or the terms and classes defined at \href{https://schema.org}{schema.org} related to the
 \href{https://schema.org/SoftwareApplication}{\texttt{SoftwareApplication}} class.   In addition,
 language-specific software metadata schemes are in widespread use, including the Debian
 package format~\cite{Debian_policy}, Python package descriptions~\cite{pypi}, and R package descriptions~\cite{wickham_r_2015}, but these are typically
@@ -636,7 +636,7 @@ In the Importance principle~(\ref{principle:importance}), we state that
 ``software should be cited on the same basis as any other research product such as a paper or a book; that is, authors should cite the appropriate set of software products just as they cite the appropriate set of papers.''
 In the case of one code that is derived from another code, citing the derived software may appear to not credit those responsible for the original software, nor recognize its role in the work that used the derived software.
 However, this is really analogous to how any research builds on other research, where each research product just cites those products that it directly builds on, not those that it indirectly builds on.
-Understanding these chains of knowledge and credit have been part of the history of science field for some time, though more recent work is suggesting more nuanced evaluation of the credit chains~\cite{casrai-credit, transitive_credit_json-ld}.
+Understanding these chains of knowledge and credit have been part of the history of science field for some time, though more recent work suggests more nuanced evaluation of the credit chains~\cite{casrai-credit, transitive_credit_json-ld}.
 
 \subsection{Software peer review}
 
@@ -675,7 +675,7 @@ Similarly,  \textit{publishers should not include references in the content coun
 \label{sec:identification}
 
 The Unique Identification principle~(\ref{principle:uid}) calls for ``a method for identification that is machine actionable, globally unique, interoperable, and recognized by a community.''
-What this means for data is discussed in detail in the ``Unique Identification'' section of a report by the FORCE11 Data Citation Implementation Group (DCIG)~\cite{10.7717/peerj-cs.1}, which calls for ``unique identification in a manner that is machine-resolvable on the Web and demonstrates a long-term commitment to persistence.''
+What this means for data is discussed in detail in the ``Unique Identification'' section of a report by the FORCE11 Data Citation Implementation Group~\cite{10.7717/peerj-cs.1}, which calls for ``unique identification in a manner that is machine-resolvable on the Web and demonstrates a long-term commitment to persistence.''
 This report also lists examples of identifiers that match these criteria including DOIs, PURLs, Handles, ARKS, and NBNs.
 For software, \textit{we recommend the use of DOIs as the unique identifier due to their common usage and acceptance, particularly as they are the standard for other digital products such as publications.}
 
@@ -687,7 +687,7 @@ While we believe there is value in including the explicit version (e.g., Git SHA
 \item A particular version number/commit reference may not represent a ``preferred'' point at which to cite the software from the perspective of the package authors.
 \end{enumerate}
 
-We recognize that there are certain situations where it may not be possible for follow the recommended best-practice.
+We recognize that there are certain situations where it may not be possible to follow the recommended best-practice.
 For example, if (1) the software authors did not register a DOI and/or release a specific version, or (2) the version of the
 software used does not match what is available to cite.
 In those cases, falling back on a combination of the repository URL and
@@ -702,7 +702,7 @@ Multiple UIDs can lead to split credit, which goes against the Credit and Attrib
 
 \subsubsection*{Software versions and identifiers}
 
-There are at least three different potential relationships between identifiers and versions of software.
+There are at least three different potential relationships between identifiers and versions of software:
 \begin{enumerate}
 \item An identifier can point to a specific version of a piece of software.
 \item An identifier can point to the piece of software, effectively all versions of the software.
@@ -737,7 +737,7 @@ The Accessibility principle (\ref{principle:accessibility}) states that ``softwa
 This does not mean that the software must be freely available.
 Rather, the metadata should provide enough information that the software can be accessed.
 If the software is free, the metadata will likely provide an identifier that can be resolved to a URL pointing to the specific version of the software being cited.
-For commercial software, the metadata should still provide information on how to access the specific software, but this may be a company's product number or a link to a web site that allows the software be purchased.
+For commercial software, the metadata should still provide information on how to access the specific software, but this may be a company's product number or a link to a website that allows the software be purchased.
 As stated in the Persistence principle~(\ref{principle:persistence}), we recognize that the software version may no longer be available, but it still should be cited along with information about how it was accessed.
 
 \subsection{What an identifier should resolve to}
