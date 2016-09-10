@@ -21,7 +21,7 @@ versions released.
 It may also be the case that the version of the software used is not associated
 with an explicit release/version number, but instead a specific git commit.
 
-### Citing commercial software or other closed
+### Citing commercial software or other closed-source software
 
 Frequently commercial or otherwise closed-source software needs to be cited.
 In this case, the version (or associated release date) combined with
@@ -33,3 +33,9 @@ Example 1: URL
     COMSOL Inc., COMSOL Multiphysics. version 4.3b, May 2013. https://www.comsol.com/comsol-multiphysics
 
 Example 2: email address
+
+### Citing software that is only available as a service
+
+Some software is only available as a service.  This is similar to closed-source software,
+except that the service is availale at a URL, and perhaps may be the subject of a paper.
+
