@@ -1,4 +1,4 @@
-# Force11 Software Citation Working Group
+# FORCE11 Software Citation Working Group
 
 ##Mission Statement (WIP)
 
@@ -38,22 +38,22 @@ Kick off meeting (telecon) with goals of:
 
 ### Phase 5 (April 2016)
 
-- Presentation of formal recommendations at Force11 2016
+- Presentation of formal recommendations at FORCE2016
 
 ## Communication plan
 
 - Monthly telecons
 - GitHub for documentation/iterating on content
 - Google groups for general discussion
-- Force11 email list for announcements
+- FORCE11 email list for announcements
 
 ##Members
 
 If you are interested in joining the group, please:
 
 1. Add yourself to the list below through a pull request
-2. To add yourself to the group mailing list and group folder on Force11:
-  * Sign into Force11: http://www.force11.org/user/register
+2. To add yourself to the group mailing list and group folder on FORCE11:
+  * Sign into FORCE11: http://www.force11.org/user/register
   * After Signing in, on the group page (http://www.force11.org/group/software-citation-working-group) subscribe to the group here using the "subscribe to group" link in right column above the group list
 
 
@@ -77,7 +77,7 @@ If you are interested in joining the group, please:
 | Carole Goble ([@carolegoble](https://github.com/carolegoble)) | The University of Manchester, Software Sustainability Institute | Participant |
 | Paul Groth ([@pgroth](https://github.com/pgroth)) | Elsevier Labs | Participant |
 | Melissa Haendel ([@mellybelly](https://github.com/mellybelly)) | OHSU | Participant |
-| Stephanie Hagstrom ([@sthagstrom](https://github.com/sthagstrom)) | Force11 | Participant |
+| Stephanie Hagstrom ([@sthagstrom](https://github.com/sthagstrom)) | FORCE11 | Participant |
 | Robert Hanisch ([@rjhanisch](https://github.com/rjhanisch)) | NIST/ODI | Participant |
 | Edwin Henneken ([@ehenneken](https://github.com/ehenneken)) | Harvard-Smithsonian CfA | Participant |
 | Ivan Herman ([@iherman](https://github.com/iherman)) | W3C | Participant |
