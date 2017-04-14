@@ -1,6 +1,9 @@
+**:warning: This group is no longer active. If you are interested in implementing software citation, please join https://www.force11.org/group/software-citation-implementation-working-group :warning:**
+
+
 # FORCE11 Software Citation Working Group
 
-##Mission Statement (WIP)
+## Mission Statement (WIP)
 
 The software citation working group is a committee that will leverage the perspectives of a variety of existing initiatives working on software citation to  produce a consolidated set of citation principles in order to encourage broad adoption of a consistent policy for software citation across disciplines and venues.  The working group will review existing efforts and make a set of recommendations. These recommendations will be put up for endorsement by the organizations represented by this group and others that play an important role in the community.
 
