@@ -11,6 +11,8 @@ The group will produce a set of principles, illustrated with working examples, a
 
 See [Joint Declaration of Data Citation Principle](https://www.force11.org/group/joint-declaration-data-citation-principles-final) as a example of a similar deliverable.
 
+The final output of the group was [Smith AM, Katz DS, Niemeyer KE, FORCE11 Software Citation Working Group. (2016) Software citation principles. PeerJ Computer Science 2:e86 https://doi.org/10.7717/peerj-cs.86](https://doi.org/10.7717/peerj-cs.86).
+
 Co-chairs: Arfon Smith & Daniel S. Katz & Kyle Niemeyer
 
 ##Timeline
